@@ -1,0 +1,1950 @@
+%% -*- mode: latex ; coding: utf-8 -*-
+\newif\iflhyper
+%\lhypertrue          %Hyperlinks im dvi
+\lhyperfalse        %keine Hykerlinks, erm"oglicht kompaktae Zitate,
+                     %Bei  Papierversion \lhyperfalse einstellen
+
+\newif\ifdraft
+%\drafttrue              % Set draft option in documentclass
+\draftfalse             % Don't set draft option in documentclass
+
+
+%\documentclass{article}        
+%\documentclass[8pt,twoside,normalheadings,
+\documentclass[fontsize=11pt,normalheadings,
+        paper=a4,headinclude,DIV20,BCOR=5mm,
+        pointlessnumbers,
+%        twocolumn,
+        \ifdraft draft,\fi
+%        ]{scrreprt}    
+        ]{scrartcl}      
+%DIV was 12, KOMA thougt that was too much enough
+\include{myheader}
+\usepackage{epsdice}
+%\usepackage{palatino}
+
+\newcommand{\ppwfuenf}{\stepcounter{wuerfelfuenf}\epsdice{\thewuerfelfuenf}} 
+
+%
+\newenvironment{wsechs}{
+\bigskip
+
+\stepcounter{wuerfeldrei}
+\begin{minipage}{\textwidth}
+\begin{tabular}[c]{r|llllll}
+\multicolumn{1}{c}{\LARGE{\textsf{\epsdice{\thewuerfeleins}\epsdice{\thewuerfelzwei}\epsdice{\thewuerfeldrei}}}} & \multicolumn{1}{c}{\epsdice{1}} & \multicolumn{1}{c}{\epsdice{2}} & \multicolumn{1}{c}{\epsdice{3}}
+& \multicolumn{1}{c}{\epsdice{4}} & \multicolumn{1}{c}{\epsdice{5}} & \multicolumn{1}{c}{\epsdice{6}} \\
+\cline{2-7}
+\rule[2.2ex]{0em}{0ex}}{\end{tabular}\end{minipage}}
+
+\setlength{\parindent}{0mm}
+
+\usepackage{fancyhdr}
+\setlength{\headheight}{15.2pt}
+\pagestyle{fancyplain}
+\cfoot{}
+
+\lhead{\Huge\arabic{wuerfeleins}:\arabic{wuerfelzwei}}
+\chead{\Huge\bf deutsch}
+\rhead{\Huge\epsdice{\thewuerfeleins}\epsdice{\thewuerfelzwei}}
+\lfoot{\Huge\epsdice{\thewuerfeleins}\epsdice{\thewuerfelzwei}}
+\chead{\Huge\bf deutsch}
+\rfoot{\Huge\arabic{wuerfeleins}:\arabic{wuerfelzwei}}
+
+
+
+\begin{document}
+\newcounter{wuerfeleins}
+\newcounter{wuerfelzwei}[wuerfeleins]
+\newcounter{wuerfeldrei}[wuerfelzwei]
+%wuerfelvier ist die Titelzeile der tabellen
+\newcounter{wuerfelfuenf}[wuerfeldrei]
+
+
+\stepcounter{wuerfeleins}
+\stepcounter{wuerfelzwei}
+
+\begin{wsechs}
+\ppwfuenf & aachen & aalen & aalsuppe & aasig & aaskopf & abartig \\
+\ppwfuenf & abbild & abbilden & abbinden & abbitten & abbruch & abdecker \\
+\ppwfuenf & abdocken & abdomen & abermals & abernten & abfall & abfangen \\
+\ppwfuenf & abfasen & abfassen & abfedern & abfetten & abflauen & abflug \\
+\ppwfuenf & abfrage & abgabe & abgaenge & abgas & abgehen & abgeirrt \\
+\ppwfuenf & abgelebt & abgelegt & abgelten & abgenagt & abgesang & abglanz
+\end{wsechs}
+\begin{wsechs}
+\ppwfuenf & abgraben & abgrund & abguss & abhacken & abhakend & abhang \\
+\ppwfuenf & abhaspel & abhauend & abheilen & abhilfe & abiose & abirren \\
+\ppwfuenf & abkalben & abkauen & abkleben & ablage & ablass & ablation \\
+\ppwfuenf & ablativ & ablauf & ablaufen & ableben & ableger & ablesend \\
+\ppwfuenf & abliegen & abloeten & abluft & abmalen & abmalend & abmarsch \\
+\ppwfuenf & abmass & abnabeln & abnehmer & abnorm & abnormal & abnutzen
+\end{wsechs}
+\begin{wsechs}
+\ppwfuenf & abpassen & abpfiff & abpumpen & abputzen & abrasion & abraum \\
+\ppwfuenf & abreiben & abreisen & abriss & abrollen & abrupt & abruzzen \\
+\ppwfuenf & abschied & absegeln & abseilen & absinken & absitzen & absprung \\
+\ppwfuenf & abstehen & absteppt & abstich & abstoss & abstrakt & abstrich \\
+\ppwfuenf & abstufen & absurd & absurde & absurdes & abtakeln & abtaster \\
+\ppwfuenf & abtauen & abteilen & abtippen & abtoeten & abtraben & abtrag
+\end{wsechs}
+\begin{wsechs}
+\ppwfuenf & abtragen & abtun & abwehr & abweisen & abwerfen & abwetzen \\
+\ppwfuenf & abwurf & abzahlen & abzehren & abzieht & account & accra \\
+\ppwfuenf & achat & achsrohr & achtbar & achteck & achtens & achter \\
+\ppwfuenf & achtmal & acker & ackernd & ackerte & acryl & actinium \\
+\ppwfuenf & adaequat & adamin & adana & addukt & adduktor & adeln \\
+\ppwfuenf & adelte & adenin & adenom & aderhaut & aderlass & adiabate
+\end{wsechs}
+\begin{wsechs}
+\ppwfuenf & adisch & adjektiv & adler & adliger & advokat & aechten \\
+\ppwfuenf & aechtend & aedern & aedernd & aegide & aegypten & aelter \\
+\ppwfuenf & aeltlich & aendert & aerger & aergernd & aerolith & aerosol \\
+\ppwfuenf & aesen & aesend & aesthet & aethyl & aetzend & aetzte \\
+\ppwfuenf & affaere & affe & affektiv & afferent & affig & affiger \\
+\ppwfuenf & afrika & agar & agentur & agenzien & agierte & agil
+\end{wsechs}
+\begin{wsechs}
+\ppwfuenf & agiler & agility & agitiert & agitprop & agmatit & agnosie \\
+\ppwfuenf & agogisch & agonal & agouti & agra & agronom & agula \\
+\ppwfuenf & aha & ahle & ahndend & ahnen & ahnend & ahnung \\
+\ppwfuenf & ahoi & ahorn & ais & aisis & aka & akarizid \\
+\ppwfuenf & akausal & akazie & akkord & akmit & akribie & akrobat \\
+\ppwfuenf & akrolein & aktin & aktion & aktiva & aktive & aktivist
+\end{wsechs}
+\newpage
+
+\stepcounter{wuerfelzwei}
+
+\begin{wsechs}
+\ppwfuenf & aktivum & akustik & akut & akzent & alaun & albanien \\
+\ppwfuenf & albe & albernd & aldehyd & aleuten & algebra & algier \\
+\ppwfuenf & alias & alibi & aliquot & alkalose & allanit & alleine \\
+\ppwfuenf & alleinig & allel & allemal & aller & allergen & allergie \\
+\ppwfuenf & allerlei & alles & allesamt & allgas & allianz & allpass \\
+\ppwfuenf & alm & alopezie & alpaka & alpen & alsdann & altan
+\end{wsechs}
+\begin{wsechs}
+\ppwfuenf & alte & alterte & altistin & altoel & altrosa & ama \\
+\ppwfuenf & amaranth & amastie & amazonas & ammer & ammonium & amnesie \\
+\ppwfuenf & amok & amoklauf & ampel & ampere & amphibol & amsel \\
+\ppwfuenf & amtiert & amtlich & amtseid & amylase & anabol & analogon \\
+\ppwfuenf & analytik & anatas & anbau & anbei & anbeten & anbinden \\
+\ppwfuenf & andauern & andere & anders & anderswo & andienen & andorra
+\end{wsechs}
+\begin{wsechs}
+\ppwfuenf & androgen & androgyn & androhen & anecken & anekdote & anemone \\
+\ppwfuenf & anfaenge & anfahren & anfangen & anfaulen & anfersen & anflehen \\
+\ppwfuenf & anfuhr & angara & angebot & angeeckt & angenehm & angiitis \\
+\ppwfuenf & anginoes & angler & angst & anguss & anhaben & anhalten \\
+\ppwfuenf & anheben & anhebung & anheften & anhydrit & anianiau & anker \\
+\ppwfuenf & ankert & anketten & anklagen & ankommen & ankunft & ankylose
+\end{wsechs}
+\begin{wsechs}
+\ppwfuenf & anlegend & anleger & anlehnen & anleinen & anleiten & anliegen \\
+\ppwfuenf & anlieger & anloeten & anmalen & anmarsch & anmelden & anmerken \\
+\ppwfuenf & anmessen & anmieten & anmut & annaehen & annehmen & annexion \\
+\ppwfuenf & anorak & anorogen & anorthit & anosmie & anrainer & anraten \\
+\ppwfuenf & anratend & anregen & anregung & anreisen & anrichte & anrufend \\
+\ppwfuenf & anrufung & ansage & ansagen & ansaugen & anschlag & ansehen
+\end{wsechs}
+\begin{wsechs}
+\ppwfuenf & ansengen & anshan & anstauen & anstehen & anstoss & ansuchen \\
+\ppwfuenf & antanzen & anteilig & antiheld & antipod & antlitz & antragen \\
+\ppwfuenf & antrieb & antwort & anwalt & anwenden & anwender & anwerfen \\
+\ppwfuenf & anwidern & anzeigen & anzeiger & aorta & aostatal & apapane \\
+\ppwfuenf & apart & aperitif & apfel & apfelmus & aphel & apikal \\
+\ppwfuenf & aplasie & aplit & apologet & apomorph & apoptose & appell
+\end{wsechs}
+\begin{wsechs}
+\ppwfuenf & appetit & applaus & appretur & aprikose & apulien & aquarell \\
+\ppwfuenf & aquarium & arabeske & arabien & arakanga & aralsee & ararauna \\
+\ppwfuenf & arbeitet & archivar & arena & argilit & arglist & arglos \\
+\ppwfuenf & argon & argument & arizona & arktis & arm & armbeuge \\
+\ppwfuenf & armbinde & armbruch & armee & armloch & armreif & armselig \\
+\ppwfuenf & arnika & arpeggio & arrak & arrogant & arsch & art
+\end{wsechs}
+\newpage
+
+\stepcounter{wuerfelzwei}
+
+\begin{wsechs}
+\ppwfuenf & artenarm & arthrose & artinsch & aruliest & arznei & arzt \\
+\ppwfuenf & asbest & aschfahl & aseitaet & ases & ashgabat & ashgill \\
+\ppwfuenf & askese & asmara & asmera & aspik & ast & astabil \\
+\ppwfuenf & astet & astete & asthma & atemlos & athletik & atmen \\
+\ppwfuenf & atmet & atomar & atomfrei & atomist & atomuhr & atresie \\
+\ppwfuenf & atrophie & attest & atto & au & auch & audit
+\end{wsechs}
+\begin{wsechs}
+\ppwfuenf & aufatmen & aufbauen & auffahrt & aufgehen & aufguss & auflage \\
+\ppwfuenf & auflager & auflast & auflegen & auflicht & aufmass & aufprall \\
+\ppwfuenf & aufputz & aufrecht & aufsager & aufsatz & aufsehen & aufsicht \\
+\ppwfuenf & aufstieg & auftakt & auftritt & augapfel & augsburg & augur \\
+\ppwfuenf & august & ausatmen & ausbau & ausbeute & ausdauer & ausfahrt \\
+\ppwfuenf & ausfall & ausfegen & ausflug & ausfuhr & ausgeben & ausguck
+\end{wsechs}
+\begin{wsechs}
+\ppwfuenf & aushaken & ausheben & aushilfe & aushub & ausklang & auslage \\
+\ppwfuenf & auslagen & auslass & ausloben & ausnutzt & ausroden & ausruf \\
+\ppwfuenf & ausrufen & aussaeen & aussage & ausschau & aussetzt & ausstoss \\
+\ppwfuenf & austenit & austin & austrag & auswurf & autigen & autobahn \\
+\ppwfuenf & autodach & autodrom & autohaus & autokino & autolyse & autopsie \\
+\ppwfuenf & autosom & avatar & avignon & avis & axillar & azalee
+\end{wsechs}
+\begin{wsechs}
+\ppwfuenf & azetat & azteke & b & bachlauf & bacillus & backzeit \\
+\ppwfuenf & badehose & baden & badeoel & badeort & badetuch & badisch \\
+\ppwfuenf & badtuer & baduhr & badumbau & baendsel & baerin & baff \\
+\ppwfuenf & bagdad & bahn & bahndamm & bahnhof & baissier & bajoc \\
+\ppwfuenf & baku & balaton & baldrian & balg & balkon & ballade \\
+\ppwfuenf & ballast & ballernd & ballett & ballon & bambus & bammel
+\end{wsechs}
+\begin{wsechs}
+\ppwfuenf & band & bandelfe & bandmass & bandung & bandwurm & bangkok \\
+\ppwfuenf & bangt & bank & bankrott & bannend & bar & barbar \\
+\ppwfuenf & barbarei & barchent & barex & barfuss & bariton & baro \\
+\ppwfuenf & baron & barre & barreme & barrique & bart & bartaxt \\
+\ppwfuenf & bartelfe & barthaar & bartkauz & baryt & basalt & basanit \\
+\ppwfuenf & baseball & basic & basilika & basis & bass & bastei
+\end{wsechs}
+\begin{wsechs}
+\ppwfuenf & bastelnd & bastler & batist & bau & bauart & baubahn \\
+\ppwfuenf & bauchig & bauer & bauform & baugeld & baugrund & baukies \\
+\ppwfuenf & baulinie & baum & baumarkt & baumelnd & baumwurf & baunorm \\
+\ppwfuenf & bauruine & bausch & bauschig & bauseil & bauseits & baustrom \\
+\ppwfuenf & baute & bautrupp & bauzaun & bayrisch & beachten & beackern \\
+\ppwfuenf & beamte & beat & bebt & becher & bechernd & becken
+\end{wsechs}
+\newpage
+
+\stepcounter{wuerfelzwei}
+
+\begin{wsechs}
+\ppwfuenf & bedampft & bedarf & bedienen & bediener & bedienet & bedingen \\
+\ppwfuenf & bedingt & bedurft & beehren & beehrend & beenden & beendigt \\
+\ppwfuenf & beet & befaehrt & befahl & befall & befassen & befasst \\
+\ppwfuenf & befiehl & befiehlt & beflaggt & befolgen & befugt & befund \\
+\ppwfuenf & befunden & begabt & begabte & begattet & begehen & begehend \\
+\ppwfuenf & begeht & beginn & beginnen & begnaden & begrenzt & begriff
+\end{wsechs}
+\begin{wsechs}
+\ppwfuenf & behaart & behaengt & behagend & behalten & behang & behangen \\
+\ppwfuenf & beharrt & beharrte & behaute & behexen & behext & behexte \\
+\ppwfuenf & behoben & behueten & behuetet & beiblatt & beichte & beichten \\
+\ppwfuenf & beichtet & beidemal & beides & beigaben & beileibe & beim \\
+\ppwfuenf & beinah & beinahe & beiname & beinhaus & beinig & beirren \\
+\ppwfuenf & beisein & beiseite & beispiel & beissend & beiwert & beizbad
+\end{wsechs}
+\begin{wsechs}
+\ppwfuenf & bejubeln & bekackt & bekehren & bekehrt & bekehrte & bekennt \\
+\ppwfuenf & bekifft & bekniet & bekommt & bekriegt & beladen & belagern \\
+\ppwfuenf & belarus & belasten & belebt & belebung & beleg & belegen \\
+\ppwfuenf & belegt & belegung & beleibt & belgien & belgrad & belieh \\
+\ppwfuenf & beliehen & bellen & bellend & bellte & belmopan & belog \\
+\ppwfuenf & belohnt & beluegen & bemalen & bemalt & bemass & bemessen
+\end{wsechs}
+\begin{wsechs}
+\ppwfuenf & bemuehte & bendorf & beneidet & benetzt & bengel & benin \\
+\ppwfuenf & benommen & benoten & benotete & bentonit & benutzte & benzol \\
+\ppwfuenf & beowulf & beraet & berappt & beratend & berater & berauben \\
+\ppwfuenf & beraubt & beraubte & bereden & beredete & beredsam & beredt \\
+\ppwfuenf & bereit & bereits & bereuen & bereuend & bergamt & bergbahn \\
+\ppwfuenf & berghang & bergig & bergteer & bergwand & beringt & berkel
+\end{wsechs}
+\begin{wsechs}
+\ppwfuenf & berlin & berliner & bern & berstend & berufen & besagen \\
+\ppwfuenf & besagend & besagte & besamend & besamte & besamung & beschaut \\
+\ppwfuenf & beschoss & beseelt & besehen & besehend & beseligt & besetzt \\
+\ppwfuenf & besitzen & besitzt & besoffen & besohlt & besorgt & besprach \\
+\ppwfuenf & besser & bessern & bestach & bestahl & bestaunt & bestellt \\
+\ppwfuenf & bestes & bestieg & bestlast & bestraft & bestritt & bestuhlt
+\end{wsechs}
+\begin{wsechs}
+\ppwfuenf & besudeln & betauen & beteuert & betiteln & betoerte & beton \\
+\ppwfuenf & betont & betonte & betraf & betraut & betreff & betreute \\
+\ppwfuenf & betrieb & betrifft & betrog & betruebt & betruegt & bett \\
+\ppwfuenf & bettend & bettete & bettzeug & betupfte & beugen & beugend \\
+\ppwfuenf & beulend & beute & beutel & bewahren & bewaldet & bewehrt \\
+\ppwfuenf & beweidet & beweis & bewiesen & bewog & bewohnte & bezahlte
+\end{wsechs}
+\newpage
+
+\stepcounter{wuerfelzwei}
+
+\begin{wsechs}
+\ppwfuenf & bezirzen & bezirzt & bezug & bezwang & bezweckt & bhopal \\
+\ppwfuenf & bhutan & bi & bias & bibbert & bibel & biberhut \\
+\ppwfuenf & biblisch & bieder & biegsam & bier & bierdose & bierglas \\
+\ppwfuenf & biermix & bieselnd & bietende & bikini & bildete & bildhaft \\
+\ppwfuenf & bildnis & biliaer & billig & bimetall & bimmelnd & bimmelt \\
+\ppwfuenf & bimodal & bimsend & bimste & binaer & binaural & bindet
+\end{wsechs}
+\begin{wsechs}
+\ppwfuenf & bindeton & bingo & biobauer & biochip & biogas & biograph \\
+\ppwfuenf & biolabor & biomalz & biomuell & biopsat & biostrom & bis \\
+\ppwfuenf & bisher & biskuit & bisschen & bistro & bit & bitten \\
+\ppwfuenf & bitzelle & bivariat & blackout & blaehen & blaehung & blaest \\
+\ppwfuenf & blaeue & blamiert & blasend & blasiert & blasig & blasrohr \\
+\ppwfuenf & blastem & blau & blaugrau & blech & blechend & blechern
+\end{wsechs}
+\begin{wsechs}
+\ppwfuenf & bleiazid & bleichen & bleierz & bleigrau & bleisatz & blender \\
+\ppwfuenf & blicklos & blickte & blieb & bliebe & blies & blind \\
+\ppwfuenf & blinde & blinder & blindort & blinzen & blitzen & bloeker \\
+\ppwfuenf & bloesse & bloggen & blonde & blonder & blouson & blubbern \\
+\ppwfuenf & bluehte & bluffer & blume & blumig & blutarm & blutegel \\
+\ppwfuenf & bluten & blutrot & blutspur & blutung & boa & bock
+\end{wsechs}
+\begin{wsechs}
+\ppwfuenf & bocken & bockmist & bodentyp & boeig & boerdeln & bohnen \\
+\ppwfuenf & bohrfeld & bohrkopf & bohrloch & bohrt & bohrung & boje \\
+\ppwfuenf & bollwerk & bolzen & bomber & bombig & bonhomie & bonn \\
+\ppwfuenf & bonobo & boot & borduere & bordwand & borgend & borglas \\
+\ppwfuenf & borniert & borste & boshaft & bosnier & boss & bot \\
+\ppwfuenf & bottich & boudoir & boxend & boxer & boxte & boykott
+\end{wsechs}
+\begin{wsechs}
+\ppwfuenf & bozen & brabbeln & brabbelt & brachte & brackig & braeu \\
+\ppwfuenf & branche & brandet & braten & braue & brauen & brauhaus \\
+\ppwfuenf & braunrot & brausen & brauste & brei & breiig & breiter \\
+\ppwfuenf & brekzie & bremsend & bremste & brennbar & brenngas & brenzlig \\
+\ppwfuenf & brettern & bridge & brigade & brigg & brikett & brillanz \\
+\ppwfuenf & brinell & bringer & brisbane & brodeln & brooklyn & brosche
+\end{wsechs}
+\begin{wsechs}
+\ppwfuenf & brotherr & bruch & brucit & bruechig & brummig & brunnen \\
+\ppwfuenf & brunsten & brut & brutal & brutraum & brutzeln & brydewal \\
+\ppwfuenf & bub & bubikopf & buchband & buche & buchecke & buchend \\
+\ppwfuenf & bucht & buddhist & buegel & buegelte & buendel & buendnis \\
+\ppwfuenf & buerette & buergen & buersten & buerzel & buesser & buett \\
+\ppwfuenf & buette & buettel & bug & bugleine & bugrad & bugsiert
+\end{wsechs}
+\newpage
+
+\stepcounter{wuerfelzwei}
+
+\begin{wsechs}
+\ppwfuenf & bugwulst & buh & buhen & buhend & buhler & buk \\
+\ppwfuenf & bukarest & bukett & bulbaer & bulgare & bulimie & bulletin \\
+\ppwfuenf & bully & bummler & bumsen & bundsteg & bunkernd & buntheit \\
+\ppwfuenf & burdigal & bure & burgund & burisch & burlesk & burleske \\
+\ppwfuenf & burolori & bursche & bursitis & bus & busan & buschig \\
+\ppwfuenf & bushel & buskabel & buslinie & busse & bussgeld & bustakt
+\end{wsechs}
+\begin{wsechs}
+\ppwfuenf & butler & butter & butzen & bypass & byssus & cabaza \\
+\ppwfuenf & cabrio & caching & cadmium & calamin & calcium & cali \\
+\ppwfuenf & calicut & callgirl & calyx & campan & caracas & caradoc \\
+\ppwfuenf & cardanol & cardiff & caritas & carrel & carving & celesta \\
+\ppwfuenf & cenoman & cent & cerit & cermet & cerrusit & ces \\
+\ppwfuenf & changsha & chaos & chatt & chatten & chauvi & chefarzt
+\end{wsechs}
+\begin{wsechs}
+\ppwfuenf & chemiker & chemnitz & chemosis & chengdu & chenille & cherub \\
+\ppwfuenf & chi & chicago & chilene & chinook & chip & chips \\
+\ppwfuenf & chiral & chloasma & chlor & chloren & chlort & chorhemd \\
+\ppwfuenf & chrom & chronist & chylus & cidre & citrin & claymore \\
+\ppwfuenf & clinch & clique & clogs & cobalt & cochin & cockpit \\
+\ppwfuenf & code & codec & codierte & coiffure & collie & colombo
+\end{wsechs}
+\begin{wsechs}
+\ppwfuenf & columbus & conga & cookeit & cordoba & cosinus & cosplay \\
+\ppwfuenf & coswig & couleur & cowboy & crack & cremig & cretonne \\
+\ppwfuenf & crimpen & crimpt & crinoid & croque & croutons & curium \\
+\ppwfuenf & cursor & cuxhaven & cyborg & cymoes & dachlos & dachluke \\
+\ppwfuenf & dachte & dackel & dada & daegu & daemmert & daemmrig \\
+\ppwfuenf & daempfen & dagegen & dahin & daiquiri & dalbe & dalian
+\end{wsechs}
+\begin{wsechs}
+\ppwfuenf & damalig & dame & damm & dampf & dampfdom & dampfer \\
+\ppwfuenf & dampfte & damwild & dan & danburit & dandy & danieder \\
+\ppwfuenf & dankfest & daran & daraus & darlegen & darre & darts \\
+\ppwfuenf & darueber & dasberg & dasein & dastehen & datenart & datenbit \\
+\ppwfuenf & datenbus & datiert & dato & datolith & dauer & dauerte \\
+\ppwfuenf & daumen & daune & davao & davor & dazu & dazutun
+\end{wsechs}
+\begin{wsechs}
+\ppwfuenf & deadlock & debatte & debuet & debugger & decapper & deckchen \\
+\ppwfuenf & decke & defekt & definit & defizit & deflator & dehnbar \\
+\ppwfuenf & dehnfuge & dehnt & dehnte & dekade & delfin & delikt \\
+\ppwfuenf & demarche & demiurg & demos & demoskop & demut & dengeln \\
+\ppwfuenf & denise & denkbar & denken & denkfaul & deponie & deppert \\
+\ppwfuenf & der & derartig & derselbe & derzeit & des & designer
+\end{wsechs}
+\newpage
+
+\stepcounter{wuerfeleins}
+\stepcounter{wuerfelzwei}
+
+\begin{wsechs}
+\ppwfuenf & despot & deswegen & detektei & detritus & deviator & dextrin \\
+\ppwfuenf & dezi & dezibel & dhaka & diaet & diagramm & diamant \\
+\ppwfuenf & diapason & diapir & diashow & diaspora & diastem & diastole \\
+\ppwfuenf & diatomit & dichotom & dicht & dickdarm & dicke & dickit \\
+\ppwfuenf & die & dieb & dielen & dielend & dienlich & diente \\
+\ppwfuenf & diese & dietrich & digest & digital & diglykol & diktiert
+\end{wsechs}
+\begin{wsechs}
+\ppwfuenf & dill & dinant & dingen & dingend & dings & dingte \\
+\ppwfuenf & dinkel & dionysos & diopsid & dioptas & dioptrie & dipol \\
+\ppwfuenf & dir & dis & disagio & disis & diskurs & diurnus \\
+\ppwfuenf & divalent & division & docht & doerrend & doge & dohle \\
+\ppwfuenf & doktorat & dokument & dolch & dolde & dolomit & domartig \\
+\ppwfuenf & domeykit & dominant & dominica & don & donau & doof
+\end{wsechs}
+\begin{wsechs}
+\ppwfuenf & dopamin & dopend & doping & doppelt & doppler & dorfbild \\
+\ppwfuenf & dorn & dornig & dosieren & dotieren & dozent & dozenten \\
+\ppwfuenf & drache & drachme & draengen & draengt & dragee & dragiert \\
+\ppwfuenf & draht & drahtig & drall & drama & dramalos & drehdorn \\
+\ppwfuenf & drehen & drehort & dreht & drehung & dreifuss & dreisatz \\
+\ppwfuenf & dreissig & dreschen & drescher & dressman & drillen & drillt
+\end{wsechs}
+\begin{wsechs}
+\ppwfuenf & dringt & drinnen & drisch & dritte & drittel & droben \\
+\ppwfuenf & droege & droehnte & droge & dronte & drops & droschke \\
+\ppwfuenf & druckend & drueben & druecken & drueckt & druesig & druide \\
+\ppwfuenf & druse & dschihad & dubioses & dublette & ducken & ducker \\
+\ppwfuenf & duckt & duckte & dudeln & dueffel & duene & duengt \\
+\ppwfuenf & duengte & duenn & duensten & duenstet & duepiert & dueppel
+\end{wsechs}
+\begin{wsechs}
+\ppwfuenf & duerre & duersten & duesen & duesend & duett & dufrenit \\
+\ppwfuenf & dufte & duften & duftig & duisburg & duldet & dulzian \\
+\ppwfuenf & dumm & dumme & dummy & dumpf & dunit & dunkel \\
+\ppwfuenf & dunsten & dunstig & duodenal & duopol & duplexer & duplikat \\
+\ppwfuenf & dusche & duschgel & dushanbe & dutzend & dvd & dyadisch \\
+\ppwfuenf & dynamik & dynamo & e & ebbe & eben & ebene
+\end{wsechs}
+\begin{wsechs}
+\ppwfuenf & ebnete & ebola & echofrei & echograf & echolot & echtheit \\
+\ppwfuenf & eckball & eckbank & eckplatz & eckwert & eclair & edel \\
+\ppwfuenf & edierend & edukt & effektor & effusion & egal & egge \\
+\ppwfuenf & eggen & eggend & egomane & egotrip & ehebruch & eheleben \\
+\ppwfuenf & ehern & ehestand & ehrbarer & ehren & ehrenamt & ehrenlos \\
+\ppwfuenf & ehrte & eibisch & eichen & eichend & eichgas & eicht
+\end{wsechs}
+\newpage
+
+\stepcounter{wuerfelzwei}
+
+\begin{wsechs}
+\ppwfuenf & eidbruch & eidotter & eieruhr & eifel & eifer & eigentum \\
+\ppwfuenf & eignen & eignung & eihuelle & eilend & eilgut & eimer \\
+\ppwfuenf & einband & einbaum & einbruch & einer & einfuhr & eingehen \\
+\ppwfuenf & eingriff & einhaken & einheit & einholen & einhorn & einig \\
+\ppwfuenf & einigend & einiges & einlage & einohrig & einrad & eins \\
+\ppwfuenf & einsehen & einser & einsicht & einstich & einsturz & eintor
+\end{wsechs}
+\begin{wsechs}
+\ppwfuenf & eintritt & einwaage & einwurf & einzahl & einzeln & einzig \\
+\ppwfuenf & einzige & eis & eisberg & eisbombe & eisdicke & eisen \\
+\ppwfuenf & eisenhut & eisenlos & eisente & eismeer & eismoewe & eissorte \\
+\ppwfuenf & eisstock & eitrig & ekelig & eklat & ekstase & ektomie \\
+\ppwfuenf & ekuador & elbtal & eleganz & elegisch & elektiv & elendig \\
+\ppwfuenf & elepaio & elfe & elidiert & elite & ellbogen & elsass
+\end{wsechs}
+\begin{wsechs}
+\ppwfuenf & eluat & eluiert & embargo & embolie & emetikum & emigrant \\
+\ppwfuenf & emission & emnie & empfand & ems & emulator & enanthem \\
+\ppwfuenf & endet & endete & endkunde & endlage & endlauf & endlinie \\
+\ppwfuenf & endobox & endogam & endokarp & endophyt & endoskop & endothel \\
+\ppwfuenf & endsumme & endung & endura & endwert & engpass & enklave \\
+\ppwfuenf & enstatit & entbehrt & ente & entehrt & entehrte & entente
+\end{wsechs}
+\begin{wsechs}
+\ppwfuenf & entenwal & enterbt & entformt & entgaser & entgegen & entgelt \\
+\ppwfuenf & entging & entheben & enthebt & enthielt & enthob & entkam \\
+\ppwfuenf & entkernt & entkorkt & entlarvt & entlaubt & entlegen & entlernt \\
+\ppwfuenf & entliess & entlohnt & entnimmt & entrahmt & entrusst & entseelt \\
+\ppwfuenf & entsetzt & entwanzt & entwarf & entweder & entzug & entzwei \\
+\ppwfuenf & entzweit & enzian & enzym & epidemie & epidural & epiphora
+\end{wsechs}
+\begin{wsechs}
+\ppwfuenf & episode & epizonal & epochal & epoche & epoxid & epsomit \\
+\ppwfuenf & erachten & erachtet & erahnen & erbarmen & erben & erbend \\
+\ppwfuenf & erbfolge & erbin & erbitten & erbmasse & erbost & erbprinz \\
+\ppwfuenf & erbrecht & erbricht & erbse & erbte & erbteil & erdachte \\
+\ppwfuenf & erdanker & erdapfel & erdbeben & erdbeere & erdfall & erdfrei \\
+\ppwfuenf & erdgas & erdiger & erdkugel & erdmasse & erdung & erdwall
+\end{wsechs}
+\begin{wsechs}
+\ppwfuenf & ereignen & ereignis & ereilend & erektion & erfaehrt & erfahren \\
+\ppwfuenf & erfasst & erflehen & erfolgt & erfragt & erfreut & erfreute \\
+\ppwfuenf & erfriert & erfror & erfunden & ergangen & ergehend & ergreift \\
+\ppwfuenf & erguss & erhaelt & erhaengt & erhalter & erhitzen & erhoben \\
+\ppwfuenf & erhoert & erholend & erholsam & erholt & erholung & erinnert \\
+\ppwfuenf & eriwan & erkaltet & erkennen & erker & erklaert & erklingt
+\end{wsechs}
+\newpage
+
+\stepcounter{wuerfelzwei}
+
+\begin{wsechs}
+\ppwfuenf & erkueren & erlaesst & erlahmen & erlangen & erle & erlebbar \\
+\ppwfuenf & erleben & erlegen & erlegt & erleidet & erliegen & erliegt \\
+\ppwfuenf & erlischt & erloeser & erloest & ermessen & ermordet & ermutigt \\
+\ppwfuenf & ernaehrt & ernennen & erneuern & erneut & erobern & erobernd \\
+\ppwfuenf & erobert & erotisch & erraten & erregbar & erreger & erregt \\
+\ppwfuenf & errettet & erringt & errungen & ersann & ersehen & ersehnt
+\end{wsechs}
+\begin{wsechs}
+\ppwfuenf & ersetzen & ersetzte & erstach & erstellt & erstens & erster \\
+\ppwfuenf & ersterer & erstkauf & erstmals & erstrebt & ersucht & ertappt \\
+\ppwfuenf & erteilte & ertoente & ertrug & eruiert & erwachen & erwacht \\
+\ppwfuenf & erwaegt & erwaehnt & erwaermt & erwarb & erwartet & erweckt \\
+\ppwfuenf & erwog & erworben & erzengel & erzfall & erzfeind & erzieht \\
+\ppwfuenf & erzielen & erznest & erzrabe & erzuernt & erzwang & eselsohr
+\end{wsechs}
+\begin{wsechs}
+\ppwfuenf & esfahan & espe & essay & essbar & essend & esslust \\
+\ppwfuenf & estnisch & ethernet & ethnisch & etikette & etsch & etui \\
+\ppwfuenf & etwa & eukaryot & europide & eurozone & evaporit & evokativ \\
+\ppwfuenf & evolut & evoziert & ewenke & exergie & exergon & exklave \\
+\ppwfuenf & exkurs & exorzist & exotherm & exotik & exponent & export \\
+\ppwfuenf & exsudat & fabel & facette & fachen & fachlich & fachtext
+\end{wsechs}
+\begin{wsechs}
+\ppwfuenf & fachwand & fachwirt & faction & faden & faecheln & faechelt \\
+\ppwfuenf & faecher & faehig & faehrte & faekal & faellen & faellt \\
+\ppwfuenf & faenger & faerbt & faeulnis & fafner & fagott & fahlkauz \\
+\ppwfuenf & fahnden & fahndend & fahrend & fahrer & fahrgast & fahrig \\
+\ppwfuenf & fahriger & fahrkorb & fahrspur & fahrweg & faible & fair \\
+\ppwfuenf & fairness & fairplay & fakten & faktisch & faktor & faktum
+\end{wsechs}
+\begin{wsechs}
+\ppwfuenf & falafel & fall & fallend & fallzahl & faltboot & faltdach \\
+\ppwfuenf & falten & faltete & faltig & faltiger & falttuer & falx \\
+\ppwfuenf & falzend & falzlos & falzte & famenne & famoser & fanal \\
+\ppwfuenf & fanfare & fang & fangzahn & fantast & farbbad & farbfoto \\
+\ppwfuenf & farbig & farblos & farbraum & farmer & farn & farthing \\
+\ppwfuenf & fasan & fase & fassend & fasslich & fasst & fatalist
+\end{wsechs}
+\begin{wsechs}
+\ppwfuenf & fauchen & faujasit & faul & faulgas & faulpelz & fauna \\
+\ppwfuenf & faust & fausten & fauxpas & fax & faxend & fayence \\
+\ppwfuenf & faziell & februar & fechtend & fechter & fechtet & federlos \\
+\ppwfuenf & fee & fegen & fegend & fegt & fehde & fehlend \\
+\ppwfuenf & fehler & fehlte & feiernd & feiert & feigling & feilen \\
+\ppwfuenf & feilend & feilspan & feiner & feinhub & feinkorn & feinsand
+\end{wsechs}
+\newpage
+
+\stepcounter{wuerfelzwei}
+
+\begin{wsechs}
+\ppwfuenf & feinsitz & felchen & feldbett & feldbuch & felge & fellatio \\
+\ppwfuenf & fels & felsig & felswand & feminin & fenn & ferkeln \\
+\ppwfuenf & ferkelt & fern & fernfeld & fernglas & fernkurs & fernziel \\
+\ppwfuenf & ferrit & fes & fesseln & fesselnd & fest & feste \\
+\ppwfuenf & festigen & festring & festsaal & fetend & fetete & fetten \\
+\ppwfuenf & fettete & fettfrei & fettherz & fettnetz & fettsack & fetzend
+\end{wsechs}
+\begin{wsechs}
+\ppwfuenf & fetzt & feucht & feudal & feuerrad & feuerton & feurig \\
+\ppwfuenf & feuriger & fez & fiasko & fibrose & ficken & fidel \\
+\ppwfuenf & fiepsend & fies & fiesling & figur & filetyp & filiale \\
+\ppwfuenf & filigran & filmen & filmstar & filtern & filternd & filtert \\
+\ppwfuenf & filterte & filzen & finale & finanzen & findbuch & findling \\
+\ppwfuenf & finnisch & fintiert & firma & firneis & fis & fische
+\end{wsechs}
+\begin{wsechs}
+\ppwfuenf & fischen & fischweg & fissil & fitis & fix & fixend \\
+\ppwfuenf & fixum & fjell & flachs & flachsee & flaeche & flaedle \\
+\ppwfuenf & flamme & flammeri & flanell & flasche & flausch & flaute \\
+\ppwfuenf & flehend & fleiss & flennend & flexion & flexur & flieder \\
+\ppwfuenf & fliegend & fliegt & fliehen & fliehend & flimmert & flinker \\
+\ppwfuenf & flipflop & flipper & flirren & flirrt & flirten & flirter
+\end{wsechs}
+\begin{wsechs}
+\ppwfuenf & flittern & flitzer & flitzt & flitzte & flocht & flocke \\
+\ppwfuenf & flockig & floessen & floete & floetend & floetet & flog \\
+\ppwfuenf & floh & florenz & flosse & flotiert & fluch & fluchen \\
+\ppwfuenf & fluchend & fluchte & fluchten & fluege & fluegge & fluenz \\
+\ppwfuenf & flugbahn & flugball & flugdach & flugdeck & flugobst & flugplan \\
+\ppwfuenf & flugpost & flugrost & flugwerk & flugzeug & flunkern & flunkert
+\end{wsechs}
+\begin{wsechs}
+\ppwfuenf & fluor & fluorid & flur & flusstal & flutet & flutscht \\
+\ppwfuenf & fock & fockbaum & fockhals & fockrahe & foehn & foehnend \\
+\ppwfuenf & foerdert & foerster & foetal & folge & folgen & folgert \\
+\ppwfuenf & folie & folieren & foltern & folternd & folterte & fond \\
+\ppwfuenf & fonds & football & footsie & foppend & foppte & fordern \\
+\ppwfuenf & fordernd & forderte & forelle & formal & formel & formen
+\end{wsechs}
+\begin{wsechs}
+\ppwfuenf & formerde & formerei & formkoks & formular & formung & fornax \\
+\ppwfuenf & forschen & forschte & forstamt & forte & fotolack & fotonarr \\
+\ppwfuenf & fototrop & foul & foulen & foyait & frack & fraese \\
+\ppwfuenf & fraesend & fragt & fraktion & francium & franken & franko \\
+\ppwfuenf & frappant & frauchen & frauen & freak & freesie & freeware \\
+\ppwfuenf & freibier & freilich & freilos & freimass & freiraum & freistil
+\end{wsechs}
+\newpage
+
+\stepcounter{wuerfelzwei}
+
+\begin{wsechs}
+\ppwfuenf & freitags & freizone & frequenz & fressen & fresser & freudig \\
+\ppwfuenf & freudlos & friede & frieden & frigide & fristlos & fritiert \\
+\ppwfuenf & froenen & froenend & fromm & fron & front & fror \\
+\ppwfuenf & frosch & frost & fruchtig & fruehzug & fuchsit & fuchtig \\
+\ppwfuenf & fuder & fuegend & fuegung & fuehlen & fuehlte & fuellen \\
+\ppwfuenf & fuellend & fuellgut & fuellte & fuellung & fuenftel & fuenfter
+\end{wsechs}
+\begin{wsechs}
+\ppwfuenf & fuenfzig & fuerwahr & fuhrgeld & fummelnd & funkbild & funke \\
+\ppwfuenf & funkeln & funkelte & funken & funkend & funker & funkt \\
+\ppwfuenf & funky & furchen & furier & furt & furzte & fushun \\
+\ppwfuenf & fusion & fuss & fussbad & fussball & fussbank & fussbett \\
+\ppwfuenf & fussel & fussliek & fusspilz & fussreif & fusssitz & fussvolk \\
+\ppwfuenf & fussweg & futon & gab & gabbro & gabel & gabelte
+\end{wsechs}
+\begin{wsechs}
+\ppwfuenf & gabelung & gaborone & gackernd & gackert & gackerte & gaebe \\
+\ppwfuenf & gaehnt & gaehnte & gaemse & gaenseei & gaerbar & gaeren \\
+\ppwfuenf & gaertner & gaffend & gag & gahnit & gala & galeere \\
+\ppwfuenf & galerie & galerist & galgen & gallien & gallisch & galmei \\
+\ppwfuenf & galopp & gamma & gammelig & gammeln & gammelt & gangerz \\
+\ppwfuenf & gans & ganze & ganzheit & garde & gardenie & gardine
+\end{wsechs}
+\begin{wsechs}
+\ppwfuenf & gardist & garen & garn & garnitur & garrotte & garstig \\
+\ppwfuenf & garte & gas & gasa & gasartig & gasdruck & gasduese \\
+\ppwfuenf & gashahn & gashebel & gasherd & gaskohle & gasmotor & gasnetz \\
+\ppwfuenf & gast & gasthof & gastiert & gastlich & gastmahl & gasuhr \\
+\ppwfuenf & gateway & gatte & gatter & gau & gaukler & gaul \\
+\ppwfuenf & gaumen & gauner & gaylord & gazpacho & geadelt & geaechzt
+\end{wsechs}
+\begin{wsechs}
+\ppwfuenf & geaeder & gealbert & gealtert & geankert & gebaer & gebaerde \\
+\ppwfuenf & geballt & gebangt & gebankt & gebannt & gebebt & gebeine \\
+\ppwfuenf & gebet & gebeten & gebettet & gebeult & gebiet & gebieten \\
+\ppwfuenf & gebildet & gebiss & geblakt & gebloggt & gebluet & geblutet \\
+\ppwfuenf & gebohrt & geboren & geborgen & geboxt & gebracht & gebraeu \\
+\ppwfuenf & gebrannt & gebraten & gebraust & gebremst & gebueckt & gebuesch
+\end{wsechs}
+\begin{wsechs}
+\ppwfuenf & gebumst & gecachet & gecuttet & gedachte & gedaerm & gedampft \\
+\ppwfuenf & gedauert & gedeckt & gedeih & gedeiht & gedenken & gedicht \\
+\ppwfuenf & gedieh & gedient & gedoerrt & gedreht & gedroht & gedruckt \\
+\ppwfuenf & geduest & geduldet & geduldig & gedungen & geduzt & geehrt \\
+\ppwfuenf & geeilt & geeinigt & geerbt & gefaerbt & gefaess & gefallen \\
+\ppwfuenf & gefalten & gefangen & gefaselt & gefasst & gefaucht & gefaxt
+\end{wsechs}
+\newpage
+
+\stepcounter{wuerfelzwei}
+
+\begin{wsechs}
+\ppwfuenf & gefecht & gefeiert & gefeilt & gefetet & gefetzt & gefeuert \\
+\ppwfuenf & gefilde & gefischt & gefleckt & geflennt & geflickt & gefliest \\
+\ppwfuenf & gefoehnt & gefolge & gefolgt & gefoppt & gefragt & gefreut \\
+\ppwfuenf & gefroren & gefuegt & gefuehlt & gefunkt & gefurcht & gefurzt \\
+\ppwfuenf & gegaert & gegart & gegeben & gegeigt & gegentor & gegessen \\
+\ppwfuenf & gegiftet & gegisst & geglaubt & geglimmt & gegoren & gegraust
+\end{wsechs}
+\begin{wsechs}
+\ppwfuenf & gegrenzt & gegroelt & geguckt & gehabt & gehaeuft & gehaftet \\
+\ppwfuenf & gehagelt & gehalt & gehangen & gehascht & gehasst & gehastet \\
+\ppwfuenf & gehehlt & geheimer & gehemmt & geherzt & geheult & gehievt \\
+\ppwfuenf & gehisst & gehoehnt & gehoeht & gehoelz & gehofft & geholt \\
+\ppwfuenf & gehopft & gehorcht & gehuepft & gehupt & gehuscht & gehustet \\
+\ppwfuenf & geifer & geifert & geige & geigen & geigend & geil
+\end{wsechs}
+\begin{wsechs}
+\ppwfuenf & geilheit & geimpft & geisselt & geiz & geizig & geiziger \\
+\ppwfuenf & gejault & gekackt & gekalbt & gekauert & gekegelt & gekeift \\
+\ppwfuenf & gekeimt & geklaert & geklafft & geklagt & geklickt & gekloent \\
+\ppwfuenf & geklopft & geknackt & geknetet & geknickt & geknifft & geknospt \\
+\ppwfuenf & geknotet & geknufft & gekostet & gekratzt & gekriegt & gekudert \\
+\ppwfuenf & gekuehlt & gekuesst & gelaber & gelabt & gelacht & geladen
+\end{wsechs}
+\begin{wsechs}
+\ppwfuenf & gelaehmt & gelaende & gelaengt & gelaeppt & gelaermt & gelaeut \\
+\ppwfuenf & gelahmt & gelaicht & gelammt & gelangte & gelappt & gelastet \\
+\ppwfuenf & gelaufe & gelaust & gelb & geld & geldkurs & geldwert \\
+\ppwfuenf & geleast & gelebt & gelechzt & gelee & geleert & gelehnt \\
+\ppwfuenf & gelehrt & geleit & gelenk & gelenzt & gelesen & geliebte \\
+\ppwfuenf & geliehen & gelierte & gelind & gelinkt & gelistet & gelitten
+\end{wsechs}
+\begin{wsechs}
+\ppwfuenf & gelle & gelobbt & gelobend & gelocht & geloehnt & geloetet \\
+\ppwfuenf & gelogen & gelotet & geluebde & gelungen & gemacht & gemaelde \\
+\ppwfuenf & gemahnt & gemanagt & gemartet & gemaukt & gemaunzt & gemeint \\
+\ppwfuenf & gemengt & gemetzel & gemietet & gemobbt & gemodert & gemopst \\
+\ppwfuenf & gemorpht & gemosert & gemuese & gemuht & gen & genaesst \\
+\ppwfuenf & genannt & genarrt & genauer & genehmer & geneigt & generft
+\end{wsechs}
+\begin{wsechs}
+\ppwfuenf & generoes & genesen & genesend & genf & geniesst & geniest \\
+\ppwfuenf & genius & genkarte & genkopie & gennaker & genort & genpool \\
+\ppwfuenf & gentest & genuegte & genuetzt & genug & genus & genuss \\
+\ppwfuenf & genutzt & geoelt & geologe & geologie & geomatik & geophon \\
+\ppwfuenf & george & georgelt & georgia & geotop & gepard & gepeilt \\
+\ppwfuenf & gepest & gepiekst & gepienst & gepiept & gepolt & gepolter
+\end{wsechs}
+\newpage
+
+\stepcounter{wuerfeleins}
+\stepcounter{wuerfelzwei}
+
+\begin{wsechs}
+\ppwfuenf & geprobt & gepunzt & geputzt & gequakt & gequellt & gequert \\
+\ppwfuenf & gerade & geraeumt & gerafft & geragt & geranie & gerankt \\
+\ppwfuenf & gerast & gerastet & geraten & geraum & gereckt & gerede \\
+\ppwfuenf & gerefft & geregelt & gereift & gerfalke & gerippt & gerne \\
+\ppwfuenf & gerobbt & gerochen & geronn & gerostet & gerste & gerte \\
+\ppwfuenf & geruch & geruckt & gerudert & geruecht & gerufen & geruhsam
+\end{wsechs}
+\begin{wsechs}
+\ppwfuenf & geruht & gesaess & gesaet & gesagte & gesalbt & gesalzen \\
+\ppwfuenf & gesaust & gescannt & geschert & geschult & gesegelt & gesegnet \\
+\ppwfuenf & geselle & gesellig & gesendet & gesenk & gesenkt & gesenst \\
+\ppwfuenf & gesinde & gesonnen & gesonnt & gespann & gespannt & gespasst \\
+\ppwfuenf & gespenst & gespickt & gespielt & gespitzt & gespuckt & gespuert \\
+\ppwfuenf & gestade & gestakt & gestalt & gestank & gestanzt & gestapft
+\end{wsechs}
+\begin{wsechs}
+\ppwfuenf & gestarrt & gestaut & gesteck & gesteift & gestell & gestellt \\
+\ppwfuenf & gestelzt & gestimmt & gestippt & gestisch & gestoppt & gestrebt \\
+\ppwfuenf & gestreng & gestrig & gestuft & gesuch & gesunden & gesunken \\
+\ppwfuenf & gesurrt & getagt & getaktet & getan & getarnt & getastet \\
+\ppwfuenf & gethront & getigert & getilgt & getippt & getobt & getrabt \\
+\ppwfuenf & getragen & getrampt & getrimmt & getrogen & getrotzt & getter
+\end{wsechs}
+\begin{wsechs}
+\ppwfuenf & getunkt & geturnt & getutet & geuebt & gewachst & gewaehlt \\
+\ppwfuenf & gewaehnt & gewahr & gewalkt & gewalt & gewandt & gewartet \\
+\ppwfuenf & gewebe & geweckt & geweicht & geweih & geweilt & geweint \\
+\ppwfuenf & geweisst & gewesen & gewicht & gewiegt & gewinn & gewinner \\
+\ppwfuenf & gewinnt & gewirr & gewiss & gewissen & gewoelbe & gewollt \\
+\ppwfuenf & gewonnen & geworfen & gewriggt & gewuerzt & gewuetet & gewuselt
+\end{wsechs}
+\begin{wsechs}
+\ppwfuenf & gezagt & gezahlt & gezahnt & gezeiten & gezielt & geziemt \\
+\ppwfuenf & gezirpt & gezuernt & gezupft & gezurrt & giebel & gieblig \\
+\ppwfuenf & gierend & gierig & gieriger & giesst & gift & giften \\
+\ppwfuenf & giftig & gigolo & gimpe & gimpel & ginfizz & gingham \\
+\ppwfuenf & ginseng & ginster & gipfeln & gipfelnd & gipser & gipsputz \\
+\ppwfuenf & gischt & gissend & glaenzt & glaetten & glashaus & glasiert
+\end{wsechs}
+\begin{wsechs}
+\ppwfuenf & glasnost & glasrohr & glasur & glatt & glaubend & glee \\
+\ppwfuenf & gleich & gleiche & gleicht & gleitaar & gleitet & glich \\
+\ppwfuenf & glimmen & glimmt & glitzern & glitzert & glocke & glotzen \\
+\ppwfuenf & glotzend & gluckend & gluckert & glueck & gluecken & gluehen \\
+\ppwfuenf & glutamat & glutbett & glyzerin & gnade & gnom & gnu \\
+\ppwfuenf & gobelin & goeffel & goennen & goennend & goesch & goetze
+\end{wsechs}
+\newpage
+
+\stepcounter{wuerfelzwei}
+
+\begin{wsechs}
+\ppwfuenf & gold & goldhut & goldkorn & golfball & gondwana & googol \\
+\ppwfuenf & goslarit & gotcha & gote & gotisch & gott & grab \\
+\ppwfuenf & graben & grabend & grabgang & grabscht & gradient & gradiert \\
+\ppwfuenf & graefin & gramm & grandala & granit & granne & granular \\
+\ppwfuenf & grapen & graph & gras & graste & gratfrei & gratis \\
+\ppwfuenf & graubaer & grauend & grauer & graugans & graugelb & graupeln
+\end{wsechs}
+\begin{wsechs}
+\ppwfuenf & graupen & grausend & grauton & grauzone & graveur & grazioes \\
+\ppwfuenf & greifarm & greifbar & greift & greis & grenze & grenzt \\
+\ppwfuenf & grienen & griente & griff & griffel & grillend & grimm \\
+\ppwfuenf & grinst & grobheit & groelt & groelte & groll & grosstun \\
+\ppwfuenf & groteske & grotte & grub & gruender & gruener & gruesst \\
+\ppwfuenf & grundbau & grundsee & grunzen & grunzend & grunzt & gruppe
+\end{wsechs}
+\begin{wsechs}
+\ppwfuenf & gruselig & gruselnd & guano & gucken & guckend & guernsey \\
+\ppwfuenf & gummi & gunst & guppy & gurgelnd & gurgelt & gurgelte \\
+\ppwfuenf & gurt & gurtband & gurtzeug & guss & gussrohr & gutgetan \\
+\ppwfuenf & guthaben & gutpunkt & gutsherr & guyana & guyaner & h \\
+\ppwfuenf & haarclip & haarfein & haarnetz & haarsieb & haarwurm & haben \\
+\ppwfuenf & habicht & hackbeil & hacken & haddsch & haelt & haengen
+\end{wsechs}
+\begin{wsechs}
+\ppwfuenf & haerte & haertung & haeschen & haeufend & haeufig & haeufte \\
+\ppwfuenf & haeutet & haff & hafnium & haftend & hagedorn & hagelt \\
+\ppwfuenf & hagen & hager & hagerer & haggis & hahn & hai \\
+\ppwfuenf & haken & hakend & halbbyte & halbedel & halbgar & halbholz \\
+\ppwfuenf & halbiert & halblaut & halbmond & halbraum & halbrund & halbwort \\
+\ppwfuenf & halbzeit & halde & halit & hall & halle & hallen
+\end{wsechs}
+\begin{wsechs}
+\ppwfuenf & halligen & hallo & halsen & halsig & haltend & halter \\
+\ppwfuenf & haltig & haltlos & hamilton & hammer & hand & handelt \\
+\ppwfuenf & handfest & handloch & handvoll & handwerk & hanf & hanfen \\
+\ppwfuenf & hang & hanglage & hannover & hanse & hanseat & hapern \\
+\ppwfuenf & haploid & haptisch & harmonik & harnisch & harpune & harsch \\
+\ppwfuenf & harschen & hartgeld & harzend & haschen & hascht & hasenohr
+\end{wsechs}
+\begin{wsechs}
+\ppwfuenf & haspe & hassen & hasten & hastend & hat & hattrick \\
+\ppwfuenf & haubitze & hauchend & haudegen & haupthub & haus & hausarzt \\
+\ppwfuenf & hausfrau & haushalt & haushuhn & hausmann & hauspost & hausputz \\
+\ppwfuenf & hausrat & hausse & haust & haustuer & hauswirt & haut \\
+\ppwfuenf & hautpilz & hauttyp & hebamme & hebelnd & hebelt & heben \\
+\ppwfuenf & hebriden & hechelnd & hechelte & hecht & heck & heda
+\end{wsechs}
+\newpage
+
+\stepcounter{wuerfelzwei}
+
+\begin{wsechs}
+\ppwfuenf & hefeteig & hefiger & heftchen & heftig & hegt & hehler \\
+\ppwfuenf & hei & heilbutt & heiler & heiligen & heiliger & heilsam \\
+\ppwfuenf & heilte & heimchen & heimisch & heimkehr & heimlich & heimsieg \\
+\ppwfuenf & heimweg & heischen & heiser & heiss & heisser & heizband \\
+\ppwfuenf & heizen & heizer & heizgas & heizt & heizte & heizzug \\
+\ppwfuenf & hektiker & heldin & heller & helsinki & hemiole & henker
+\end{wsechs}
+\begin{wsechs}
+\ppwfuenf & hepatit & heraldik & heraus & herberge & herbizid & herbsten \\
+\ppwfuenf & herpes & herrisch & herrscht & hertz & herzblut & herzen \\
+\ppwfuenf & herzhaft & herziger & hessit & hetze & hetzen & hetzend \\
+\ppwfuenf & hetzerei & heuernte & heuriger & heuwiese & hiatus & hibiskus \\
+\ppwfuenf & hickory & hielt & hieraus & hierin & hiervon & hiesig \\
+\ppwfuenf & hievend & hilfe & hilft & himalaja & hinab & hinfahrt
+\end{wsechs}
+\begin{wsechs}
+\ppwfuenf & hinspiel & hinten & hinteres & hinunter & hirnhaut & hirnholz \\
+\ppwfuenf & hirnlos & hirse & hissen & hissend & hisste & hitzig \\
+\ppwfuenf & hitzkopf & hobbock & hobel & hobelte & hochbahn & hochhaus \\
+\ppwfuenf & hochlage & hochland & hochmut & hochrot & hochwald & hocke \\
+\ppwfuenf & hockend & hockey & hockt & hoecker & hoeffig & hoeflich \\
+\ppwfuenf & hoehere & hoehle & hoehnt & hoehnte & hoerbar & hoeren
+\end{wsechs}
+\begin{wsechs}
+\ppwfuenf & hoerte & hoertest & hoffart & hoffnung & hohe & hohl \\
+\ppwfuenf & hohlniet & hohltier & hohlwand & hohlweg & holismus & holmium \\
+\ppwfuenf & holster & holzbock & holzkrug & holzopal & holzwurm & homonym \\
+\ppwfuenf & homophob & honiara & honorant & honstein & hooligan & hoppla \\
+\ppwfuenf & horcher & hormonal & hornfels & hornhai & hornisse & hornklee \\
+\ppwfuenf & hort & hose & hosen & hospiz & hosting & houston
+\end{wsechs}
+\begin{wsechs}
+\ppwfuenf & hublast & hubtisch & hubwagen & huch & hudeln & hue \\
+\ppwfuenf & hueha & huelle & huepfend & hueten & huetend & huetete \\
+\ppwfuenf & huftier & huker & huldigte & huldvoll & humoral & humorist \\
+\ppwfuenf & humpelt & humus & hunger & hungern & hungernd & hupe \\
+\ppwfuenf & hupend & hurley & hurtig & hurtiger & huschend & huscht \\
+\ppwfuenf & husten & hutwaren & hwangho & hyacinth & hyalin & hybrid
+\end{wsechs}
+\begin{wsechs}
+\ppwfuenf & hydrant & hydrat & hydrid & hydriert & hydroxyd & hymnisch \\
+\ppwfuenf & hyperbel & hypernym & hyperop & hypnose & hypotaxe & hypothek \\
+\ppwfuenf & ich & idaho & ideell & idiot & idiotie & igel \\
+\ppwfuenf & ignorant & ihm & ihn & ikone & ileus & illit \\
+\ppwfuenf & illusion & imago & immens & immun & impetigo & impfend \\
+\ppwfuenf & impfoese & impfrate & impft & implosiv & impotent & impulsiv
+\end{wsechs}
+\newpage
+
+\stepcounter{wuerfelzwei}
+
+\begin{wsechs}
+\ppwfuenf & imstand & inbrunst & index & indianer & indirekt & indisch \\
+\ppwfuenf & indolent & indore & induktiv & infantil & influenz & infusion \\
+\ppwfuenf & inhalt & initial & inland & inmitten & innen & inner \\
+\ppwfuenf & inneres & innerste & innung & insasse & insel & instand \\
+\ppwfuenf & institut & intakter & intensiv & intrige & intuitiv & intus \\
+\ppwfuenf & inuit & invasion & invasiv & inventar & invers & inzision
+\end{wsechs}
+\begin{wsechs}
+\ppwfuenf & inzucht & iota & iowa & irakisch & irden & irgend \\
+\ppwfuenf & irin & irisch & irislori & irland & ironisch & irr \\
+\ppwfuenf & irreal & irren & irrig & irrtum & irrweg & isdn \\
+\ppwfuenf & isebel & isentrop & isfahan & island & isochem & isochor \\
+\ppwfuenf & isochore & isogloss & isohypse & isomorph & israel & israelit \\
+\ppwfuenf & ivorer & ja & jabalpur & jacht & jackett & jackpot
+\end{wsechs}
+\begin{wsechs}
+\ppwfuenf & jacquard & jade & jaehlich & jaehzorn & jagatee & jahrbuch \\
+\ppwfuenf & jakobsit & jalapeno & jalousie & jambus & jammer & jammert \\
+\ppwfuenf & jammerte & japanalk & japse & jasmin & jaspis & jazz \\
+\ppwfuenf & je & jede & jedwede & jeep & jemals & jemen \\
+\ppwfuenf & jemenit & jenes & jenisej & jesus & jeton & jetzt \\
+\ppwfuenf & jeweils & jig & jigger & jilin & jinan & joch
+\end{wsechs}
+\begin{wsechs}
+\ppwfuenf & jochbein & jodeln & jodelt & jodelte & johlen & jojo \\
+\ppwfuenf & joker & jordan & jordanit & journal & jubilar & juckig \\
+\ppwfuenf & juckt & judentum & juedisch & juenger & juengst & juengste \\
+\ppwfuenf & juetland & jumper & jung & junko & junta & jurte \\
+\ppwfuenf & justiz & jute & juvenil & jux & juxen & kabellos \\
+\ppwfuenf & kabeln & kabelnd & kabeltau & kabinett & kachelnd & kachexie
+\end{wsechs}
+\begin{wsechs}
+\ppwfuenf & kadaver & kaeckern & kaefer & kaelte & kaemmt & kaempfen \\
+\ppwfuenf & kaempfte & kaff & kagu & kahlheit & kahmig & kaimauer \\
+\ppwfuenf & kainsmal & kairo & kajak & kakadu & kakapo & kalb \\
+\ppwfuenf & kalben & kalbend & kalbernd & kalif & kalifat & kalken \\
+\ppwfuenf & kalkgips & kalkuel & kaltband & kam & kamelie & kamin \\
+\ppwfuenf & kamm & kammgarn & kampala & kampfgas & kanapee & kandidat
+\end{wsechs}
+\begin{wsechs}
+\ppwfuenf & kanister & kanne & kannte & kanon & kanonade & kanpur \\
+\ppwfuenf & kantern & kantete & kanton & kanu & kanzel & kaolin \\
+\ppwfuenf & kap & kapammer & kapern & kapernd & kapert & kapgeier \\
+\ppwfuenf & kapiert & kapital & kapitell & kapitol & kapmeise & kappt \\
+\ppwfuenf & kappzaum & kapsel & kapseln & kaptriel & kar & karachi \\
+\ppwfuenf & karamell & karaoke & karbon & kardioid & karger & karibik
+\end{wsechs}
+\newpage
+
+\stepcounter{wuerfelzwei}
+
+\begin{wsechs}
+\ppwfuenf & kariert & karioes & karma & karoass & karosse & kartei \\
+\ppwfuenf & karthago & karyotyp & kasack & kasbah & kaserne & kasino \\
+\ppwfuenf & kaskade & kaspernd & kassel & kassler & kasualie & katalog \\
+\ppwfuenf & katarakt & kataster & katheder & katheter & kathode & katode \\
+\ppwfuenf & katze & kauen & kauender & kauernd & kauffrau & kauorgan \\
+\ppwfuenf & kautabak & kaute & kauz & kaverne & kaviar & kea
+\end{wsechs}
+\begin{wsechs}
+\ppwfuenf & keck & kecker & keckheit & kegel & kegeln & kehlen \\
+\ppwfuenf & kehlend & kehlkopf & kehlnaht & kehrer & kehrwert & keifen \\
+\ppwfuenf & keifte & keilen & keimen & keimend & keimhaft & keimte \\
+\ppwfuenf & keines & keinmal & kelle & keller & kellerei & kelterei \\
+\ppwfuenf & kemenate & kenianer & kenner & kennsatz & kennte & kepheus \\
+\ppwfuenf & kerbte & kerl & kernfach & kernholz & kerniger & kernlos
+\end{wsechs}
+\begin{wsechs}
+\ppwfuenf & kernoel & kernrohr & kerosin & kesser & kettung & keuper \\
+\ppwfuenf & khaki & kharkiv & khartum & kibbuz & kickball & kieken \\
+\ppwfuenf & kieme & kies & kiesbank & kieserit & kiesweg & kiew \\
+\ppwfuenf & kiez & killer & kilobyte & kimme & kinase & kind \\
+\ppwfuenf & kindheit & kinese & kinetik & kino & kippa & kippelig \\
+\ppwfuenf & kipper & kirgise & kiribati & kirsche & kiste & kiting
+\end{wsechs}
+\begin{wsechs}
+\ppwfuenf & kitschig & kitt & kittchen & kittet & kitzelnd & kiwi \\
+\ppwfuenf & klaert & klaerte & klagen & klaghaft & klagt & klamauk \\
+\ppwfuenf & klammern & klammert & klapphut & klaps & klapsend & klatsch \\
+\ppwfuenf & klaue & klausel & klebt & kleckst & kleidend & kleidsam \\
+\ppwfuenf & kleidung & kleiebad & kleinod & kleinst & klematis & klemmend \\
+\ppwfuenf & klemmte & klempner & klerikal & klette & klicken & klickte
+\end{wsechs}
+\begin{wsechs}
+\ppwfuenf & klient & klientel & kliff & klima & klimmen & klimmte \\
+\ppwfuenf & klimmzug & klimpert & klingen & klinik & klinisch & klinker \\
+\ppwfuenf & klippe & klipper & kloente & klomm & klonen & klonte \\
+\ppwfuenf & klopfer & klopfte & klub & kluese & kluft & klughaft \\
+\ppwfuenf & klumpen & klumpend & klumpig & klumpt & knacken & knackend \\
+\ppwfuenf & knacker & knackig & knallen & knarrte & knast & knattern
+\end{wsechs}
+\begin{wsechs}
+\ppwfuenf & knattert & knauf & knebelit & knebelt & kneifen & kneifend \\
+\ppwfuenf & kneten & knetet & knicker & kniehoch & knieholz & kniend \\
+\ppwfuenf & kniet & knipsen & knipsend & knipste & knistern & knittern \\
+\ppwfuenf & knochig & knockout & knoechel & knorpel & knorren & knorrig \\
+\ppwfuenf & knospend & knospet & knotend & knotete & knotig & knuddeln \\
+\ppwfuenf & knuepfel & knuepfen & knurrend & knurrte & knut & knute
+\end{wsechs}
+\newpage
+
+\stepcounter{wuerfelzwei}
+
+\begin{wsechs}
+\ppwfuenf & knutt & koala & kobalt & kobellit & koch & kochbuch \\
+\ppwfuenf & kocht & kodieren & kodizill & koecheln & koeder & koehler \\
+\ppwfuenf & koepfen & koepft & koepfte & koerner & koernig & koete \\
+\ppwfuenf & koeter & koffein & koffer & kognak & kohlkopf & kohorte \\
+\ppwfuenf & koital & kokain & kokarde & koketter & kolik & kolleg \\
+\ppwfuenf & kollege & kolonie & koloss & kolossal & koma & komfort
+\end{wsechs}
+\begin{wsechs}
+\ppwfuenf & komiker & komisch & komitee & komma & kommando & kommen \\
+\ppwfuenf & kommend & kommod & kommotio & kommt & kommunal & komoedie \\
+\ppwfuenf & kompakt & komplett & komplize & kompott & kondom & konfetti \\
+\ppwfuenf & konfokal & kongress & konifere & konisch & konklave & konserve \\
+\ppwfuenf & konstant & konter & kontext & kontor & kontraer & kontrast \\
+\ppwfuenf & kontur & konvers & konzept & kopf & kopie & kopierte
+\end{wsechs}
+\begin{wsechs}
+\ppwfuenf & kopilot & kopist & koppelnd & koppelt & kopplung & kord \\
+\ppwfuenf & kordel & kordit & koreaner & kork & korkgeld & korollar \\
+\ppwfuenf & koronar & korral & korrosiv & korrupt & korsar & kortex \\
+\ppwfuenf & kosake & koscher & kosename & kosmisch & kosovo & kostbar \\
+\ppwfuenf & kosten & kostuem & kotzen & krabbe & krabbeln & kracher \\
+\ppwfuenf & kraehend & kraengen & kraenker & kragen & krakau & krakeelt
+\end{wsechs}
+\begin{wsechs}
+\ppwfuenf & krakelig & krakelnd & kramen & kramend & krampe & krampf \\
+\ppwfuenf & kranbahn & kranial & kranich & krankend & krapfen & krass \\
+\ppwfuenf & kratzen & kratzend & krault & krauser & kraut & krawatte \\
+\ppwfuenf & krebseln & kreditor & krefeld & kreidig & kreiert & kreis \\
+\ppwfuenf & kreischt & kreiseln & kreisen & kreisend & kreissen & kreiste \\
+\ppwfuenf & kreml & kreter & kreuz & kreuzass & kreuzer & kreuzigt
+\end{wsechs}
+\begin{wsechs}
+\ppwfuenf & kreuzte & kribbage & kribblig & kriecht & krieg & kriegend \\
+\ppwfuenf & krieger & krim & kriseln & kritik & kritisch & kritteln \\
+\ppwfuenf & kritzelt & kroatien & krocket & kroenend & kroenung & krokus \\
+\ppwfuenf & krone & kropf & kross & kruemmer & krug & krumm \\
+\ppwfuenf & kruzifix & kryonik & krypton & kuba & kubus & kuckt \\
+\ppwfuenf & kuckuck & kudern & kuebel & kueche & kuehl & kuehlen
+\end{wsechs}
+\begin{wsechs}
+\ppwfuenf & kuehler & kuehloel & kuendbar & kuenftig & kuerlauf & kuert \\
+\ppwfuenf & kuerte & kuerzen & kuessen & kuesst & kuester & kuhhaut \\
+\ppwfuenf & kuhhirt & kuhmilch & kulanz & kultwein & kumpel & kunde \\
+\ppwfuenf & kunming & kupfer & kupieren & kuppel & kuppelt & kuppler \\
+\ppwfuenf & kupplung & kur & kurhaus & kuries & kurios & kurol \\
+\ppwfuenf & kursiv & kurve & kurz & kurzwahl & kuschen & kuskus
+\end{wsechs}
+\newpage
+
+\stepcounter{wuerfeleins}
+\stepcounter{wuerfelzwei}
+
+\begin{wsechs}
+\ppwfuenf & kutscher & kuwait & kuweit & kuweiter & kyanit & kymrisch \\
+\ppwfuenf & lab & labbrig & labend & labern & labert & labkraut \\
+\ppwfuenf & labsal & lacher & lachgas & lachhaft & lackiert & lactase \\
+\ppwfuenf & ladbar & ladend & ladin & laecheln & laehmt & laehmung \\
+\ppwfuenf & laengst & laeppen & laerm & laermend & laermig & laermt \\
+\ppwfuenf & laestern & laestert & laeufig & laeutend & laeutet & lagert
+\end{wsechs}
+\begin{wsechs}
+\ppwfuenf & lagunaer & lahmend & lahmt & lahn & lahnung & lahore \\
+\ppwfuenf & lakai & laktiert & lallen & lambda & lamellar & lammen \\
+\ppwfuenf & lammend & lammnetz & lampion & lancier & lanciert & landenge \\
+\ppwfuenf & landgang & landgraf & landmann & landtag & landwein & langen \\
+\ppwfuenf & langend & langit & langt & langte & languste & lanolin \\
+\ppwfuenf & lapidar & lappalie & larifari & larve & larvizid & las
+\end{wsechs}
+\begin{wsechs}
+\ppwfuenf & lasch & lasieren & lasso & lasten & lastend & latein \\
+\ppwfuenf & latinum & latrine & latschig & latschte & latz & laub \\
+\ppwfuenf & laubdach & laubig & laubsieb & laudanum & lauf & laufkran \\
+\ppwfuenf & laufrad & laufsitz & laufspur & laufsteg & laufzeit & laugen \\
+\ppwfuenf & laugt & laune & laurie & laus & lauschig & lauscht \\
+\ppwfuenf & lausen & lausig & lauste & lauten & lauter & lautlich
+\end{wsechs}
+\begin{wsechs}
+\ppwfuenf & lavieren & lawine & layouter & lebend & lechzt & leckend \\
+\ppwfuenf & lecker & lecktest & leder & lee & leere & leerraum \\
+\ppwfuenf & leerrohr & leert & leerzug & legal & legat & legend \\
+\ppwfuenf & legende & leggings & legieren & legiert & legitim & legt \\
+\ppwfuenf & leguan & lehm & lehmerde & lehnen & lehnt & lehrbuch \\
+\ppwfuenf & lehrfach & lehrjahr & lehrpfad & lehrring & lehrziel & leibchen
+\end{wsechs}
+\begin{wsechs}
+\ppwfuenf & leid & leider & leidig & leidlich & leidlig & leidtun \\
+\ppwfuenf & leidvoll & leihe & leiht & leimen & leimlos & leimt \\
+\ppwfuenf & leine & leiste & leisten & leistend & leistung & leitbild \\
+\ppwfuenf & leiten & leitend & leiterin & leitet & leitete & leitring \\
+\ppwfuenf & lektor & lemma & lena & lende & lenicet & leninist \\
+\ppwfuenf & lenkend & lenkrad & lenkt & lenkte & lenzen & leptit
+\end{wsechs}
+\begin{wsechs}
+\ppwfuenf & lernend & lernt & lesbar & lesbe & lesen & leser \\
+\ppwfuenf & lesestab & lesetyp & lesung & letteln & lettisch & lettner \\
+\ppwfuenf & letztens & letztes & letzthin & leugnend & leukoxen & levkoje \\
+\ppwfuenf & lewis & libanon & liberal & libido & libyer & lichtend \\
+\ppwfuenf & lichtet & liebe & lieber & liebes & liebkind & lieblich \\
+\ppwfuenf & lieblos & liebste & liebt & liefernd & lieferte & liege
+\end{wsechs}
+\newpage
+
+\stepcounter{wuerfelzwei}
+
+\begin{wsechs}
+\ppwfuenf & liegt & liess & lift & liga & ligatur & likoer \\
+\ppwfuenf & lila & lille & limnisch & linde & linden & linderte \\
+\ppwfuenf & lindwurm & linear & linkend & linkes & linotype & linsen \\
+\ppwfuenf & lipophil & lippe & lisboa & lisene & lispelte & listen \\
+\ppwfuenf & listings & litauen & litoral & litze & litzen & llanvirn \\
+\ppwfuenf & lobbyist & lobt & lobus & lochcode & lochdorn & lochen
+\end{wsechs}
+\begin{wsechs}
+\ppwfuenf & locht & lockerer & lockert & lockerte & lockig & lockung \\
+\ppwfuenf & loden & lodernd & loderte & loeffelt & loeffler & loesbar \\
+\ppwfuenf & loescher & loesend & loess & loeten & loetet & log \\
+\ppwfuenf & loggia & logierte & logiker & lohe & lohnsatz & loipe \\
+\ppwfuenf & lokal & lome & london & lord & los & losgehen \\
+\ppwfuenf & loslegen & losung & lotete & lotse & lotus & lowrider
+\end{wsechs}
+\begin{wsechs}
+\ppwfuenf & luchs & lud & ludhiana & ludwigit & luebeck & lueften \\
+\ppwfuenf & lueftete & luemmel & luemmeln & luemmelt & luester & luestete \\
+\ppwfuenf & luetisch & luffa & luft & luftbett & luftbild & luftloch \\
+\ppwfuenf & luftsack & lufttaxi & luke & lunchbox & lungern & lunker \\
+\ppwfuenf & lupe & lurch & lustmord & lutet & luxation & luzifer \\
+\ppwfuenf & lydit & lyocell & lyriker & lysin & lyzeum & macau
+\end{wsechs}
+\begin{wsechs}
+\ppwfuenf & machen & machend & machete & macht & macke & madrasa \\
+\ppwfuenf & maeander & maehren & maekler & maelzend & maerz & maessig \\
+\ppwfuenf & maessigt & maesten & mafia & mafioso & mafit & magen \\
+\ppwfuenf & mager & magern & magerton & magisch & magmatit & magnet \\
+\ppwfuenf & mahagoni & mahlen & mahlte & mahnt & maid & main \\
+\ppwfuenf & mainz & maiskorn & maismehl & major & majoran & makaber
+\end{wsechs}
+\begin{wsechs}
+\ppwfuenf & makler & makramee & makrele & makro & makrone & mal \\
+\ppwfuenf & malabo & malachit & malamut & malbuch & male & malerei \\
+\ppwfuenf & malkurs & mallorca & malte & malzend & mammut & mampfte \\
+\ppwfuenf & managen & managend & manager & mangan & manganit & mangel \\
+\ppwfuenf & mangeln & mangelnd & mangold & manieren & manko & mannhaft \\
+\ppwfuenf & mannheim & manntag & mannweib & mantisse & mantra & manual
+\end{wsechs}
+\begin{wsechs}
+\ppwfuenf & mappe & marabu & maracay & maracuja & margarit & marginal \\
+\ppwfuenf & marin & marine & marke & marker & markig & markise \\
+\ppwfuenf & marklos & marmor & marode & maroons & marotte & marterte \\
+\ppwfuenf & maschine & maskulin & mass & massage & massaker & massiver \\
+\ppwfuenf & masslos & mast & masthuhn & mastitis & material & matratze \\
+\ppwfuenf & matrize & matrone & matrose & matschig & mauer & mauert
+\end{wsechs}
+\newpage
+
+\stepcounter{wuerfelzwei}
+
+\begin{wsechs}
+\ppwfuenf & mauerte & maul & maultier & maunzen & maunzend & mausert \\
+\ppwfuenf & mausete & mausetot & mausgrau & maust & mazeral & meckernd \\
+\ppwfuenf & medaille & medan & medial & median & medien & medium \\
+\ppwfuenf & medley & meereis & meerenge & meerut & mehl & mehlig \\
+\ppwfuenf & mehlwurm & mehrt & meidend & meidet & meineid & meinend \\
+\ppwfuenf & meines & meinte & meinung & meisseln & meisselt & meist
+\end{wsechs}
+\begin{wsechs}
+\ppwfuenf & mekong & melanin & melaphyr & melder & meldet & melilith \\
+\ppwfuenf & melke & melken & melkend & menarche & mengend & menhir \\
+\ppwfuenf & meniskus & mennige & mensch & mental & menue & menuett \\
+\ppwfuenf & mercedes & mergeln & mergelnd & meridian & merkte & merkur \\
+\ppwfuenf & mescalin & meson & mesophil & messe & messebau & messen \\
+\ppwfuenf & messias & messzeit & metapher & methan & methanol & methode
+\end{wsechs}
+\begin{wsechs}
+\ppwfuenf & methodik & metier & metrik & metrisch & metro & meucheln \\
+\ppwfuenf & meute & meuterte & mexiko & miami & miaut & miaute \\
+\ppwfuenf & micelle & micro & mied & miene & mies & miesling \\
+\ppwfuenf & mietende & mieter & mietete & mietfrei & mietkauf & mietze \\
+\ppwfuenf & mikrobe & miktion & milano & milch & milchkuh & milde \\
+\ppwfuenf & mildernd & mildheit & milieu & militaer & militant & milkt
+\end{wsechs}
+\begin{wsechs}
+\ppwfuenf & millerit & milli & million & milz & mimen & mimend \\
+\ppwfuenf & mimisch & mimose & mindern & mine & minimal & minuspol \\
+\ppwfuenf & miozaen & mir & mischbar & mischehe & mischen & mischung \\
+\ppwfuenf & mispel & missen & mission & mitautor & miterbe & mitesser \\
+\ppwfuenf & mitleid & mitogen & mitose & mittels & mitunter & mobbend \\
+\ppwfuenf & mobbte & mobil & mobile & modder & modefan & modell
+\end{wsechs}
+\begin{wsechs}
+\ppwfuenf & moderat & moderig & moderne & moderner & moderte & modezar \\
+\ppwfuenf & moench & moerder & moerser & moewe & mogelnd & mogelte \\
+\ppwfuenf & mohr & molasse & molch & molise & molle & mollert \\
+\ppwfuenf & molmasse & monarch & monazit & mondhell & mondlos & monetaer \\
+\ppwfuenf & mongolei & mongolid & monieren & monogam & monolog & monoman \\
+\ppwfuenf & monomane & monophon & monoton & monsieur & moorbad & moorente
+\end{wsechs}
+\begin{wsechs}
+\ppwfuenf & moorig & mooring & moos & mop & mops & moral \\
+\ppwfuenf & morchel & morden & mordent & mordfall & morgig & morion \\
+\ppwfuenf & mormone & moroni & morphem & morphen & morphium & morsch \\
+\ppwfuenf & mosaik & mosambik & moschus & mosern & most & motiv \\
+\ppwfuenf & motor & motorik & motorrad & motortyp & mousse & muecke \\
+\ppwfuenf & muede & mueder & muehelos & muehle & muell & mueller
+\end{wsechs}
+\newpage
+
+\stepcounter{wuerfelzwei}
+
+\begin{wsechs}
+\ppwfuenf & muemmeln & muendend & muendete & muenzen & muenzt & muenzte \\
+\ppwfuenf & muessig & muetze & muezzin & muffig & muffiger & muldex \\
+\ppwfuenf & mullit & mulmiger & multipel & mumie & mummeln & munchkin \\
+\ppwfuenf & mund & mundloch & mungo & munster & munterer & murin \\
+\ppwfuenf & murmeln & mus & muscat & muse & museum & musikant \\
+\ppwfuenf & musikbox & musiker & muskeln & muster & musternd & musterte
+\end{wsechs}
+\begin{wsechs}
+\ppwfuenf & mutagen & mutante & mutiert & muttchen & myanmar & myelom \\
+\ppwfuenf & myopisch & myrmekit & mystisch & nabe & nabel & nacara \\
+\ppwfuenf & nachbar & nachen & nachhut & nachlass & nachlauf & nachlese \\
+\ppwfuenf & nachname & nacht & nachtrag & nachweis & nadel & naehen \\
+\ppwfuenf & naehrte & naehte & naehzeug & naessen & nagel & nagelnd \\
+\ppwfuenf & nagelte & nagend & nagpur & nah & nahen & nahkampf
+\end{wsechs}
+\begin{wsechs}
+\ppwfuenf & nahm & nahrhaft & nahrung & naiv & nanning & nano \\
+\ppwfuenf & napalm & naphtha & narbung & narrheit & narrte & narzisse \\
+\ppwfuenf & nasal & nashik & nass & nasser & nasskalt & natron \\
+\ppwfuenf & naturell & naturnah & nautik & nazar & neben & nebenuhr \\
+\ppwfuenf & nebraska & necken & neckend & neckerei & negation & negative \\
+\ppwfuenf & negieren & nehmend & nehrung & neid & neidend & neidet
+\end{wsechs}
+\begin{wsechs}
+\ppwfuenf & neidlos & neidvoll & neigt & neigte & nekom & nekrose \\
+\ppwfuenf & nennbar & nennend & nennlast & nennmass & nennwert & neodym \\
+\ppwfuenf & neosom & nepalese & nepaluhu & nephrit & neptun & nerf \\
+\ppwfuenf & nerfen & nerfend & nervend & nervoes & nervte & nest \\
+\ppwfuenf & nestor & nett & netzball & netzdose & netzfern & netzplan \\
+\ppwfuenf & neubau & neuer & neuerer & neueste & neuester & neuestes
+\end{wsechs}
+\begin{wsechs}
+\ppwfuenf & neugier & neujahr & neukunde & neuling & neun & neunter \\
+\ppwfuenf & neunzig & neupreis & neuritis & neuron & neuronal & neurose \\
+\ppwfuenf & neutral & neutrino & neutron & neuwagen & niagara & nie \\
+\ppwfuenf & niedrig & niesend & niest & nietet & nietete & niger \\
+\ppwfuenf & nigeria & nikolaus & nikosia & nikotin & nimm & nimmer \\
+\ppwfuenf & ninja & nippel & nippflut & niqab & nirgends & nitrat
+\end{wsechs}
+\begin{wsechs}
+\ppwfuenf & nitriert & nizza & nobel & nocken & noelen & noelend \\
+\ppwfuenf & noetig & noetigt & nominal & nordsee & nordwest & nordwind \\
+\ppwfuenf & norit & norm & normativ & normen & normwand & norwegen \\
+\ppwfuenf & notanker & noten & nothafen & notlauf & notluke & notsegel \\
+\ppwfuenf & notstand & nougat & noumea & novize & noviziat & nuckeln \\
+\ppwfuenf & nuclid & nuetzend & nullen & nullzeit & nummer & nunatak
+\end{wsechs}
+\newpage
+
+\stepcounter{wuerfelzwei}
+
+\begin{wsechs}
+\ppwfuenf & nunchaku & nuntius & nussbaum & nuthobel & nutria & nutte \\
+\ppwfuenf & nutzbar & nutzen & nutzer & nutzlos & nutzte & nymphe \\
+\ppwfuenf & o & obdach & obelisk & oben & oberes & oberlauf \\
+\ppwfuenf & oberliga & oberste & obgleich & objektiv & oblag & oblegen \\
+\ppwfuenf & obskur & obskurer & obstsaft & obsttag & obszoen & obwohl \\
+\ppwfuenf & obzwar & odem & odessa & oeder & oedipal & oedland
+\end{wsechs}
+\begin{wsechs}
+\ppwfuenf & oehr & oelfleck & oelig & oelkanne & oelmulti & oelpegel \\
+\ppwfuenf & oelpreis & oelsamen & oelseide & oelte & oelzeug & oenologe \\
+\ppwfuenf & oese & ofenfest & ofenrohr & ofentuer & offizier & oftmals \\
+\ppwfuenf & ohnedies & ohrfeige & ohrring & okarina & okkult & oktal \\
+\ppwfuenf & oktan & oktopus & okular & oldtimer & oleander & oligarch \\
+\ppwfuenf & olivenit & oll & oma & oman & onanie & onkel
+\end{wsechs}
+\begin{wsechs}
+\ppwfuenf & ontario & operand & operette & opfer & opfern & opfernd \\
+\ppwfuenf & opfertod & opferung & ophiolit & optiker & optimal & opus \\
+\ppwfuenf & oral & oralsex & orange & orden & ordernd & ordnen \\
+\ppwfuenf & oregano & oregon & organ & organist & orgasmus & orgel \\
+\ppwfuenf & orgeln & orgelnd & orient & origami & ort & ortgang \\
+\ppwfuenf & ortolan & ortsplan & ortstein & osmium & ost & ostblock
+\end{wsechs}
+\begin{wsechs}
+\ppwfuenf & ostern & ostufer & otitis & ottawa & otter & ottomane \\
+\ppwfuenf & outend & outet & outtake & oval & overlay & ovipar \\
+\ppwfuenf & ovulum & oxhoft & ozelot & ozonloch & paarlauf & paarreim \\
+\ppwfuenf & packen & paechter & paella & paffer & pakt & paladin \\
+\ppwfuenf & palas & palila & palmfett & palmwein & pampe & pampig \\
+\ppwfuenf & pangaea & panieren & panierte & panisch & panorama & panschen
+\end{wsechs}
+\begin{wsechs}
+\ppwfuenf & pansen & papagei & papeete & papismus & pappband & pappe \\
+\ppwfuenf & paprika & papst & papua & parade & paraffin & paranoia \\
+\ppwfuenf & paranoid & parataxe & parentel & parese & paris & park \\
+\ppwfuenf & parkdeck & parken & parkuhr & parodie & parole & partner \\
+\ppwfuenf & partout & passat & passen & passend & passiv & passte \\
+\ppwfuenf & pastille & pastoes & patchen & pate & pathos & patience
+\end{wsechs}
+\begin{wsechs}
+\ppwfuenf & patrone & patt & patzend & patzer & patzig & pauke \\
+\ppwfuenf & pauker & paukist & pausen & pausend & pazifist & peak \\
+\ppwfuenf & pechtorf & peeling & peer & pegel & pegmatit & peiler \\
+\ppwfuenf & peinigen & peitsche & pektisch & pelikan & pelztier & pendant \\
+\ppwfuenf & pendeln & pendelte & penibel & pennend & penner & pensum \\
+\ppwfuenf & peperoni & perfekt & pergamin & perianal & perihel & periklas
+\end{wsechs}
+\newpage
+
+\stepcounter{wuerfelzwei}
+
+\begin{wsechs}
+\ppwfuenf & perineal & perioral & peripher & periskop & perkutan & perlhuhn \\
+\ppwfuenf & perlte & peroral & perser & persisch & person & perthit \\
+\ppwfuenf & peruecke & pervers & perverse & pestizid & pestwurz & petalit \\
+\ppwfuenf & petze & pfaehlen & pfarramt & pfarrer & pfeffern & pfeffert \\
+\ppwfuenf & pfeife & pfeiler & pfirsich & pflanze & pflanzen & pflegen \\
+\ppwfuenf & pfleger & pflegte & pflicht & pfosten & pfropfen & pfuscher
+\end{wsechs}
+\begin{wsechs}
+\ppwfuenf & pfuschig & pfuscht & phantom & pharao & phase & phasor \\
+\ppwfuenf & phatisch & phenakit & philogyn & phiole & phloem & phobie \\
+\ppwfuenf & phoebe & phon & physisch & picheln & pichelte & picken \\
+\ppwfuenf & pickt & pieksend & piensen & piensend & piepend & piepser \\
+\ppwfuenf & piepst & pikass & pikee & pikend & pilgerte & pille \\
+\ppwfuenf & pilot & pilz & piment & pinakoid & ping & pinge
+\end{wsechs}
+\begin{wsechs}
+\ppwfuenf & pingelig & pink & pinkelte & pinnwand & pinsel & pionier \\
+\ppwfuenf & piopio & pipeline & pirogge & pirsch & pirschen & pistole \\
+\ppwfuenf & piston & pkw & placebo & plaetten & plagiat & plakat \\
+\ppwfuenf & plan & planarie & planbar & planend & planet & plant \\
+\ppwfuenf & plantage & planvoll & planzahl & planziel & plappern & plasma \\
+\ppwfuenf & plastik & plastron & platin & platzt & platzte & playback
+\end{wsechs}
+\begin{wsechs}
+\ppwfuenf & pliozaen & plissee & plumper & plunder & pluspol & pluto \\
+\ppwfuenf & pluton & plymouth & pochte & pocken & podsol & poet \\
+\ppwfuenf & poetisch & pokern & polar & polaron & polder & pole \\
+\ppwfuenf & poliert & politur & polnisch & polo & polster & polyeder \\
+\ppwfuenf & polygam & polymikt & polyp & polyurie & polzahl & pommern \\
+\ppwfuenf & pompeji & pomphaft & pond & pont & pony & popcorn
+\end{wsechs}
+\begin{wsechs}
+\ppwfuenf & popel & popelig & populaer & populist & poroeser & porphyr \\
+\ppwfuenf & port & portlet & porto & portugal & poseur & posieren \\
+\ppwfuenf & postiert & postulat & postweg & potent & potenter & pracht \\
+\ppwfuenf & praefekt & praefix & praegen & praemie & praerie & praesenz \\
+\ppwfuenf & prahlte & praia & prall & prallend & pram & prasopal \\
+\ppwfuenf & prasselt & prassen & prassend & praxis & predigen & prediger
+\end{wsechs}
+\begin{wsechs}
+\ppwfuenf & preisen & preisend & presbyop & pressen & prickelt & priester \\
+\ppwfuenf & primaer & primas & primat & prime & primer & primzahl \\
+\ppwfuenf & prinzip & priorat & prise & prisma & proa & probe \\
+\ppwfuenf & probte & profi & programm & proktor & promille & promisk \\
+\ppwfuenf & prophet & propst & prost & prostata & protease & protest \\
+\ppwfuenf & prothese & proton & protz & protzen & protzt & protzte
+\end{wsechs}
+\newpage
+
+\stepcounter{wuerfeleins}
+\stepcounter{wuerfelzwei}
+
+\begin{wsechs}
+\ppwfuenf & proustit & provinz & proximal & prueft & pruefung & pruegeln \\
+\ppwfuenf & prunken & prunkend & psalm & psalter & psi & psyche \\
+\ppwfuenf & psycho & ptose & publik & pudding & pudel & pudernd \\
+\ppwfuenf & puderte & puebla & pueblo & pullover & pulpitis & puls \\
+\ppwfuenf & pumpen & pumpend & pumpgun & pumphose & pumps & punkrock \\
+\ppwfuenf & punkt & punkten & punktend & punsch & pupsend & purpurn
+\end{wsechs}
+\begin{wsechs}
+\ppwfuenf & pushend & putsch & putte & putten & putzfrau & putzig \\
+\ppwfuenf & putzte & puzzolan & pyelitis & pyogen & pyridin & pyrogen \\
+\ppwfuenf & pyrop & pyroxene & quaalude & quaekend & quaelen & quaelt \\
+\ppwfuenf & quaelte & quaestor & quaestur & quaken & quakend & quakt \\
+\ppwfuenf & qualm & qualvoll & quant & quark & quartaer & quartal \\
+\ppwfuenf & quarz & quarzend & quasi & quellte & quellung & querbeet
+\end{wsechs}
+\begin{wsechs}
+\ppwfuenf & querholz & querkopf & querpass & quieksen & quitt & quitte \\
+\ppwfuenf & quittung & quorum & quotiert & rabiater & rachitis & racker \\
+\ppwfuenf & radau & radelt & radelte & radgabel & radierer & radio \\
+\ppwfuenf & radium & radkranz & radkreuz & radlader & radlast & radler \\
+\ppwfuenf & radnabe & radon & radsport & radtour & radtype & raechen \\
+\ppwfuenf & raechend & raecher & raedchen & raehm & raenge & raetsel
+\end{wsechs}
+\begin{wsechs}
+\ppwfuenf & raffeln & raffelnd & raffen & ragout & rah & rahmbrei \\
+\ppwfuenf & rahmend & rain & rainfarn & ramadan & ramdisk & rammen \\
+\ppwfuenf & rammt & rammte & rampe & rand & randlos & randmeer \\
+\ppwfuenf & rang & rangeln & rangiert & rapide & rapmusik & rappe \\
+\ppwfuenf & rappel & rappeln & rapplig & rapport & rapunzel & rar \\
+\ppwfuenf & rarer & rarst & rasiert & raspel & raspelte & rasse
+\end{wsechs}
+\begin{wsechs}
+\ppwfuenf & rasselnd & rasselt & rassiger & rassist & rastend & raster \\
+\ppwfuenf & rastern & rasur & rate & ration & rational & rattern \\
+\ppwfuenf & ratternd & raubank & rauben & raubend & raubgut & raubte \\
+\ppwfuenf & raubzug & rauchlos & rauer & raufbold & raufen & raufend \\
+\ppwfuenf & rauft & raufte & rauh & raumbuch & raunen & raunend \\
+\ppwfuenf & rauschte & rauswurf & razzia & reaktion & reaktiv & realfilm
+\end{wsechs}
+\begin{wsechs}
+\ppwfuenf & rebe & reblaus & rechen & rechner & rechte & rechtens \\
+\ppwfuenf & rechter & rechts & recife & reckend & recyceln & redet \\
+\ppwfuenf & redlich & reederei & referat & regal & regatta & regelbar \\
+\ppwfuenf & regenlos & reggae & regie & regiert & regierte & register \\
+\ppwfuenf & reglette & regnen & regolith & regung & reibach & reiblaut \\
+\ppwfuenf & reibt & reichend & reicherz & reife & reifend & reiflich
+\end{wsechs}
+\newpage
+
+\stepcounter{wuerfelzwei}
+
+\begin{wsechs}
+\ppwfuenf & reift & reihe & reiher & reihum & reimen & reimend \\
+\ppwfuenf & reimt & reimte & reiner & reinfall & reingas & reiniger \\
+\ppwfuenf & reisbrei & reisfeld & reisig & reist & reiste & reiten \\
+\ppwfuenf & reitend & reiterei & reitet & reiz & reizbar & reizen \\
+\ppwfuenf & rektal & rektion & rektorat & relais & relation & relativ \\
+\ppwfuenf & relevanz & relief & reliquie & remedium & rempelnd & ren
+\end{wsechs}
+\begin{wsechs}
+\ppwfuenf & rennbahn & rennen & renner & rente & rentner & repeater \\
+\ppwfuenf & reprint & republik & requisit & reserve & resonant & reste \\
+\ppwfuenf & restlich & restwert & retinit & retorte & retsina & retten \\
+\ppwfuenf & retter & rettung & reuevoll & reuig & reverenz & revulsiv \\
+\ppwfuenf & rezent & reziprok & rhenium & rhetorik & rhizom & rhodonit \\
+\ppwfuenf & rhodos & rhonchus & rhythmit & rhythmus & richtung & ricotta
+\end{wsechs}
+\begin{wsechs}
+\ppwfuenf & riechen & riefe & riege & riegel & rieselnd & rieselt \\
+\ppwfuenf & riesig & riesiger & rigg & rigide & rigoros & rijad \\
+\ppwfuenf & rillend & ring & ringelig & ringen & ringsum & rinne \\
+\ppwfuenf & rinnen & rinnsal & ripstop & riskant & riskiert & rispe \\
+\ppwfuenf & ritual & rituell & ritze & ritzen & ritzte & robbe \\
+\ppwfuenf & rock & rocken & rockig & rockstar & rodeln & roeche
+\end{wsechs}
+\begin{wsechs}
+\ppwfuenf & roemer & roentgen & roeschen & roescher & roestete & roetel \\
+\ppwfuenf & rohheit & rohkost & rohleder & rohoel & rohr & rohrgrab \\
+\ppwfuenf & rohsalz & rohstoff & rollen & rollfeld & rollt & rollte \\
+\ppwfuenf & rolltuer & roma & rosario & rosarot & rosazea & roseau \\
+\ppwfuenf & rosenoel & rosette & rosig & rosine & ross & rosskur \\
+\ppwfuenf & rost & rostig & roststab & rotaetze & rotalge & rotauge
+\end{wsechs}
+\begin{wsechs}
+\ppwfuenf & rotbeize & roteiche & rotguss & rothaut & rothokko & rotieren \\
+\ppwfuenf & rotlori & rotstift & rotunde & rotvanga & rotwurst & rotzunge \\
+\ppwfuenf & rouge & roulade & roulette & rubbeln & rubellit & rubin \\
+\ppwfuenf & ruchlos & ruckelnd & ruckfrei & rucksack & ruder & ruderer \\
+\ppwfuenf & rudern & rudert & ruderte & rueckruf & rueckt & rueckte \\
+\ppwfuenf & rueckzug & ruede & rueffelt & ruegen & ruehrer & ruehrig
+\end{wsechs}
+\begin{wsechs}
+\ppwfuenf & ruelpsen & ruempfte & ruestete & ruestig & ruestung & ruetteln \\
+\ppwfuenf & ruettler & rufen & rufmord & ruft & ruhelos & ruhen \\
+\ppwfuenf & ruhepol & ruhesitz & ruhespur & ruhetag & ruhevoll & ruhezeit \\
+\ppwfuenf & ruhiger & ruhm & ruhrwurz & ruhte & ruiniert & rummel \\
+\ppwfuenf & rumort & rumpeln & rumpfnah & rund & rundfunk & rundherd \\
+\ppwfuenf & rundkopf & rundlich & rundwurm & runzelt & rupft & ruppiger
+\end{wsechs}
+\newpage
+
+\stepcounter{wuerfelzwei}
+
+\begin{wsechs}
+\ppwfuenf & russ & russen & russend & russig & rustikal & rutsche \\
+\ppwfuenf & saal & saatbett & saatzeit & sabbelnd & sabbernd & sacha \\
+\ppwfuenf & sachalin & sacharin & sachen & sachlage & sachlich & sacktuch \\
+\ppwfuenf & sackvoll & saeend & saege & saeger & saegt & saenke \\
+\ppwfuenf & saete & saeuerte & saeufer & saeuft & saeugen & saeugte \\
+\ppwfuenf & saeule & saeumen & saeumt & saftig & saftlos & sagenit
+\end{wsechs}
+\begin{wsechs}
+\ppwfuenf & sago & sagt & sagte & saibling & saigon & saisonal \\
+\ppwfuenf & sakral & salatoel & salbader & salband & salbei & salben \\
+\ppwfuenf & salbend & salbt & salbte & salopp & salve & salz \\
+\ppwfuenf & salzarm & salzburg & salzdom & salzen & salzend & salzfass \\
+\ppwfuenf & salzhang & salzig & salziger & salzsee & sambia & sambier \\
+\ppwfuenf & same & sammelte & sammler & sana & sandale & sanddorn
+\end{wsechs}
+\begin{wsechs}
+\ppwfuenf & sandsack & sanft & sanfter & sanftmut & sangria & sanierte \\
+\ppwfuenf & sanitaer & sank & sanktion & santiago & santon & santos \\
+\ppwfuenf & saphir & saprobie & sarajevo & sardelle & sari & sarkom \\
+\ppwfuenf & satellit & satin & sattblau & sattel & satteln & sattelt \\
+\ppwfuenf & sattler & sattlung & satzart & satzende & sauberer & sauciere \\
+\ppwfuenf & sauer & sauerei & sauergas & saufen & saufkopf & saugend
+\end{wsechs}
+\begin{wsechs}
+\ppwfuenf & saugkopf & saugkorb & saugnapf & saugt & saugte & saugzug \\
+\ppwfuenf & saumtier & saurer & sausend & sauste & sautiert & scalping \\
+\ppwfuenf & scampi & schaber & schabt & schach & schacher & schaden \\
+\ppwfuenf & schadet & schaefer & schaekel & schaelen & schaelt & schaelte \\
+\ppwfuenf & schaere & schaetze & schaf & schaffte & schafott & schalmei \\
+\ppwfuenf & schaltet & schalung & scham & schamane & schanker & schar
+\end{wsechs}
+\begin{wsechs}
+\ppwfuenf & scharrt & scharrte & scharte & schartig & schauen & schauer \\
+\ppwfuenf & schauern & schaufel & schaumig & schecke & scheckig & scheibe \\
+\ppwfuenf & scheiden & scheider & scheisse & schelm & schelte & schema \\
+\ppwfuenf & schenkel & schenkte & scherbe & scherge & schert & scheuen \\
+\ppwfuenf & scheuend & scheuern & scheut & scheute & schickse & schickte \\
+\ppwfuenf & schied & schief & schienen & schiente & schiff & schiffte
+\end{wsechs}
+\begin{wsechs}
+\ppwfuenf & schiite & schikane & schikra & schild & schinden & schirch \\
+\ppwfuenf & schiss & schlacht & schlack & schlaff & schlagen & schlager \\
+\ppwfuenf & schlange & schlau & schleier & schleife & schlemm & schleppe \\
+\ppwfuenf & schleppt & schleuse & schlitzt & schloss & schluck & schluff \\
+\ppwfuenf & schlug & schmaeht & schmalz & schmand & schmarre & schmatz \\
+\ppwfuenf & schmatzt & schmiege & schmiere & schmilzt & schmust & schnallt
+\end{wsechs}
+\newpage
+
+\stepcounter{wuerfelzwei}
+
+\begin{wsechs}
+\ppwfuenf & schnappt & schnarrt & schnecke & schnee & schneien & schnoede \\
+\ppwfuenf & schnorrt & schnuert & schober & schoene & schonend & schonung \\
+\ppwfuenf & schor & schoss & schot & schott & schotter & schraege \\
+\ppwfuenf & schranke & schrat & schraube & schraubt & schreien & schrieb \\
+\ppwfuenf & schrillt & schroff & schroten & schub & schuber & schubst \\
+\ppwfuenf & schueler & schueren & schuesse & schuetz & schuetze & schuften
+\end{wsechs}
+\begin{wsechs}
+\ppwfuenf & schulamt & schulbus & schulden & schuldet & schuldig & schulrat \\
+\ppwfuenf & schultag & schulte & schulweg & schuppe & schuppen & schuppig \\
+\ppwfuenf & schurre & schurz & schwaden & schwalbe & schwang & schwankt \\
+\ppwfuenf & schwanz & schwappt & schwarm & schwarz & schwazit & schweb \\
+\ppwfuenf & schwede & schweift & schweigt & schweiz & schwelle & schwenk \\
+\ppwfuenf & schwenkt & schwer & schwerer & schwinge & schwofen & schwuel
+\end{wsechs}
+\begin{wsechs}
+\ppwfuenf & schwuele & schwule & schwulst & schwund & seance & seattle \\
+\ppwfuenf & sec & sechseck & sechste & sechster & sechzehn & sedcard \\
+\ppwfuenf & see & seeamt & seebad & seefeder & seefisch & seegras \\
+\ppwfuenf & seegurke & seeheld & seekrieg & seekuh & seelisch & seemann \\
+\ppwfuenf & seemine & seemoewe & seenot & seeohr & seereise & seestadt \\
+\ppwfuenf & seetier & seevolk & seezunge & segel & segelt & segler
+\end{wsechs}
+\begin{wsechs}
+\ppwfuenf & segnen & segnend & sehend & sehnend & sehnlich & sehnte \\
+\ppwfuenf & sei & seiche & seidig & seiend & seifiger & seihend \\
+\ppwfuenf & seiht & seihte & seil & seiler & seilkeil & seinige \\
+\ppwfuenf & seite & seither & seitlich & sekt & sekte & sekunde \\
+\ppwfuenf & sekunden & selbst & selektor & seltenst & semiarid & seminar \\
+\ppwfuenf & seminom & semiotik & senator & sendai & sendbote & sender
+\end{wsechs}
+\begin{wsechs}
+\ppwfuenf & sendete & sendung & sengen & sengend & sengte & senkdorn \\
+\ppwfuenf & senke & senkt & senkung & sennerei & sennerin & senon \\
+\ppwfuenf & sense & sensorik & senst & senste & septum & serail \\
+\ppwfuenf & seraph & serbien & serge & serife & serizit & sermon \\
+\ppwfuenf & seroes & serviert & sesam & sesshaft & session & setzei \\
+\ppwfuenf & setzt & seufzend & seufzte & sextant & sexuell & shenzhen
+\end{wsechs}
+\begin{wsechs}
+\ppwfuenf & sherpa & shinty & shorts & shunten & sial & sicherer \\
+\ppwfuenf & sichernd & sicherte & sichten & sichtend & sichter & sichtete \\
+\ppwfuenf & sichtung & sickern & sickerte & siebente & siebgut & siebtens \\
+\ppwfuenf & siebter & siebtes & siebung & siebzig & siechen & siechte \\
+\ppwfuenf & siechtum & sieden & siedend & siedlung & siegelte & sieger \\
+\ppwfuenf & siegt & siegte & siehe & sieht & signatar & signatur
+\end{wsechs}
+\newpage
+
+\stepcounter{wuerfelzwei}
+
+\begin{wsechs}
+\ppwfuenf & signum & silber & silicium & siliert & silikat & silikose \\
+\ppwfuenf & silizium & sima & simbabwe & simpel & simultan & sinfonie \\
+\ppwfuenf & singen & singsang & singstar & sinkt & sinnlos & sinnt \\
+\ppwfuenf & sintern & sintflut & sipho & sirene & sistum & situp \\
+\ppwfuenf & sitzbank & sitzbein & sitzecke & sitzgurt & skaliert & skalp \\
+\ppwfuenf & skanken & skeleton & sketch & ski & skianzug & skihelm
+\end{wsechs}
+\begin{wsechs}
+\ppwfuenf & skilauf & skip & skipass & skipiste & skistock & sklerose \\
+\ppwfuenf & skoliose & skulptur & skyline & skyth & slacken & slogan \\
+\ppwfuenf & slowakei & slum & slup & smegma & smiley & smoking \\
+\ppwfuenf & snob & snooker & soeben & soeldner & sofern & soff \\
+\ppwfuenf & sofija & sogleich & soiree & solang & solar & solcher \\
+\ppwfuenf & soldbuch & solider & sollmass & sollwert & solo & sonde
+\end{wsechs}
+\begin{wsechs}
+\ppwfuenf & sonett & sonniger & sonst & sonstwas & sonstwo & sooft \\
+\ppwfuenf & sorbe & sorge & sorgte & sortiert & sosse & souper \\
+\ppwfuenf & soweit & sowieso & soziall & spachtel & spaehend & spaenne \\
+\ppwfuenf & spaetheu & spaltaxt & spalte & spaniel & spanien & spanier \\
+\ppwfuenf & spanisch & spanlos & spannen & spannend & spannte & sparer \\
+\ppwfuenf & sparren & sparsam & spasmus & spass & spassen & spasste
+\end{wsechs}
+\begin{wsechs}
+\ppwfuenf & spatz & specht & speedo & speigatt & speisen & spenden \\
+\ppwfuenf & spendete & spermium & sperrend & sperrgut & sperrt & sperrung \\
+\ppwfuenf & spicken & spickend & spie & spiegel & spiegelt & spiel \\
+\ppwfuenf & spielart & spieluhr & spielzug & spiessig & spiesste & spikes \\
+\ppwfuenf & spillit & spinat & spind & spinett & spinnen & spion \\
+\ppwfuenf & spital & spitze & spitzte & spixara & spliss & spoiler
+\end{wsechs}
+\begin{wsechs}
+\ppwfuenf & spontan & spore & sportart & sportler & spotting & spray \\
+\ppwfuenf & sprechen & spreizt & spreizte & sprengen & spricht & spring \\
+\ppwfuenf & springen & springer & sprintet & sprit & spritzen & spritzig \\
+\ppwfuenf & spruch & sprue & spruehen & sprueht & spruehte & spucken \\
+\ppwfuenf & spuele & spuelgas & spuken & spulen & spulend & spund \\
+\ppwfuenf & spundet & spundung & spuren & spurt & spurten & spurtet
+\end{wsechs}
+\begin{wsechs}
+\ppwfuenf & sputnik & sputum & staat & stab & stabil & stachel \\
+\ppwfuenf & stadttor & staeche & staehlen & staendig & staerke & staerker \\
+\ppwfuenf & staerkt & staette & staffage & stahl & stahlbad & stahlung \\
+\ppwfuenf & staken & stakkato & stall & stamm & stammelt & stampfte \\
+\ppwfuenf & stander & standort & standuhr & stanley & stannin & stanzen \\
+\ppwfuenf & stanzt & stanzte & stapel & stapelte & stapfend & stapler
+\end{wsechs}
+\newpage
+
+\stepcounter{wuerfelzwei}
+
+\begin{wsechs}
+\ppwfuenf & star & starr & starren & start & startend & statisch \\
+\ppwfuenf & stator & statuesk & status & statut & stauchen & stauchte \\
+\ppwfuenf & staunen & staurohr & stausee & staut & stauung & steatose \\
+\ppwfuenf & stechuhr & steckbar & stecker & steg & stehlen & stehlend \\
+\ppwfuenf & steht & steife & steifen & steifend & steigen & steigend \\
+\ppwfuenf & steiger & steigern & steil & stein & steingut & stellar
+\end{wsechs}
+\begin{wsechs}
+\ppwfuenf & stellend & stellte & stelzen & stelzend & stemmt & stemmte \\
+\ppwfuenf & sterbend & sternlos & stets & steuern & steuerte & sticht \\
+\ppwfuenf & stichtag & stickend & stickig & stickte & stieben & stieg \\
+\ppwfuenf & stiehl & stieren & stierend & stierte & stifte & stiften \\
+\ppwfuenf & stiftet & stigma & stillen & stillend & stillt & stilluhr \\
+\ppwfuenf & stilvoll & stimmend & stimmer & stinkend & stirn & stirnrad
+\end{wsechs}
+\begin{wsechs}
+\ppwfuenf & stochern & stocken & stockt & stoehnt & stoehnte & stoeren \\
+\ppwfuenf & stoerung & stolz & stolzit & stopfer & stopft & stopp \\
+\ppwfuenf & stoppeln & stoppen & stoppend & stopper & stoppte & stoppuhr \\
+\ppwfuenf & store & strafbar & strafe & strafen & strafend & straffte \\
+\ppwfuenf & strahl & strahlt & stramm & strammer & stranden & strandet \\
+\ppwfuenf & strapaze & strass & strasse & stratege & streber & strebt
+\end{wsechs}
+\begin{wsechs}
+\ppwfuenf & strebte & strecke & streckt & streife & streifen & streifig \\
+\ppwfuenf & streifte & streikt & streiten & streitet & streng & streuen \\
+\ppwfuenf & streuend & streuer & streunte & strick & striemig & strikt \\
+\ppwfuenf & strippen & stroemte & stroh & stromer & stromlos & strosse \\
+\ppwfuenf & strotzen & strotzte & strudel & struma & strunk & struwit \\
+\ppwfuenf & stueck & stueckig & stuermen & stuermt & stuermte & stuerzt
+\end{wsechs}
+\begin{wsechs}
+\ppwfuenf & stuerzte & stufen & stulpe & stumpf & stupend & stupid \\
+\ppwfuenf & stupide & stupsen & stupsend & sturm & sturz & stutzend \\
+\ppwfuenf & stutzer & stutzte & styling & styxeule & suaheli & sublim \\
+\ppwfuenf & submarin & submers & substanz & substrat & subtyp & suchbar \\
+\ppwfuenf & suchbaum & suche & suchende & suchte & sudanese & sudhaus \\
+\ppwfuenf & suechtig & suedlage & suedring & suedufer & suehne & suehnen
+\end{wsechs}
+\begin{wsechs}
+\ppwfuenf & suesst & suesste & suite & suizid & sulahuhn & sultanat \\
+\ppwfuenf & suppe & supremat & surabaya & sure & surfen & surfer \\
+\ppwfuenf & surfing & surreal & surren & surrte & sushi & suspekt \\
+\ppwfuenf & sutur & suzani & sydney & syenit & sylvin & symptom \\
+\ppwfuenf & synagoge & syndrom & synergie & syngenit & synkope & synopse \\
+\ppwfuenf & synovial & syntax & synthese & syphilis & syringe & systole
+\end{wsechs}
+\newpage
+
+\stepcounter{wuerfeleins}
+\stepcounter{wuerfelzwei}
+
+\begin{wsechs}
+\ppwfuenf & szenerie & tabu & tacker & tadellos & tadelte & taendeln \\
+\ppwfuenf & taete & taetigte & taeuscht & taft & tag & tagegeld \\
+\ppwfuenf & tagelang & tagelohn & tagen & tagend & tagewerk & tagline \\
+\ppwfuenf & taipeh & taiwaner & taiyuan & takelage & taktik & taktil \\
+\ppwfuenf & taktung & taktzeit & tal & talgig & talgrund & talmi \\
+\ppwfuenf & talmud & tand & tandem & tang & tanga & tangente
+\end{wsechs}
+\begin{wsechs}
+\ppwfuenf & tango & tanker & tankwart & tanne & tansania & tantal \\
+\ppwfuenf & tante & tantieme & tanz & tanzt & tao & taoismus \\
+\ppwfuenf & tapedeck & tapete & tapfer & tapferer & tappte & taps \\
+\ppwfuenf & tapsen & tapsiger & tapst & tarawa & tarif & tarnte \\
+\ppwfuenf & tartan & taste & tastete & tatenlos & tatort & tatterig \\
+\ppwfuenf & tau & taub & tauber & taubheit & tauchbar & taucht
+\end{wsechs}
+\begin{wsechs}
+\ppwfuenf & tauend & taufen & taufte & tauglich & tauig & taukranz \\
+\ppwfuenf & taumel & taumelt & taumelte & taupunkt & tauschen & tauscht \\
+\ppwfuenf & tauschte & tausend & taut & taxieren & taxon & teamim \\
+\ppwfuenf & teamwork & teebaum & teebrett & teepause & teer & teerfass \\
+\ppwfuenf & teeroel & teeuhr & teewagen & teheran & teigig & teil \\
+\ppwfuenf & teilfeld & teilung & tektonit & telegraf & teller & tellur
+\end{wsechs}
+\begin{wsechs}
+\ppwfuenf & templer & tendenz & tenesmus & tenne & tensor & tentativ \\
+\ppwfuenf & tephroit & term & termin & terminal & ternaer & terrain \\
+\ppwfuenf & terrasse & terrier & terrigen & tessin & testend & testfall \\
+\ppwfuenf & testiert & testlauf & tetanus & teuer & teufel & texas \\
+\ppwfuenf & textlich & theater & theismus & theist & theologe & theosoph \\
+\ppwfuenf & these & thorit & thriller & thronend & thurgau & thymian
+\end{wsechs}
+\begin{wsechs}
+\ppwfuenf & tibeter & tickend & ticktack & tidefall & tiefbau & tiefblau \\
+\ppwfuenf & tiefe & tiefer & tiefgang & tiefland & tiefsinn & tierarzt \\
+\ppwfuenf & tierlieb & tiermehl & tierspur & tierwelt & tiffany & tilgbar \\
+\ppwfuenf & timbre & tinktur & tippelnd & tippend & tirol & tiroler \\
+\ppwfuenf & tischler & titan & titanit & titel & titelei & titte \\
+\ppwfuenf & toben & tobsucht & tobt & tochter & toent & toerchen
+\end{wsechs}
+\begin{wsechs}
+\ppwfuenf & toerin & tofu & togo & toleranz & toll & tolle \\
+\ppwfuenf & tollend & toller & tollerei & tombola & tomtom & tonartig \\
+\ppwfuenf & tonfall & tonga & tongrube & tonig & tonkopf & tonkrug \\
+\ppwfuenf & tonlos & tonmasse & tonsatz & tonstein & tontaube & tonus \\
+\ppwfuenf & tonwahl & topas & topfvoll & toque & torfmoor & torfmoos \\
+\ppwfuenf & torgeld & torkeln & torkelte & torlos & toronto & torques
+\end{wsechs}
+\newpage
+
+\stepcounter{wuerfelzwei}
+
+\begin{wsechs}
+\ppwfuenf & torshavn & tosend & tost & totale & totband & toter \\
+\ppwfuenf & totpunkt & totzone & toupet & toupiert & tour & trab \\
+\ppwfuenf & trachee & traef & traenend & traenke & traenken & traenkt \\
+\ppwfuenf & traeumen & traeumt & tragbild & trage & tragend & tragik \\
+\ppwfuenf & tragiker & tragisch & tragseil & tragwerk & trainer & training \\
+\ppwfuenf & traiteur & traktat & traktion & tramp & trampelt & trampen
+\end{wsechs}
+\begin{wsechs}
+\ppwfuenf & trance & transgen & transit & trappist & trapsen & trapsend \\
+\ppwfuenf & trasse & trauen & trauerte & traufe & traum & traurig \\
+\ppwfuenf & trauring & traut & traute & trauung & treber & treck \\
+\ppwfuenf & treibeis & treiben & treiber & tremolo & trennend & trennt \\
+\ppwfuenf & trense & tretauto & tretend & treueeid & triade & trick \\
+\ppwfuenf & tricksen & tridymit & triefen & triezen & triezte & trifft
+\end{wsechs}
+\begin{wsechs}
+\ppwfuenf & trifle & triggern & trigonal & triller & trillern & trilogie \\
+\ppwfuenf & trimaran & trimmen & trimmend & trimmer & trinkbar & trinker \\
+\ppwfuenf & trinkt & tripolis & tritium & tritt & trivium & trizeps \\
+\ppwfuenf & trocknen & trockner & troedel & troesten & troester & troetend \\
+\ppwfuenf & trog & troll & trollend & trommel & trommeln & tropfend \\
+\ppwfuenf & tropfte & trott & trottel & trotten & trottet & trotzend
+\end{wsechs}
+\begin{wsechs}
+\ppwfuenf & trotzig & trudelnd & trueb & trueben & trueber & truebt \\
+\ppwfuenf & truebte & truegen & truegend & truegt & trumpf & trumpfen \\
+\ppwfuenf & trupp & trust & truthahn & truthuhn & tschador & tscheche \\
+\ppwfuenf & tsunami & tube & tuch & tucuxi & tuefteln & tuell \\
+\ppwfuenf & tuemmler & tuencht & tuend & tuepfeln & tuerke & tuermen \\
+\ppwfuenf & tuff & tugend & tui & tummler & tundra & tuner
+\end{wsechs}
+\begin{wsechs}
+\ppwfuenf & tunfisch & tungstit & tunken & tunlich & tunnel & tunneln \\
+\ppwfuenf & tunnelnd & turban & turmkopf & turnend & turnfest & turnhose \\
+\ppwfuenf & turnier & turniert & turnte & tuschelt & tussi & tutorium \\
+\ppwfuenf & tuwinien & typenrad & ueberzog & uebung & ueppiger & ufo \\
+\ppwfuenf & uhr & uhrzeit & uhu & ukraine & ukulele & ulexit \\
+\ppwfuenf & ulken & ulkend & ulkus & um & umackern & umbauend
+\end{wsechs}
+\begin{wsechs}
+\ppwfuenf & umbetten & umbiegen & umfaehrt & umfaengt & umfang & umfangen \\
+\ppwfuenf & umfing & umgab & umgangen & umgarnen & umgebend & umgehabt \\
+\ppwfuenf & umgehend & umgibt & umhaben & umhang & umhauend & umhin \\
+\ppwfuenf & umjubelt & umkreist & umladend & umlegend & umleiten & umluft \\
+\ppwfuenf & umpacken & umplanen & umranden & umreisst & umringt & umrissen \\
+\ppwfuenf & umsetzen & umsonst & umsorgt & umsorgte & umspann & umstand
+\end{wsechs}
+\newpage
+
+\stepcounter{wuerfelzwei}
+
+\begin{wsechs}
+\ppwfuenf & umtausch & umtrunk & umweg & umwelt & umwenden & umwerfen \\
+\ppwfuenf & umwinden & umwindet & umwunden & unbelebt & unblutig & undank \\
+\ppwfuenf & uneinig & uneins & unfairer & unfern & unfug & ungeduld \\
+\ppwfuenf & ungemein & ungerade & ungern & ungewiss & ungiftig & unglaube \\
+\ppwfuenf & ungleich & unglueck & unhold & uni & unicast & union \\
+\ppwfuenf & unkeusch & unklar & unkundig & unmasse & unmengen & unmodern
+\end{wsechs}
+\begin{wsechs}
+\ppwfuenf & unmut & unreal & unreife & unrein & unruh & unruhe \\
+\ppwfuenf & unruhen & uns & unscharf & unschuld & unserige & unstabil \\
+\ppwfuenf & unstern & unstet & untaetig & unter & unterart & unterbau \\
+\ppwfuenf & unterlag & unterste & unterzug & untiefe & untreue & untugend \\
+\ppwfuenf & unwetter & unwille & unwillig & unzahl & unze & unzucht \\
+\ppwfuenf & uraemie & ural & uran & urban & urbeleg & urdu
+\end{wsechs}
+\begin{wsechs}
+\ppwfuenf & urgenz & urgieren & urladen & urlehre & urmeer & urologe \\
+\ppwfuenf & urologie & ursache & urstoff & urteil & urteilte & uruguay \\
+\ppwfuenf & urumqi & urvogel & urvolk & urzeit & usenet & uterin \\
+\ppwfuenf & uwarowit & vadodara & vage & vakant & valencia & valetta \\
+\ppwfuenf & valin & valuta & valviert & vamp & vanadium & vanille \\
+\ppwfuenf & variabel & variable & varianz & varikoes & vasall & vaseline
+\end{wsechs}
+\begin{wsechs}
+\ppwfuenf & vegan & vehemenz & vene & ventil & ventral & verarmen \\
+\ppwfuenf & verarmte & verascht & verband & verbannt & verbogen & verbot \\
+\ppwfuenf & verdacht & verdammt & verdeck & verdient & verehrer & verein \\
+\ppwfuenf & vereisen & verendet & verengt & verengte & vererbt & verewigt \\
+\ppwfuenf & verfiel & verfilmt & verfror & verfuegt & verfugt & verfuhr \\
+\ppwfuenf & vergaser & vergeben & vergehen & vergenz & vergibt & verging
+\end{wsechs}
+\begin{wsechs}
+\ppwfuenf & vergipst & vergoren & vergoss & vergriff & vergrub & verhallt \\
+\ppwfuenf & verhauen & verheert & verhehlt & verheilt & verhexen & verirrt \\
+\ppwfuenf & verkalkt & verkeilt & verkokte & verkorkt & verlader & verlaedt \\
+\ppwfuenf & verlangt & verlauf & verlegt & verleih & verlesen & verletzt \\
+\ppwfuenf & verliebt & verlieh & verliert & verliess & verlinkt & verloren \\
+\ppwfuenf & vermacht & vermarkt & vermass & vermerk & vermerkt & vermied
+\end{wsechs}
+\begin{wsechs}
+\ppwfuenf & vermint & verminte & vermisst & vernetzt & veroeden & veroedet \\
+\ppwfuenf & verortet & verpetzt & verraet & verrann & verrat & verraten \\
+\ppwfuenf & verreist & verrinnt & verrufen & vers & versackt & versager \\
+\ppwfuenf & versalzt & versbau & verschob & versengt & versenkt & versiegt \\
+\ppwfuenf & versiert & version & versoff & versohlt & verstand & verstoss \\
+\ppwfuenf & vertagt & vertan & vertiert & vertippt & vertont & vertrank
+\end{wsechs}
+\newpage
+
+\stepcounter{wuerfelzwei}
+
+\begin{wsechs}
+\ppwfuenf & vertraut & vertuend & verueben & veruebt & verulken & verulkt \\
+\ppwfuenf & verwahrt & verwaist & verwebt & verwehen & verwehrt & verweht \\
+\ppwfuenf & verweilt & verweint & verweist & verwesen & verzahnt & verzeiht \\
+\ppwfuenf & verzerrt & vespert & veteran & video & vieleck & viermal \\
+\ppwfuenf & vierpass & vierpol & vierteln & vierter & viertes & vierzig \\
+\ppwfuenf & vigil & vignette & vilnius & vinyl & virginia & virtuos
+\end{wsechs}
+\begin{wsechs}
+\ppwfuenf & virulent & visavis & visiert & visite & viskose & visuell \\
+\ppwfuenf & visum & vitamin & vitreus & vitriol & vivianit & vogt \\
+\ppwfuenf & voile & vollauf & vollbad & vollends & vollgas & volllast \\
+\ppwfuenf & voltait & vor & vorabruf & vorbau & vorbeben & vorberg \\
+\ppwfuenf & vorbild & vordach & vorderes & vorfeld & vorgabe & vorgeben \\
+\ppwfuenf & vorgriff & vorgrube & vorhaben & vorhafen & vorhang & vorhin
+\end{wsechs}
+\begin{wsechs}
+\ppwfuenf & vorig & vorkauf & vorlauf & vorlegen & vorleser & vorne \\
+\ppwfuenf & vornehm & vorort & vorplatz & vorraum & vorrunde & vorsagen \\
+\ppwfuenf & vorschau & vorschub & vorsegel & vorsitz & vorspiel & vorstadt \\
+\ppwfuenf & vorstand & vortag & vortrag & vortrupp & vulgaer & wach \\
+\ppwfuenf & wachen & wachhaus & wachsam & wachsein & wachsend & wachtel \\
+\ppwfuenf & wackeln & wackelnd & wackelte & wacker & wad & wade
+\end{wsechs}
+\begin{wsechs}
+\ppwfuenf & waechter & waegen & waegend & waehlend & waehler & waelzer \\
+\ppwfuenf & waelzte & waermer & waescht & wafer & waffe & waffel \\
+\ppwfuenf & waffen & wagemut & wagte & wahlen & wahlgang & wahllos \\
+\ppwfuenf & wahnhaft & wahnwitz & wahrend & waldhorn & waldhuhn & waldkauz \\
+\ppwfuenf & waldland & waldmann & walhalla & walken & walkend & walker \\
+\ppwfuenf & wallaby & wallach & wallone & wallung & walzen & walzer
+\end{wsechs}
+\begin{wsechs}
+\ppwfuenf & walzgold & wand & wandelnd & wanderer & wandernd & wandung \\
+\ppwfuenf & wange & wankt & want & warb & ware & warnen \\
+\ppwfuenf & warnruf & warnt & warnung & wartend & warwick & warze \\
+\ppwfuenf & waschbar & waschen & waschung & wasen & wassernd & waten \\
+\ppwfuenf & wattwurm & wavellit & wc & wealden & weber & webleine \\
+\ppwfuenf & webpelz & webware & wechsel & wechselt & wecker & weckt
+\end{wsechs}
+\begin{wsechs}
+\ppwfuenf & wedeln & wedelnd & wegfegen & weggang & weggeben & wegholen \\
+\ppwfuenf & wegjagen & weglegen & wegrand & wegtun & wegwehen & wehe \\
+\ppwfuenf & wehen & wehgetan & wehklage & wehmut & wehrhaft & weib \\
+\ppwfuenf & weiche & weichen & weichlot & weide & weidend & weidete \\
+\ppwfuenf & weihe & weihend & weiht & weil & weilend & weilt \\
+\ppwfuenf & weilte & weinberg & weinend & weinfass & weinfest & weinjahr
+\end{wsechs}
+\newpage
+
+\stepcounter{wuerfelzwei}
+
+\begin{wsechs}
+\ppwfuenf & weinlese & weinrebe & weinrot & weint & weise & weisheit \\
+\ppwfuenf & weissend & weist & weisung & weiten & weiteres & weitet \\
+\ppwfuenf & weitung & welche & welkt & welle & wellend & wellig \\
+\ppwfuenf & welpe & welt & weltall & weltbild & weltklug & weltlauf \\
+\ppwfuenf & weltmann & weltraum & weltteil & wen & wenden & wendend \\
+\ppwfuenf & wendig & weniger & wenigste & wenn & werben & werber
+\end{wsechs}
+\begin{wsechs}
+\ppwfuenf & werdend & werkshof & wernerit & wertend & wertete & wertfrei \\
+\ppwfuenf & wertig & wertung & wesen & wesir & west & westgote \\
+\ppwfuenf & westturm & westwall & weta & wettend & wetternd & wettert \\
+\ppwfuenf & wettet & wettete & wichsen & wicht & wickelt & widder \\
+\ppwfuenf & wider & widmend & wie & wieherte & wiener & wies \\
+\ppwfuenf & wiese & wiesel & wieviel & wigwam & wikinger & wild
+\end{wsechs}
+\begin{wsechs}
+\ppwfuenf & wilder & wildling & wildpark & wildtier & wildtyp & willens \\
+\ppwfuenf & willig & wimmelnd & wimmern & wimmernd & wimper & wind \\
+\ppwfuenf & winden & windend & windet & windhund & windlast & windrad \\
+\ppwfuenf & windsack & windstau & windsunk & wink & winkend & winker \\
+\ppwfuenf & winsch & winselt & winselte & winter & winters & winzig \\
+\ppwfuenf & wipfel & wippen & wir & wirbelnd & wirbt & wirkung
+\end{wsechs}
+\begin{wsechs}
+\ppwfuenf & wirren & wirrkopf & wirrnis & wirtin & wischen & wischer \\
+\ppwfuenf & witternd & witzbold & witzelnd & witziger & witzlos & woanders \\
+\ppwfuenf & wodka & wodurch & woelben & woelbte & wogen & woher \\
+\ppwfuenf & wohin & wohl & wohlig & wohltat & wohnbau & wohngeld \\
+\ppwfuenf & wohnheim & wohnort & wohnraum & wohnte & wohnturm & wohnung \\
+\ppwfuenf & wolke & wolkig & wollen & wollgarn & wolliger & wollte
+\end{wsechs}
+\begin{wsechs}
+\ppwfuenf & wombat & wonach & wonne & wonniger & woran & worauf \\
+\ppwfuenf & woraus & wortart & wortlos & wortsinn & wortteil & wortwahl \\
+\ppwfuenf & wovor & wrackgut & wrang & wringend & wuchern & wuchs \\
+\ppwfuenf & wucht & wuchtet & wuehler & wuerdigt & wuergen & wuergend \\
+\ppwfuenf & wuerger & wuergt & wuerzen & wuerzt & wuerzte & wuesche \\
+\ppwfuenf & wuestung & wuetend & wuetet & wund & wunder & wundern
+\end{wsechs}
+\begin{wsechs}
+\ppwfuenf & wundmal & wurf & wurmig & wurst & wurtzit & wuselnd \\
+\ppwfuenf & xenolith & xenon & xylole & yoga & yokto & yttrium \\
+\ppwfuenf & zacke & zacken & zaehler & zaehlte & zaehlung & zaehmbar \\
+\ppwfuenf & zaehmen & zaehmte & zaeumen & zagen & zagend & zaghaft \\
+\ppwfuenf & zagreb & zagte & zahlt & zahlte & zahnarzt & zahnfach \\
+\ppwfuenf & zahnfee & zahngold & zahnlos & zahnt & zander & zange
+\end{wsechs}
+\newpage
+
+\stepcounter{wuerfelzwei}
+
+\begin{wsechs}
+\ppwfuenf & zanken & zankt & zankte & zappelnd & zappelte & zarin \\
+\ppwfuenf & zauberei & zaubern & zaubernd & zaudern & zauderte & zaumzeug \\
+\ppwfuenf & zaun & zeche & zechen & zecher & zechte & zechtour \\
+\ppwfuenf & zedieren & zediert & zehneck & zehner & zehnfach & zehnte \\
+\ppwfuenf & zeichner & zeigen & zeigend & zeigt & zeigte & zeisig \\
+\ppwfuenf & zeising & zeit & zeitlos & zeitzone & zellig & zellkern
+\end{wsechs}
+\begin{wsechs}
+\ppwfuenf & zellwand & zelt & zeltbahn & zeltdach & zelten & zeltend \\
+\ppwfuenf & zement & zenit & zensiert & zentaur & zentral & zentrale \\
+\ppwfuenf & zenturio & zeolith & zephir & zepter & zepto & zerbiss \\
+\ppwfuenf & zerfall & zerfrass & zergeht & zerhackt & zerkaute & zerlegt \\
+\ppwfuenf & zernagen & zernagt & zerrann & zerreibt & zerrieb & zerriss \\
+\ppwfuenf & zertrat & zertritt & zeug & zeuge & zeugnis & zeugte
+\end{wsechs}
+\begin{wsechs}
+\ppwfuenf & ziegel & ziehbar & zieht & ziehung & ziel & zielcode \\
+\ppwfuenf & zielen & zielend & zielland & ziellos & zielt & zielte \\
+\ppwfuenf & ziemlich & zier & ziererei & zierlich & ziert & ziesel \\
+\ppwfuenf & zigeuner & zigste & zigster & zigstes & zimtduft & zimtente \\
+\ppwfuenf & zinke & zinken & zinkoxid & zinnern & zinnie & zinnober \\
+\ppwfuenf & zinnrot & zinssatz & zionist & zirkular & zirpend & zirpt
+\end{wsechs}
+\begin{wsechs}
+\ppwfuenf & zischend & zischte & zisterne & zitat & zitiert & zittert \\
+\ppwfuenf & zitterte & zobel & zocken & zockt & zockte & zoege \\
+\ppwfuenf & zoegern & zoegert & zoisit & zoll & zollfrei & zonarbau \\
+\ppwfuenf & zoonose & zorb & zotte & zottlig & zuarbeit & zuchtlos \\
+\ppwfuenf & zuckeln & zuckerig & zuckernd & zuckt & zuckung & zudem \\
+\ppwfuenf & zuechter & zuechtet & zuecken & zuege & zuegeln & zuegiger
+\end{wsechs}
+\begin{wsechs}
+\ppwfuenf & zuendete & zuenftig & zuerich & zuernend & zuernt & zuernte \\
+\ppwfuenf & zufallen & zugebaut & zugeeilt & zugehabt & zugelegt & zugglied \\
+\ppwfuenf & zughaken & zugiger & zugkluft & zugleine & zugmodul & zugseil \\
+\ppwfuenf & zugzone & zugzwang & zuhaben & zuhause & zuheften & zujubeln \\
+\ppwfuenf & zukauf & zukehren & zulassen & zumachen & zumal & zumessen \\
+\ppwfuenf & zunaehen & zunft & zuoberst & zuordnen & zupacken & zupfend
+\end{wsechs}
+\begin{wsechs}
+\ppwfuenf & zupft & zuredend & zurren & zurrt & zusatz & zuschuss \\
+\ppwfuenf & zusenden & zustehen & zutiefst & zuvortun & zuweilen & zuwenden \\
+\ppwfuenf & zuwenig & zuwider & zuwinken & zuzeiten & zuziehen & zwang \\
+\ppwfuenf & zwanglos & zweifelt & zweimal & zweipol & zweite & zweitens \\
+\ppwfuenf & zweites & zwinger & zwist & zyanat & zyanid & zyanose \\
+\ppwfuenf & zygote & zyklamat & zyklon & zypriot & zyprisch & zystisch
+\end{wsechs}
+
+
+
+
+\end{document}
+
+
+%%% Local Variables: 
+%%% mode: latex
+%%% TeX-master: t
+%%% End: 

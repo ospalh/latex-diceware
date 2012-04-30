@@ -1,0 +1,2521 @@
+%% -*- mode: latex ; coding: utf-8 -*-
+\newif\iflhyper
+%\lhypertrue          %Hyperlinks im dvi
+\lhyperfalse        %keine Hykerlinks, erm"oglicht kompaktae Zitate,
+                     %Bei  Papierversion \lhyperfalse einstellen
+
+\newif\ifdraft
+%\drafttrue              % Set draft option in documentclass
+\draftfalse             % Don't set draft option in documentclass
+
+
+%\documentclass{article}        
+%\documentclass[8pt,twoside,normalheadings,
+\documentclass[fontsize=9pt,normalheadings,
+        paper=a4,headinclude,DIV30,BCOR=0mm,
+        headsepline,pointlessnumbers,
+        twocolumn,
+        \ifdraft draft,\fi
+%        ]{scrreprt}    
+        ]{scrartcl}      
+%DIV was 12, KOMA thougt that was too much enough
+\include{myheader}
+%\usepackage{palatino}
+\raggedbottom 
+
+\usepackage{fancyhdr}
+\setlength{\headheight}{15.2pt}
+\pagestyle{fancyplain}
+\cfoot{}
+\lhead{\Huge\bf\thewzweins}
+\chead{\Huge\bf deutsch}
+\rhead{\Huge\bf\thewzweins}
+\lfoot{\Huge\bf\thewzweins}
+\cfoot{\Huge\bf deutsch}
+\rfoot{\Huge\bf\thewzweins}
+%
+\newenvironment{wzwanzig}{\medskip \begin{minipage}{0.5\textwidth}
+\stepcounter{wzwzwei}
+\bigskip
+\begin{tabular}[c]{|lllll}
+\multicolumn{1}{l}{{\Large\bf \arabic{wzweins} : \arabic{wzwzwei} : } 
+  1, 6}
+ & \multicolumn{1}{c}{2, 7} & \multicolumn{1}{c}{3, 8} &
+\multicolumn{1}{c}{4, 9} & \multicolumn{1}{c}{5, 0} \\
+\hline
+}{
+\end{tabular}\end{minipage}}
+
+
+\setlength{\parindent}{0mm}
+\begin{document}
+
+
+\newcounter{wzweins}
+\newcounter{wzwzwei}[wzweins]
+
+\stepcounter{wzweins}
+\begin{wzwanzig}
+aachen & aalartig & aalbutt & aalglatt & aalreuse \\
+aalsuppe & aasen & abbe & abbiegen & abbitten \\
+abblasen & abbruch & abdampf & abdienen & abdomen \\
+abdruck & abduktiv & abend & aberdeen & abermals
+\end{wzwanzig} 
+\begin{wzwanzig}
+abernten & aberwitz & abfall & abfasend & abfassen \\
+abfeuern & abfluss & abfragen & abfuhr & abfunken \\
+abgang & abgebaut & abgebend & abgehend & abgelebt \\
+abgelegt & abgesagt & abgetaut & abglanz & abgleich
+\end{wzwanzig}
+\begin{wzwanzig}
+abgrasen & abgraten & abhacken & abhakend & abhauen \\
+abhebung & abhilfe & abhilfen & abhobeln & abhoeren \\
+abholen & abholtag & abhusten & abiose & abitur \\
+abkanten & abkauen & abkaufen & abkehren & abkippen
+\end{wzwanzig} 
+\begin{wzwanzig}
+ablader & ablass & ableger & ableiten & ableiter \\
+ablesend & abloesen & abnaehen & abnaeher & abnagen \\
+abnagend & abonnent & abordnen & abprall & abpumpen \\
+abrasiv & abraten & abreiben & abriss & abrufbar
+\end{wzwanzig} 
+\begin{wzwanzig}
+absaufen & abschied & absehen & absender & absengen \\
+absenken & absetzen & absetzer & absinth & absitzen \\
+absteppt & abstoss & absurd & absurde & absurdes \\
+abtanzen & abtaster & abteilen & abteufen & abtraben
+\end{wzwanzig} 
+\begin{wzwanzig}
+abtreten & abtrieb & abtrift & abtun & abtupfen \\
+abwaegen & abwahl & abwasch & abzahlen & abzielen \\
+abzocke & abzuege & abzug & accra & ach \\
+achsrohr & achtern & achtet & achtfach & achtlos
+\end{wzwanzig} 
+\begin{wzwanzig}
+achtmal & achtung & achtzehn & achtzig & ackern \\
+actinium & adamant & adana & addieren & addierer \\
+addition & adduktor & adel & adeln & adelte \\
+adenin & ader & adieu & adisch & adjutant
+\end{wzwanzig} 
+\begin{wzwanzig}
+adlige & adretter & adria & adstrat & advent \\
+adverb & aebtlich & aechten & aechtend & aechtete \\
+aechtung & aederung & aegaeis & aegide & aegypten \\
+aehnelnd & aehnlich & aelter & aeltere & aelteste
+\end{wzwanzig} 
+\begin{wzwanzig}
+aendern & aeneis & aergert & aergerte & aerolith \\
+aetna & aetzkalk & aetzmass & aetzt & aeussern \\
+affaere & affig & afrika & agenzien & aggregat \\
+agieren & agierte & agility & agnosie & agogisch
+\end{wzwanzig} 
+\begin{wzwanzig}
+agonist & agouti & aha & ahndend & ahndet \\
+ahndung & ahnfrau & ahnt & ahnte & aids \\
+airbag & airbus & akikiki & akkord & akmit \\
+akren & akribie & akt & akten & aktion
+\end{wzwanzig} 
+\begin{wzwanzig}
+aktiva & aktive & aktivum & aktor & aktuell \\
+akutbett & akuter & akzidens & aland & alarm \\
+albaner & albatros & albedo & albit & album \\
+aleuten & algerier & algier & algizid & alias
+\end{wzwanzig} 
+\begin{wzwanzig}
+alibi & aliquot & aliquote & alkali & alkaloid \\
+allanit & allegro & alleinig & allel & allemal \\
+aller & alles & allesamt & allianz & allmende \\
+allueren & aloe & alpaka & alpen & alraun
+\end{wzwanzig} 
+\begin{wzwanzig}
+als & alsdann & altai & altbau & altert \\
+alterte & altertum & alterung & altlast & altrosa \\
+altruist & alufolie & ama & amazonas & amber \\
+ambition & ambulanz & ameise & amme & amnestie
+\end{wzwanzig} 
+\begin{wzwanzig}
+amoklauf & amphibol & amt & amtlich & amtseid \\
+amtsrobe & amtssitz & amtszeit & amuesant & an \\
+anal & analogon & analsex & analyse & analytik \\
+anapaest & anbauen & anbellen & anbieten & anblasen
+\end{wzwanzig} 
+\begin{wzwanzig}
+andacht & andenken & andere & anderer & anderes \\
+anders & andesin & andeuten & andienen & andradit \\
+androgyn & android & anecken & aneignen & anfachen \\
+anfahrt & anfall & anfang & anfangen & anfersen
+\end{wzwanzig} 
+\begin{wzwanzig}
+anfrage & angebend & angebot & angeln & angelnd \\
+angelte & angesagt & angina & anglesit & anglist \\
+angola & anguilla & anguss & anhaben & anhabend \\
+anhaken & anhakend & anhalter & animiert & anis
+\end{wzwanzig} 
+\begin{wzwanzig}
+anisium & ankaufen & ankerit & ankern & ankert \\
+ankerte & anketten & anklagen & ankleben & anlage \\
+anlassen & anleger & anleimen & anleinen & anleiten \\
+anmerken & anmutung & annaehen & anomal & anomalie
+\end{wzwanzig} 
+\begin{wzwanzig}
+anordnen & anosmie & anpacken & anpeilen & anprall \\
+anraten & anregen & anreihen & anreise & anreisen \\
+anrichte & anruf & anrufer & ansager & anschein \\
+ansetzen & anshan & ansicht & ansinnen & ansporn
+\end{wzwanzig} 
+\begin{wzwanzig}
+anstand & anstehen & anstrich & ansturm & anteil \\
+antiheld & antik & antike & antilope & antimon \\
+antonym & antrag & antragen & antreten & antrieb \\
+antritt & anwahl & anwalt & anweisen & anwender
+\end{wzwanzig} 
+\begin{wzwanzig}
+anwerben & anwidern & anzahl & anzahlen & anzapfen \\
+anzeigen & anziehen & aorta & aortal & aostatal \\
+apache & apanage & apatit & aperitif & apertur \\
+apfel & aphizid & aplasie & apnoe & apoplast
+\end{wzwanzig}
+\newpage
+\stepcounter{wzweins}
+
+\begin{wzwanzig}
+appetit & applaus & applet & april & apulien \\
+aquarium & arabeske & arabisch & arbeit & arbeiten \\
+arena & arenig & arginin & arglist & argon \\
+arid & arkebuse & arkus & armada & armatur
+\end{wzwanzig} 
+\begin{wzwanzig}
+armbeuge & armbinde & arme & armee & armenien \\
+armieren & armloch & armreif & armselig & armut \\
+aroma & arrivist & arsenal & arsin & artefakt \\
+artname & aruba & as & asbest & asbolan
+\end{wzwanzig}
+\begin{wzwanzig}
+aschfahl & aschgrau & aseitaet & asien & asmara \\
+asmera & asozial & asoziale & aspartat & aspirin \\
+assonanz & ast & astat & asten & asteroid \\
+astet & astete & asthma & astreich & asyl
+\end{wzwanzig} 
+\begin{wzwanzig}
+atemgift & atemzug & atherom & athetose & athletik \\
+atlanta & atomist & atomkern & atompilz & atomtest \\
+atomtod & atomzeit & atonie & atrial & attribut \\
+au & auckland & audimax & audit & auditiv
+\end{wzwanzig}
+\begin{wzwanzig}
+aue & auen & auenwald & aufbau & aufbeton \\
+aufessen & aufgehen & aufhaben & aufhaken & aufjagen \\
+auflegen & auflesen & aufrauen & aufriss & aufruhr \\
+aufsagen & aufschub & aufstand & auftauen & auftrag
+\end{wzwanzig} 
+\begin{wzwanzig}
+auftritt & aufwind & augenlid & augsburg & augur \\
+august & aus & ausarten & ausatmen & ausdruck \\
+ausflug & ausfugen & ausgasen & ausgeber & ausguck \\
+aushaken & aushang & ausholen & ausklang & auskunft
+\end{wzwanzig}
+\begin{wzwanzig}
+auslegen & ausloben & ausnutzt & auspuff & ausroden \\
+ausrollt & ausrufer & aussage & aussagen & ausschau \\
+aussehen & ausser & ausstieg & austenit & austin \\
+austrag & austritt & ausueben & auswuchs & auszeit
+\end{wzwanzig} 
+\begin{wzwanzig}
+autobank & autocode & autohaus & autokino & automat \\
+autotyp & autsch & avisiert & axial & azalee \\
+azetat & azimut & azoren & azteke & azurit \\
+babylon & baccara & bacchus & bachufer & bacillus
+\end{wzwanzig}
+\begin{wzwanzig}
+backen & backform & backhaus & backzeit & bad \\
+badegast & badehose & badend & badenixe & badeoel \\
+badeofen & badeort & badesteg & badumbau & baeckt \\
+baehen & baendel & baendigt & baendsel & baff
+\end{wzwanzig} 
+\begin{wzwanzig}
+bagel & baggernd & baggert & bahamas & bahn \\
+bahrtuch & baiser & baisse & baissier & bake \\
+balaton & balearen & balg & balkan & balkon \\
+ball & balsam & baltisch & balzen & bambus
+\end{wzwanzig}
+\begin{wzwanzig}
+bandelfe & bandmass & bandpass & bandstab & bandung \\
+bang & bange & bangt & bankhaus & bannend \\
+barbados & barbar & barbarei & barbusig & barfuss \\
+bargeld & bariton & bark & baro & baroda
+\end{wzwanzig} 
+\begin{wzwanzig}
+baron & baronin & barreme & barrique & barsch \\
+bartalk & bartaxt & baryon & baryt & basal \\
+basel & basieren & bassist & bastelnd & bastille \\
+bathyal & baubahn & baubuero & bauen & baufeld
+\end{wzwanzig}
+\begin{wzwanzig}
+bauform & bauholz & baukalk & baukies & baulaerm \\
+bauland & baulaser & baulinie & baumarkt & baumasse \\
+baumeln & baumelnd & baumelte & baumhaus & baumlos \\
+baumsarg & baureihe & bauruine & bauschte & bauseil
+\end{wzwanzig} 
+\begin{wzwanzig}
+baustahl & baustein & baustoff & baute & bauteil \\
+bauzaun & bauzeit & beachtet & beamte & beanie \\
+beatmung & bebaubar & bebaut & bebaute & bebauung \\
+bechern & becircen & becirct & bedachen & bedachte
+\end{wzwanzig}
+\begin{wzwanzig}
+bedarf & bedauern & bedaure & bedient & bediente \\
+bedingen & bedrohen & bedruckt & bedurft & beduselt \\
+beehrend & beendet & beerdigt & befaehrt & befahl \\
+befallen & befasst & befiehlt & befleckt & befrager
+\end{wzwanzig} 
+\begin{wzwanzig}
+befreien & befuehlt & befuellt & befugt & befunden \\
+begabter & begabung & begatten & begeben & begegnen \\
+begehrte & begierde & begnadet & begossen & begreift \\
+begrub & beguss & behaart & behaebig & behaengt
+\end{wzwanzig}
+\begin{wzwanzig}
+behagend & behagt & behalten & behangen & beharrte \\
+behaucht & behauend & behaute & behebt & behelmt \\
+behext & behielt & behob & behoben & behutsam \\
+bei & beichten & beichtet & beides & beifall
+\end{wzwanzig} 
+\begin{wzwanzig}
+beifang & beifuss & beihoden & beilage & beileid \\
+beinahe & beinhaus & beinvene & beirat & beirren \\
+beirrte & beirut & beissend & beitel & beitritt \\
+beiwort & beizbad & beizt & bejahung & bejubelt
+\end{wzwanzig}
+\begin{wzwanzig}
+bekam & bekehren & bekehrte & beklagen & bekleben \\
+bekniend & bekommt & bekundet & belagern & belange \\
+belarus & belasten & belaubt & beleg & belegung \\
+belehrt & beleihen & belemnit & belgier & belize
+\end{wzwanzig} 
+\begin{wzwanzig}
+bellend & beller & belohnen & bemalt & bemannt \\
+bemass & bemerkt & bemerkte & bemisst & benannte \\
+benebeln & beneidet & benetzen & benin & benotung \\
+benthal & benutzen & benutzer & benziner & benzoe
+\end{wzwanzig}
+\newpage
+\stepcounter{wzweins}
+
+\begin{wzwanzig}
+bequem & berappt & berater & beratung & berauben \\
+beraubt & beredend & beredet & beregnen & bereich \\
+bereisen & bereiten & bereits & bereuen & bereuend \\
+bergbau & berge & bergen & bergend & berghang
+\end{wzwanzig} 
+\begin{wzwanzig}
+bergig & bergmann & beringen & bern & berrias \\
+bersten & beruehrt & beruf & berufend & beruft \\
+beruhend & beruht & besagen & besagte & besaitet \\
+besamend & besamt & besandet & besatz & besatzer
+\end{wzwanzig}
+\begin{wzwanzig}
+beschaut & bescheid & beschiss & beschlag & beschlug \\
+beschuss & beseelt & besetzt & besiegen & besieht \\
+besinnen & besoffen & besohlt & besoldet & besorgt \\
+beste & besteck & besteigt & bestes & bestickt
+\end{wzwanzig} 
+\begin{wzwanzig}
+bestwig & bestzeit & besucher & betaeubt & betagt \\
+betauen & beten & betende & beteuern & beteuert \\
+betoerte & betont & betonte & betraf & betrauen \\
+betreten & betreuer & betrieb & betrifft & betritt
+\end{wzwanzig}
+\begin{wzwanzig}
+betrogen & betruegt & bettelnd & bettend & bettete \\
+bettreif & bettsofa & bettzeug & betuermt & betulich \\
+betupft & beulen & beulend & beutel & beuteln \\
+bewachte & bewaehrt & bewahrer & bewaldet & bewegend
+\end{wzwanzig} 
+\begin{wzwanzig}
+bewegte & beweint & beweisen & bewerber & bewiesen \\
+bewirken & bewirten & bewoelkt & bewogen & bewohnen \\
+bewohnte & beworben & bezahlen & bezeigen & bezeugt \\
+bezieht & bezirzen & bezog & bhutan & bias
+\end{wzwanzig}
+\begin{wzwanzig}
+bibbern & bibberte & bidet & biegen & biegerei \\
+biegsam & biegt & biene & bier & bierbass \\
+bierchen & bierzelt & bieseln & bieselnd & biest \\
+bietend & bieter & bild & bildband & bildend
+\end{wzwanzig} 
+\begin{wzwanzig}
+bilder & bildete & bildfunk & bildhaft & bildnis \\
+biliaer & billig & billigen & billigte & bimbo \\
+bimmeln & bimmelte & bimsend & binaer & binden \\
+bindend & bindet & bindeton & bingo & binnen
+\end{wzwanzig}
+\begin{wzwanzig}
+biochip & biofilm & biologie & biomalz & bionisch \\
+biopace & bios & biotit & biowaffe & birkhuhn \\
+bis & bisam & bischof & bishkek & biskuit \\
+bismut & bistabil & bitmap & bitmodus & bitrate
+\end{wzwanzig} 
+\begin{wzwanzig}
+bittend & bittet & bitumen & bivariat & biwak \\
+blabla & blaehen & blaest & blamiert & blas \\
+blasen & blasiert & blasig & blasloch & blassuhu \\
+blastese & blauhelm & blausand & blechen & blechend
+\end{wzwanzig}
+\begin{wzwanzig}
+bleib & bleicher & bleiern & bleierz & bleiglas \\
+blende & blender & blendet & blendung & blick \\
+blickend & blind & blinde & blinken & blinkend \\
+blinzend & bloed & bloeder & bloeken & bloggen
+\end{wzwanzig} 
+\begin{wzwanzig}
+blonder & bloss & bluehte & bluffer & bluse \\
+blutarm & blutbild & blutet & blutgeld & blutspur \\
+bockbier & bocken & bockig & bodenart & boe \\
+boeiger & boerdeln & bogen & bogie & bohle
+\end{wzwanzig}
+\begin{wzwanzig}
+bohrend & bohrung & bolero & bolzen & bomhard \\
+bon & bonn & bonobo & bonsai & boom \\
+boomen & boot & booten & bootleg & bor \\
+boranate & borate & bordbuch & bordeaux & bordell
+\end{wzwanzig} 
+\begin{wzwanzig}
+bordgang & bordnetz & bordwand & borglas & borough \\
+borsalbe & borstig & boskop & bosporus & botanik \\
+bouldern & bovist & boxkampf & boxt & brabbeln \\
+brabbelt & brachte & braeunen & brandete & brandung
+\end{wzwanzig}
+\begin{wzwanzig}
+brannte & bratend & brauch & brauchen & braucht \\
+braue & brauend & brauerei & brauhaus & braunit \\
+braunrot & braust & brauste & braute & brav \\
+bravo & breakout & brechen & brechend & brechung
+\end{wzwanzig} 
+\begin{wzwanzig}
+breiiger & bremse & bremsen & bremser & bremsweg \\
+brennen & brennend & brenngas & brenngel & brett \\
+brettern & brie & brief & bries & brigade \\
+brigant & brillanz & bringend & bringer & brisant
+\end{wzwanzig}
+\begin{wzwanzig}
+brisbane & brokat & brokkoli & bronzit & brosame \\
+bruch & bruchbau & brucit & bruder & bruechig \\
+bruecke & brueden & bruegge & bruellen & bruellte \\
+bruenett & brummig & brunei & brut & brutei
+\end{wzwanzig} 
+\begin{wzwanzig}
+buccal & buchband & buchbar & buchend & buchgeld \\
+buchname & bucht & buchung & buckel & buckelig \\
+bucklig & budapest & buddeln & buddhist & bude \\
+buecken & bueffeln & buegelte & buendel & buendig
+\end{wzwanzig}
+\begin{wzwanzig}
+buerette & buergend & buero & bueroset & buerste \\
+buersten & buerzel & buessend & buette & buettel \\
+buffalo & buganker & bugkorb & bugleine & bugsiert \\
+buhen & buhmann & buhruf & buk & bulletin
+\end{wzwanzig} 
+\begin{wzwanzig}
+bumerang & bummelte & bump & bums & bund \\
+bunkernd & buntheit & burlesk & burleske & bursitis \\
+burundi & bus & bushmeat & buskarte & buslinie \\
+butter & buttern & butternd & bytownit & c
+\end{wzwanzig}
+\newpage
+\stepcounter{wzweins}
+
+\begin{wzwanzig}
+cabaza & caddie & caesium & cakewalk & calamin \\
+calcium & cali & calicut & callgirl & calypso \\
+canasta & cannabis & carbid & cardanol & cardiff \\
+carnotit & castries & catsuit & cayenne & cedille
+\end{wzwanzig} 
+\begin{wzwanzig}
+cerrusit & ces & ceses & cetaceen & chabasit \\
+changsha & chanukka & chaos & chariten & charmant \\
+chatten & chef & chemie & chemisch & chemnitz \\
+chemosis & chengdu & chennai & cherokee & chiasmus
+\end{wzwanzig}
+\begin{wzwanzig}
+chicoree & chilene & chili & chinon & chipsatz \\
+chlorend & chlort & choral & chorhemd & chronik \\
+cis & cisis & citrin & clogs & clown \\
+cobaltin & cobol & cochin & codec & codieren
+\end{wzwanzig} 
+\begin{wzwanzig}
+codiert & codierte & coenzym & coesit & collie \\
+colombo & columbit & computer & conakry & coniac \\
+cookeit & copyleft & coroner & cortine & cortisol \\
+cosinus & cosplay & couleur & coupe & covellin
+\end{wzwanzig}
+\begin{wzwanzig}
+cranium & crimpen & crimpend & crimpt & crinoid \\
+croupier & cuica & curling & curry & cursor \\
+cuticula & cutter & cyborg & cymoes & cystom \\
+dachhaut & dachlack & dachlos & dachluke & dachs
+\end{wzwanzig} 
+\begin{wzwanzig}
+dachsbau & dackel & daechte & daemon & daempfer \\
+daempft & dafuer & daher & daherum & damals \\
+damm & dammbau & dammfuss & dampfdom & dampfer \\
+dampfig & damwild & dan & danalith & danieder
+\end{wzwanzig}
+\begin{wzwanzig}
+dankend & dankt & dann & darauf & daraus \\
+darf & darin & das & dasberg & datei \\
+datenart & datenbus & dativ & datolith & dauert \\
+daune & davao & davor & dazu & debatte
+\end{wzwanzig} 
+\begin{wzwanzig}
+debil & debuet & decke & deckglas & deckte \\
+defensiv & deflator & dehnen & dehnend & deichbau \\
+deine & deixis & deka & dekade & dekadent \\
+dekanat & delikat & delirium & delle & delta
+\end{wzwanzig}
+\begin{wzwanzig}
+demagoge & dementia & demokrat & demoskop & demuetig \\
+demut & dendrit & denise & denkbar & denkfaul \\
+denkmale & dental & denver & deo & deponie \\
+deport & depot & der & derart & derartig
+\end{wzwanzig} 
+\begin{wzwanzig}
+derby & derselbe & derwisch & deses & designer \\
+deswegen & detektiv & deut & deutet & deutlich \\
+devisen & dezent & dezi & diabetes & diachron \\
+diakonat & diakonie & diallag & diamant & diaspora
+\end{wzwanzig}
+\begin{wzwanzig}
+diastem & dichotom & dichte & dichter & dichtete \\
+dickfilm & didaktik & diebisch & dielend & dienern \\
+dienst & diese & diesel & diesig & dieweil \\
+diffizil & digerati & digestiv & diktator & diktion
+\end{wzwanzig} 
+\begin{wzwanzig}
+dildo & diluvial & dimer & dimorph & dingend \\
+dingt & diode & dioezese & dioptrie & dioxin \\
+diplopie & dir & direkt & dirndl & dirne \\
+disis & diskus & disparat & distel & diurnus
+\end{wzwanzig}
+\begin{wzwanzig}
+diva & divalent & divers & dividend & dockend \\
+dodoma & doerrte & doge & dogma & doha \\
+dohle & doktrin & dokument & dolde & doline \\
+dollbord & dolmen & domartig & domherr & dominanz
+\end{wzwanzig} 
+\begin{wzwanzig}
+domizil & donau & donner & donnern & donnert \\
+doof & doofmann & dopamin & doping & doppler \\
+dorn & dorthin & dortig & dortmund & dose \\
+dosiert & dosierte & dotiert & dotter & downton
+\end{wzwanzig}
+\begin{wzwanzig}
+dozent & drachme & dragee & drahtig & drama \\
+drangsal & draussen & dreh & drehfest & drehort \\
+dreht & drehtuer & drehung & drehzahl & drei \\
+dreibein & dreifach & dreifuss & dreimal & dreirad
+\end{wzwanzig} 
+\begin{wzwanzig}
+dreisatz & dreister & dreizack & drell & drempel \\
+dresden & dressur & drift & drillich & drilling \\
+drillte & drillung & drinnen & dritte & dritteln \\
+drittens & dritter & droehnen & droge & drohte
+\end{wzwanzig}
+\begin{wzwanzig}
+drohung & dromedar & drosch & drosselt & druck \\
+druckt & druecker & drueckte & druide & drunten \\
+druse & du & dualist & dublin & ducken \\
+ducker & duckt & duckte & duebelnd & duebelte
+\end{wzwanzig} 
+\begin{wzwanzig}
+duellant & duempeln & duene & duenger & duengt \\
+duengte & duengung & duennst & duenung & dueppel \\
+duerfend & duerre & duersten & duestern & duft \\
+dufte & duftend & duisburg & dulden & duldet
+\end{wzwanzig}
+\begin{wzwanzig}
+duldsam & duldung & dummchen & dummkopf & dung \\
+dunkeln & durst & durstig & duschgel & duster \\
+dutt & dutzend & duzend & dvd & dyade \\
+dyadisch & dynastie & e & ebbdauer & ebbdelta
+\end{wzwanzig} 
+\begin{wzwanzig}
+eber & ebnen & ebnend & ebonit & echo \\
+echtheit & eckbank & eckig & eckiger & eckkreis \\
+eckzahn & edel & edelmann & edelmut & edieren \\
+edler & edwin & efeu & effektiv & efferent
+\end{wzwanzig}
+\newpage
+\stepcounter{wzweins}
+
+\begin{wzwanzig}
+effusiv & egal & eggen & eggend & egoist \\
+egomanie & ehekrach & ehepaar & ehestand & ehrbarer \\
+ehrend & ehrenlos & ehrentor & ehrlich & eiablage \\
+eibe & eibisch & eichen & eichend & eichgas
+\end{wzwanzig} 
+\begin{wzwanzig}
+eichte & eidbruch & eier & eiern & eiernd \\
+eifer & eifert & eifrig & eigenes & eilbote \\
+eilbrief & eileiter & eilend & eilig & eiliger \\
+eilpaket & eilte & eilzug & eimer & einarmig
+\end{wzwanzig}
+\begin{wzwanzig}
+einbruch & einbusse & eindosen & einebnen & einfuhr \\
+eingangs & eingriff & einhaken & einhauen & einheit \\
+einhorn & einigend & einklang & einkorn & einladen \\
+einlass & einlesen & einoede & einriss & eins
+\end{wzwanzig} 
+\begin{wzwanzig}
+einsamer & einsatz & einstand & einstig & einueben \\
+einwaage & einwand & einzige & einzug & eisbaer \\
+eisbein & eisberg & eischnee & eisdicke & eisdiele \\
+eisen & eisenerz & eisente & eisfrei & eisig
+\end{wzwanzig}
+\begin{wzwanzig}
+eisstock & eistee & eisvogel & eitern & eiterung \\
+eitler & eitrig & eitriger & ekeln & eklat \\
+eklig & eklogit & eladur & elan & elastan \\
+elbtal & elch & elegisch & elektrik & elektron
+\end{wzwanzig} 
+\begin{wzwanzig}
+elend & elf & elfe & elfte & elidiert \\
+elitaer & elite & eloquent & elter & eluvial \\
+eluvium & embolie & emers & emetikum & emigrant \\
+emittent & emnie & emoticon & empfahl & empfing
+\end{wzwanzig}
+\begin{wzwanzig}
+empor & ems & enanthem & enargit & endend \\
+endet & endigen & endigend & endlage & endlinie \\
+endobox & endothel & endpunkt & endrunde & endstufe \\
+endsumme & endteufe & endura & endwert & endzeit
+\end{wzwanzig} 
+\begin{wzwanzig}
+enge & enkel & enormer & enstatit & entartet \\
+entband & entbehrt & entdeckt & enteisen & enteist \\
+entenwal & entfernt & entformt & entgeht & entheben \\
+enthebt & enthoben & entkalkt & entkernt & entkommt
+\end{wzwanzig}
+\begin{wzwanzig}
+entleert & entlehnt & entmannt & entnervt & entnimmt \\
+entoderm & entpackt & entrusst & entsalzt & entseelt \\
+entsetzt & entsteht & entwarf & entwich & entzug \\
+ephitese & epiphora & episch & episode & epitaxie
+\end{wzwanzig} 
+\begin{wzwanzig}
+epoche & eponym & erahnen & erbat & erbauend \\
+erbauer & erbaute & erbend & erbeutet & erbfolge \\
+erbium & erblickt & erbmasse & erbost & erboste \\
+erbrach & erbricht & erbte & erbteil & erdachte
+\end{wzwanzig}
+\begin{wzwanzig}
+erdbau & erddamm & erddruck & erden & erdenken \\
+erdfall & erdig & erdkern & erdkugel & erdnah \\
+erdsieb & erdstoss & erdwall & erdwerk & ereignen \\
+erektil & erfand & erfassen & erfasste & erfindet
+\end{wzwanzig} 
+\begin{wzwanzig}
+erfolg & erfolgt & erfragen & erfragt & erfreut \\
+erfriert & erfroren & erfuhr & erfurt & ergangen \\
+ergebend & ergebung & ergehen & erglueht & ergraut \\
+ergriff & erhaelt & erhaengt & erheben & erhebend
+\end{wzwanzig}
+\begin{wzwanzig}
+erhoehen & erhoeht & erhoehte & erhofft & erhoffte \\
+erholend & erholsam & erholung & erinnern & eritrea \\
+eriwan & erkannt & erkannte & erkaufen & erkennt \\
+erker & erklaert & erklimmt & erklomm & erkrankt
+\end{wzwanzig} 
+\begin{wzwanzig}
+erkundet & erlag & erlahmte & erlangt & erlauben \\
+erleben & erlebend & erlebte & erledigt & erlernen \\
+erlitt & erlitten & erlosch & ermorden & ermuedet \\
+ermutigt & erneuert & erneut & ernte & erntend
+\end{wzwanzig}
+\begin{wzwanzig}
+erntet & erobernd & erodirt & erogen & erotisch \\
+erproben & errang & erraten & erregbar & erregen \\
+erregend & erregte & erretten & erroeten & errungen \\
+ersann & ersaufen & ersehen & ersehnen & ersehnt
+\end{wzwanzig} 
+\begin{wzwanzig}
+ersehnte & ersinnt & erst & erstach & erstarrt \\
+erstens & erster & erstere & ersticht & erstickt \\
+erstkauf & erstmals & ersucht & erteilen & erteilte \\
+ertoenen & ertoente & ertrug & eruieren & erwaegen
+\end{wzwanzig}
+\begin{wzwanzig}
+erwaehnt & erwarten & erwartet & erwecken & erweckt \\
+erwerben & erworben & erzeugt & erzfeind & erzgang \\
+erzieher & erzieht & erzielt & erzog & erzuernt \\
+esche & esfahan & eskariol & eskarpe & espe
+\end{wzwanzig} 
+\begin{wzwanzig}
+essbar & esssucht & este & etage & etappe \\
+etat & eternit & ethanol & ethernet & ethisch \\
+ethologe & etikett & etliche & etwa & etwaig \\
+euklas & eunuch & euphorie & eurasien & eurocent
+\end{wzwanzig}
+\begin{wzwanzig}
+europid & eurozone & euxenit & evoziert & ewig \\
+exakt & exanthem & exegese & exergon & exkurs \\
+exogen & exoten & expander & experte & exquisit \\
+externe & extruder & exuvie & exzess & exzessiv
+\end{wzwanzig} 
+\begin{wzwanzig}
+exzision & fabrikat & facharzt & fachen & fachkurs \\
+fachlich & fachtext & fachwand & fachwelt & fad \\
+faecheln & faechelt & faecher & faehre & faehrt \\
+faehrte & faelle & faellig & faellte & faerben
+\end{wzwanzig}
+\newpage
+\stepcounter{wzweins}
+
+\begin{wzwanzig}
+faerbte & faeulnis & fafner & fahler & fahnden \\
+fahndung & fahrgeld & fahrig & fahrsilo & fahrweg \\
+fairplay & fakten & faktor & faktotum & falafel \\
+fallbaer & fallen & falls & falltor & fallzahl
+\end{wzwanzig} 
+\begin{wzwanzig}
+falsch & faltdach & falte & faltung & falzend \\
+falzt & famoser & famulus & fan & fangdamm \\
+fangen & fangzahn & fanklub & fantast & farbbad \\
+farbbild & farbige & farthing & fasan & faschine
+\end{wzwanzig}
+\begin{wzwanzig}
+fase & faser & fass & fassade & fassbar \\
+fassen & fassend & fasslich & fassung & fasten \\
+fastend & fastfood & faszikel & fataler & fauchen \\
+faul & faulen & faulgas & faulpelz & faust
+\end{wzwanzig} 
+\begin{wzwanzig}
+fausten & fauvist & fauxpas & favorit & faxabruf \\
+faxe & fechter & fechtet & federnd & feenhaft \\
+fehlbar & fehlen & fehler & feiernd & feiert \\
+feierte & feigling & feile & feilend & feilscht
+\end{wzwanzig}
+\begin{wzwanzig}
+feilte & feinkorn & feinsitz & feld & feldbett \\
+feldbus & feldmaus & felsig & felsiger & felswand \\
+fenchel & fender & fermion & fernfeld & fernrohr \\
+ferrit & feses & fessel & fest & festakt
+\end{wzwanzig} 
+\begin{wzwanzig}
+festgast & festigt & festigte & festland & festnetz \\
+festrede & festsaal & festung & fetal & feten \\
+fettend & fettfang & fettherz & fettig & fettnetz \\
+fetzend & feuer & feuermal & feuerrad & feuerrot
+\end{wzwanzig}
+\begin{wzwanzig}
+feuerung & fez & fick & fiebert & fiebrig \\
+fiepsend & fieren & fiesling & filiale & filmdiva \\
+filmisch & filter & filternd & filzend & filzlaus \\
+fimmel & finale & findling & fing & finit
+\end{wzwanzig} 
+\begin{wzwanzig}
+fink & finnisch & finschia & finster & finte \\
+firma & firmiert & fischart & fischend & fisis \\
+fiskus & fistel & fittich & fixen & fixend \\
+fixierte & fixt & fixte & fjell & fjord
+\end{wzwanzig}
+\begin{wzwanzig}
+flacher & flachsen & flackern & flaeche & flaedle \\
+flag & flair & flak & flakon & flammen \\
+flammeri & flandern & flanke & flaum & flaumig \\
+flausen & flechtet & fleckig & fleht & flehte
+\end{wzwanzig} 
+\begin{wzwanzig}
+fleisch & fleiss & fleissig & flennt & flennte \\
+fletscht & flexaton & flexibel & flickend & fliege \\
+fliegt & fliehen & fliehend & flieste & flimmern \\
+flimmert & flirrt & flirtend & flitzen & flitzer
+\end{wzwanzig}
+\begin{wzwanzig}
+flitzte & flocht & floete & floetet & floetist \\
+flop & flora & florenz & florett & floss \\
+flucher & fluege & fluegge & flugbahn & fluglage \\
+flugplan & flugrost & flugzeit & fluken & flunkert
+\end{wzwanzig} 
+\begin{wzwanzig}
+fluor & flur & fluse & flussbau & flusstal \\
+fluten & flutscht & fock & fockmast & fockrahe \\
+foehn & foehnte & foenen & fokal & folgern \\
+folgert & folgsam & folter & foltern & folterte
+\end{wzwanzig}
+\begin{wzwanzig}
+fondue & fontaene & foppen & foppt & forciert \\
+form & formal & formell & formerei & formlos \\
+formsand & formte & forscht & forstamt & fort \\
+forum & fossula & fotogen & fotograf & fotze
+\end{wzwanzig} 
+\begin{wzwanzig}
+foxweber & fracht & fraesen & fraesend & fraest \\
+frager & fraglos & fragte & fraktal & franzose \\
+frappant & fratze & frech & freetown & freeware \\
+fregatte & frei & freibier & freien & freier
+\end{wzwanzig}
+\begin{wzwanzig}
+freiflug & freigabe & freigang & freigold & freilich \\
+freiwurf & freizeit & freizone & fremd & fremde \\
+frequenz & fresser & freude & freudig & frevel \\
+frevelt & friedlos & frierend & friert & friese
+\end{wzwanzig} 
+\begin{wzwanzig}
+frigide & frisch & frische & frisoer & friss \\
+fristen & fritiert & frivol & frohsinn & front \\
+frontal & frottee & frueh & frueher & fruehzug \\
+frugaler & fuchsbau & fuchtig & fuegt & fuegung
+\end{wzwanzig}
+\begin{wzwanzig}
+fuehlbar & fuehlen & fuehler & fuehrte & fuelle \\
+fueller & fuellte & fuellung & fuenf & fuenfte \\
+fuenfter & fuenftes & fuerbass & fuerwahr & fugend \\
+fuhrmann & fulleren & fummelig & fummelnd & fund
+\end{wzwanzig} 
+\begin{wzwanzig}
+fundus & funkbake & funkelt & funknetz & funky \\
+furche & furcht & furt & furzt & furzte \\
+fuss & fussball & fussbett & fusselig & fusseln \\
+fussnote & fusspilz & fussreif & fussspur & fussvolk
+\end{wzwanzig}
+\begin{wzwanzig}
+futon & fuzzy & gab & gabel & gabeln \\
+gabelung & gackernd & gackert & gaehnen & gaenge \\
+gaengeln & gaerbar & gaerend & gaerrest & gaertner \\
+gaerung & gaffend & gahnit & galaxie & gallisch
+\end{wzwanzig} 
+\begin{wzwanzig}
+gallone & galmei & galopp & gamasche & gambia \\
+gameport & gamma & gammelei & gammelig & gammeln \\
+gammelnd & gangbild & gangzahl & gans & ganz \\
+ganzer & ganzzahl & garantie & garnele & garstig
+\end{wzwanzig}
+\newpage
+\stepcounter{wzweins}
+
+\begin{wzwanzig}
+garte & gasbeton & gashahn & gaskappe & gasse \\
+gastiert & gastmahl & gatte & gattin & gaudi \\
+gaul & gaumen & gauner & gaunerei & gaylord \\
+gazelle & geadelt & geaeder & geaetzt & geahndet
+\end{wzwanzig} 
+\begin{wzwanzig}
+gealbert & gealtert & geangelt & geankert & geatmet \\
+gebacken & gebaerde & gebaeude & geballt & gebangt \\
+gebaren & gebatikt & gebellt & geber & gebetet \\
+gebeugt & gebeult & gebier & gebiet & gebieten
+\end{wzwanzig}
+\begin{wzwanzig}
+gebieter & gebildet & gebirge & gebissen & geblaese \\
+geblecht & geblinzt & geblitzt & gebluet & gebongt \\
+geboren & geborgt & gebraeu & gebrannt & gebraten \\
+gebruell & gebueckt & gebuehr & gebuergt & gebuesst
+\end{wzwanzig} 
+\begin{wzwanzig}
+gebuht & gecuttet & gedanken & gedeck & gedeih \\
+gedeihen & gedeiht & gedicht & gedockt & gedoerrt \\
+gedreht & geduckt & geduftet & geduld & gedurft \\
+geebnet & geeggt & geeifert & geeilt & geendt
+\end{wzwanzig}
+\begin{wzwanzig}
+gefallen & gefangen & gefaselt & gefasst & gefaucht \\
+gefegt & gefettet & gefilzt & gefischt & gefixt \\
+gefliest & geflitzt & geflohen & geflutet & gefoppt \\
+gefreit & gefreut & gefroent & gefroren & gefuege
+\end{wzwanzig} 
+\begin{wzwanzig}
+gefuegt & gefugt & gefunkt & gegaert & gegafft \\
+gegangen & gegeben & gegeigt & gegenpol & gegenzug \\
+gegiert & gegrast & gegrillt & gehakt & gehalst \\
+gehangen & geharzt & gehasst & gehastet & gehaust
+\end{wzwanzig}
+\begin{wzwanzig}
+geheftet & gehege & gehegt & geheim & geheimer \\
+geherzt & gehetzt & geheul & geheult & gehievt \\
+gehisst & gehoben & gehockt & gehoehnt & gehoelz \\
+gehoeren & gehopft & gehorcht & gehortet & gehuellt
+\end{wzwanzig} 
+\begin{wzwanzig}
+gehupt & gehurt & gehweg & geifer & geifert \\
+geil & geiler & geimpft & geisselt & geiz \\
+geizen & geizend & geizig & geizten & gejagt \\
+gejapst & gejodelt & gejuchzt & gejuxt & gekalkt
+\end{wzwanzig}
+\begin{wzwanzig}
+gekannt & gekapert & gekiekt & geklaeff & geklappt \\
+geklebt & geklumpt & geknapst & geknarrt & geknetet \\
+gekniet & geknufft & gekonnt & gekoren & gekost \\
+gekostet & gekotzt & gekramt & gekreuzt & gekrimpt
+\end{wzwanzig} 
+\begin{wzwanzig}
+gekuckt & gekuerzt & gekuesst & gelaber & gelabt \\
+geladen & gelage & gelagert & gelandet & gelandt \\
+gelass & gelastet & gelbkauz & geldgier & geldkurs \\
+geleast & gelechzt & geleckt & gelenk & gelenkt
+\end{wzwanzig}
+\begin{wzwanzig}
+geliebte & geliert & gelierte & gelind & gelistet \\
+gellend & gelobbt & gelobend & gelocht & gelockt \\
+gelodert & geloehnt & gelost & gelotet & gelotst \\
+gelten & geltung & gelungen & gelyncht & gemaeht
+\end{wzwanzig} 
+\begin{wzwanzig}
+gemaelde & gemaess & gemampft & gemartet & gemasert \\
+gemaunzt & gemelkt & gemieden & gemietet & gemimt \\
+gemisch & gemisst & gemocht & gemogelt & gemolken \\
+gemotzt & gemuenzt & gemuese & gemuet & gemundet
+\end{wzwanzig}
+\begin{wzwanzig}
+gemusst & gen & genaeht & genannt & genau \\
+gendarm & geneidet & geneigt & generft & generoes \\
+genesen & genesend & genetzt & genickt & genital \\
+genius & genkarte & genom & genort & genosse
+\end{wzwanzig} 
+\begin{wzwanzig}
+genpool & genre & genua & genuege & genuetzt \\
+genutet & geoelt & geopfert & geordie & george \\
+geortet & geotop & geoutet & gepaart & gepaukt \\
+gepaust & gepellt & gepennt & gepflegt & gepiept
+\end{wzwanzig}
+\begin{wzwanzig}
+gepisst & gepocht & gepolter & gepraegt & geprallt \\
+geprangt & geprasst & gepufft & gequaelt & gequake \\
+gequalmt & gequiekt & gequirlt & gerade & geradelt \\
+geraet & geragt & gerahmt & gerassel & geraubt
+\end{wzwanzig} 
+\begin{wzwanzig}
+gerauft & gerecht & geredet & gerefft & gereimt \\
+gereist & gerettet & gericht & gerieben & gerinnt \\
+gerissen & geritzt & gern & gerne & gerodelt \\
+geroetet & geroutet & geruecht & geruht & geruhte
+\end{wzwanzig}
+\begin{wzwanzig}
+gerundet & gesaet & gesaeumt & gesalzt & gesandet \\
+gesandt & gesandte & gesaugt & gesaust & geschirr \\
+geschoss & gesegnet & geseicht & geseiht & geselle \\
+gesenk & gesenkt & gesiegt & gesinde & gesoeff
+\end{wzwanzig} 
+\begin{wzwanzig}
+gesonnen & gesonnt & gesorgt & gesotten & gespasst \\
+gesperrt & gespickt & gespuckt & gespuert & gespult \\
+gestanzt & gestapft & gestarrt & gestaut & geste \\
+gesteift & gestell & gestellt & gestelzt & gestik
+\end{wzwanzig}
+\begin{wzwanzig}
+gestreng & gesunden & gesunken & gesuzelt & getagt \\
+getakelt & getanzt & getappt & getastet & getaucht \\
+getauft & getaut & geteert & getextet & getoese \\
+getrabt & getraenk & getragen & getrapst & getraut
+\end{wzwanzig} 
+\begin{wzwanzig}
+getreue & getriezt & getropft & getruebt & getue \\
+getunkt & geturnt & gewaechs & gewaehr & gewaermt \\
+gewagt & gewagter & gewagtes & gewahrt & gewandt \\
+gewann & gewarnt & gewebe & gewendet & gewettet
+\end{wzwanzig}
+\newpage
+\stepcounter{wzweins}
+
+\begin{wzwanzig}
+gewichen & gewieft & gewiegt & gewinde & gewinn \\
+gewinnen & gewippt & gewirkt & gewirr & gewitzt \\
+gewoben & gewoehnt & gewoelbe & gewoelle & gewogt \\
+gewonnen & gewuerz & gewuerzt & gewunden & gezaehnt
+\end{wzwanzig} 
+\begin{wzwanzig}
+gezahlt & gezaust & gezehrt & gezeigt & gezerrt \\
+gezeter & geziemt & geziert & gezischt & gezwickt \\
+gibbsit & gibt & gieblig & gierend & gieriger \\
+giesser & gift & giften & giftpilz & giga
+\end{wzwanzig}
+\begin{wzwanzig}
+gilling & gimpe & ging & gingham & gipfelnd \\
+gipfelte & gipsbrei & gipsen & gipser & gipshut \\
+gischt & gisis & gissend & gitter & gladiole \\
+glaenzen & glaenzte & glaesern & glaette & glaetten
+\end{wzwanzig} 
+\begin{wzwanzig}
+glaeubig & glashaus & glasig & glasrand & glasrohr \\
+glasrose & glauben & glaubend & glaubte & gleiche \\
+gleichen & gleicht & gleis & gleissen & gleitweg \\
+gliedern & gliedert & glimmte & glossar & glotzend
+\end{wzwanzig}
+\begin{wzwanzig}
+glotzer & gltzern & glucin & gluckend & gluckert \\
+gluckste & gluecken & glukose & glut & glycin \\
+gnu & godthab & goenner & goethit & goi \\
+goldgelb & goldig & goldkurs & goldrand & golf
+\end{wzwanzig} 
+\begin{wzwanzig}
+golgatha & gon & gondel & gondwana & gong \\
+googeln & googol & gorgone & goss & gote \\
+gotisch & gottheit & gouache & grabend & grabscht \\
+grad & gradient & graeber & graemend & graeuel
+\end{wzwanzig}
+\begin{wzwanzig}
+graf & graffiti & granit & grantig & grapen \\
+graph & grapscht & grasdach & grasend & grat \\
+gratweg & grau & graubaer & grauen & grauend \\
+graugans & graupe & graupeln & grausam & grausend
+\end{wzwanzig} 
+\begin{wzwanzig}
+gravur & greifarm & greifbar & greifend & greifer \\
+greifzug & greis & greisen & grell & gremium \\
+grenada & grenze & grenzend & grenzt & griebe \\
+grieche & griesse & griff & griffig & grimasse
+\end{wzwanzig}
+\begin{wzwanzig}
+grimm & grinst & grinste & grips & grobian \\
+grobsand & groeber & groelt & groesse & groesst \\
+groesste & groll & grollend & gros & grossmut \\
+groteske & grub & grubber & grube & gruebeln
+\end{wzwanzig} 
+\begin{wzwanzig}
+gruenend & gruessen & gruesst & grufti & grundbau \\
+grundton & grundzug & grunge & grunzen & grunzte \\
+gruselig & gruselnd & grusslos & guano & gucken \\
+guckend & guckloch & guckt & guckte & gueltig
+\end{wzwanzig}
+\begin{wzwanzig}
+guerilla & guertel & guertend & guineer & guiyang \\
+gulasch & gulli & gurren & gurtsatz & gurtstab \\
+guss & gussform & gussteil & guthaben & gutpunkt \\
+gutshaus & guttural & h & haar & haarband
+\end{wzwanzig} 
+\begin{wzwanzig}
+haargel & haarig & haariger & haarkies & haarlos \\
+haarmode & haarnetz & haarreif & haarsieb & haarwild \\
+haarwurm & haben & hackbeil & hacken & hackte \\
+hadernd & hadron & haeher & haekelnd & haemmert
+\end{wzwanzig}
+\begin{wzwanzig}
+haengen & haeresie & haerten & haerter & haertete \\
+haesin & haeufen & haeufig & haeufung & haeutend \\
+haeutet & haeutete & haeutig & haeutung & hafen \\
+haff & hafnerei & haft & haftbar & haftmine
+\end{wzwanzig} 
+\begin{wzwanzig}
+hagedorn & hagelnd & hagen & hager & hagerer \\
+haggis & haibarbe & hakend & halb & halbaffe \\
+halbbyte & halber & halbiert & halbmast & halbraum \\
+halbrund & halbwelt & halbwort & halfter & halftern
+\end{wzwanzig}
+\begin{wzwanzig}
+halligen & hals & halsader & halsend & halsig \\
+halter & hamburg & handbuch & handeln & handfest \\
+handkuss & handlich & hanf & hang & hanglage \\
+hangzhou & hanseat & hantiert & haploid & harare
+\end{wzwanzig} 
+\begin{wzwanzig}
+harfe & harkend & harkt & harkte & harmlos \\
+harmonie & harpyie & hartholz & hartzinn & harvard \\
+harz & harzoel & haschend & hascht & haspe \\
+haspeln & hass & hasten & hastiger & hatschi
+\end{wzwanzig}
+\begin{wzwanzig}
+hattrick & haubitze & hauchen & haufen & hauklotz \\
+haus & hausarzt & hausbar & hausgast & hausgott \\
+haushuhn & hausrat & haustier & hauswirt & haut \\
+hautleim & hauttyp & haxe & he & hebamme
+\end{wzwanzig} 
+\begin{wzwanzig}
+hebelnd & heben & hebend & hebezug & hebt \\
+hebung & hechelnd & hecht & hechten & heck \\
+hefe & hefiger & heftet & heftig & hehlen \\
+hehler & heide & heilen & heilig & heiliger
+\end{wzwanzig}
+\begin{wzwanzig}
+heiligt & heillos & heilt & heimat & heimchen \\
+heimelig & heimisch & heimsieg & heiraten & heischen \\
+heisser & heiter & heizbar & heizer & heizform \\
+heizstab & heizte & heizwert & held & helfer
+\end{wzwanzig} 
+\begin{wzwanzig}
+hell & hellblau & hellgrau & hellrot & helm \\
+helvet & hemiole & hemmen & henna & heraldik \\
+heraus & herb & herbheit & herbsten & hercynit \\
+herd & herfahrt & herrisch & herrlich & herz
+\end{wzwanzig}
+\newpage
+\stepcounter{wzweins}
+
+\begin{wzwanzig}
+herzen & herzhaft & herzig & herzog & heses \\
+hessisch & hessit & hettang & hetzerei & heu \\
+heuboden & heuchler & heurig & heuwiese & hexaeder \\
+hiatus & hickory & hiddenit & hieraus & hierbei
+\end{wzwanzig} 
+\begin{wzwanzig}
+hierfuer & hiervon & hierzu & hiesig & high \\
+hihi & hilfe & hindi & hindu & hindurch \\
+hinein & hinfahrt & hinflug & hinfort & hing \\
+hinhauen & hinken & hinkend & hinknien & hinlegen
+\end{wzwanzig}
+\begin{wzwanzig}
+hinrunde & hinsicht & hinspiel & hinten & hinter \\
+hintere & hinterer & hirnholz & hirsch & hirse \\
+hirt & hissend & hisste & histidin & hitze \\
+hoatzin & hobbock & hobby & hobeln & hobelte
+\end{wzwanzig} 
+\begin{wzwanzig}
+hochbahn & hochbau & hochhaus & hochkant & hochland \\
+hochmut & hochofen & hochrad & hochrein & hochruf \\
+hochsitz & hochtour & hocker & hockte & hoden \\
+hoeffig & hoehe & hoehere & hoehnt & hoehnte
+\end{wzwanzig}
+\begin{wzwanzig}
+hoelzern & hoeret & hoeschen & hof & hoffart \\
+hoffend & hoffnung & hoheit & hohlheit & hohlmass \\
+hohlnaht & hohlniet & hohltier & hohlwand & holen \\
+holland & holm & holmium & holonom & holperig
+\end{wzwanzig} 
+\begin{wzwanzig}
+holt & holzart & holzig & holzkeil & hominid \\
+homophob & honahle & honduras & honiara & honoel \\
+honstein & horcher & horizont & hormonal & horn \\
+hornhaut & hornig & horoskop & horrend & horst
+\end{wzwanzig}
+\begin{wzwanzig}
+hort & horten & hortete & hose & hospital \\
+host & hostess & hotel & hotfix & hubmotor \\
+hubwagen & hubwerk & huebsch & huelle & huellen \\
+huellend & huelse & huelsig & huendin & huepfend
+\end{wzwanzig} 
+\begin{wzwanzig}
+hueten & huetend & huetet & huetete & huf \\
+huftier & huka & huker & huld & huldigt \\
+huldigte & humit & hummel & hummer & humor \\
+humoral & humorist & humorlos & humpelnd & humpen
+\end{wzwanzig}
+\begin{wzwanzig}
+hundebox & hundshai & hungern & hungernd & hungert \\
+hupen & hupt & hure & huren & hurend \\
+hurerei & hurtiger & huschend & hustend & hutkopf \\
+hyaene & hybrid & hymnisch & hypoderm & hypoid
+\end{wzwanzig} 
+\begin{wzwanzig}
+hypoton & idealtyp & ideell & ident & idiotie \\
+idokras & idol & idylle & ihr & iiwi \\
+illegal & illinois & illusion & image & imbiss \\
+imitator & immerzu & impfarzt & impfend & impfrate
+\end{wzwanzig}
+\begin{wzwanzig}
+imposant & impuls & inaktiv & inbrunst & inder \\
+indianer & indigo & indirekt & infarkt & inferno \\
+influenz & infolge & infrarot & inguinal & inhaber \\
+initiale & injektiv & inkohlen & inkreis & inland
+\end{wzwanzig} 
+\begin{wzwanzig}
+inlinen & innenohr & innerer & innerst & innung \\
+insekt & inserent & insomnie & instabil & instand \\
+instanz & instinkt & institut & insular & intakter \\
+intensiv & internet & intifada & intim & intus
+\end{wzwanzig}
+\begin{wzwanzig}
+inuit & iota & iowa & iran & irgend \\
+irin & irland & irrend & irrfahrt & irrig \\
+irrsinn & irrt & irrte & irrtum & irrwisch \\
+isfahan & isobar & isobare & isochore & isochrom
+\end{wzwanzig} 
+\begin{wzwanzig}
+isoliert & isomatte & isomorph & isopache & isotyp \\
+istmenge & istzeit & ivorisch & jaeh & jaehzorn \\
+jaetete & jagdhaus & jagdhund & jagdwild & jagend \\
+jagt & jagte & jaguar & jahr & jahrgang
+\end{wzwanzig}
+\begin{wzwanzig}
+jalapeno & jalousie & jambisch & jammer & jammerte \\
+jaspopal & jault & javafarn & jawort & jazz \\
+jede & jeder & jedes & jemals & jemen \\
+jenes & jesaja & jesiden & jesus & jiddisch
+\end{wzwanzig} 
+\begin{wzwanzig}
+jig & jive & jobben & joch & jochbein \\
+jodeln & jodler & jodsalz & joggen & joggend \\
+jogger & jogging & johlend & joker & jotnium \\
+journal & joystick & jubelt & jubelte & juchzend
+\end{wzwanzig}
+\begin{wzwanzig}
+jucken & juckend & juckig & juckreiz & juckte \\
+judo & juengste & julienne & jumper & jung \\
+junior & junko & junta & jurist & juso \\
+jute & jux & juxend & kabarett & kabbeln
+\end{wzwanzig} 
+\begin{wzwanzig}
+kabeljau & kabeln & kabeltau & kabine & kabotage \\
+kabul & kaelter & kaeme & kaemmte & kaempfer \\
+kaernten & kagu & kahler & kai & kainit \\
+kaiserin & kaka & kakapo & kalben & kalette
+\end{wzwanzig}
+\begin{wzwanzig}
+kalif & kalk & kalkerde & kalkig & kalkspat \\
+kalktuff & kalme & kalt & kaltdach & kamazit \\
+kamel & kamelkuh & kamille & kamin & kamm \\
+kammer & kammgarn & kammrad & kampfgas & kanada
+\end{wzwanzig} 
+\begin{wzwanzig}
+kanadier & kandare & kandiert & kandis & kanister \\
+kann & kanonade & kanonier & kantate & kanternd \\
+kantet & kanton & kanu & kaolin & kap \\
+kapaun & kapella & kapern & kapernd & kapgeier
+\end{wzwanzig}
+\newpage
+\stepcounter{wzweins}
+
+\begin{wzwanzig}
+kapieren & kapiert & kapierte & kapillar & kapitaen \\
+kapital & kapkauz & kapmeise & kapok & kappe \\
+kappend & kappt & kappte & kaprice & kapring \\
+kapseln & kapselnd & kaptriel & kapuhu & karaffe
+\end{wzwanzig} 
+\begin{wzwanzig}
+karasee & karat & karbid & karbol & karbonit \\
+karditis & karelien & karger & karibu & kariert \\
+karma & karn & karnies & karpfen & karre \\
+karst & karte & karzinom & kasack & kasan
+\end{wzwanzig}
+\begin{wzwanzig}
+kasbah & kaschmir & kasper & kasse & kassette \\
+kassiert & kassler & kastanie & kasten & kasuar \\
+katarakt & katarrh & kate & katheder & katheter \\
+katholik & kattun & katze & kaudern & kauderte
+\end{wzwanzig} 
+\begin{wzwanzig}
+kaue & kauende & kauender & kauernd & kauerte \\
+kaufen & kauffrau & kaufte & kaufwert & kaum \\
+kaustik & kautabak & kaviar & kegeln & kegelnd \\
+kegelrad & kehle & kehlend & kehliger & kehlkopf
+\end{wzwanzig}
+\begin{wzwanzig}
+kehllaut & kehren & kehrend & kehricht & kehrt \\
+kehrwert & keifen & keifend & keift & keil \\
+keilen & keimen & keimhaft & keimling & keimt \\
+keinmal & kelle & kellerei & kellner & keloid
+\end{wzwanzig} 
+\begin{wzwanzig}
+kelpgans & kenia & kennfeld & kennung & kennwort \\
+kentern & keratose & kerker & kerl & kerniger \\
+kernrohr & kerosin & kesser & ketchup & kette \\
+ketzer & ketzerei & keuchend & keuchte & keuchtet
+\end{wzwanzig}
+\begin{wzwanzig}
+keuper & khartum & khulna & kiefer & kiekend \\
+kiekt & kieme & kiesbank & kiesbett & kieserit \\
+kiessand & kieswerk & kiez & kiffen & kigali \\
+kilobaud & kimme & kinase & kindlich & kinese
+\end{wzwanzig} 
+\begin{wzwanzig}
+kinn & kinnbart & kinshasa & kiosk & kippend \\
+kippte & kippzeit & kirchhof & kirchner & kirgise \\
+kissen & kistchen & kiste & kittel & kitten \\
+kittet & kitz & kitzel & kitzelt & kiwi
+\end{wzwanzig}
+\begin{wzwanzig}
+kladde & klade & klaefft & klaeffte & klaergas \\
+klagbar & klagt & klammer & klammern & klammert \\
+klamotte & klampe & klang & klappbar & klappe \\
+klappend & klappern & klappert & klaps & klarglas
+\end{wzwanzig} 
+\begin{wzwanzig}
+klartext & klassik & klatsch & klatsche & klauben \\
+klaue & klauen & klauend & klause & klausur \\
+klaut & klavier & klebband & klebend & klebreis \\
+klebt & klebte & klecks & kleider & kleidet
+\end{wzwanzig}
+\begin{wzwanzig}
+kleidung & kleiner & klemmt & klerikal & klerus \\
+klickte & klimmend & klimmte & klinge & klingel \\
+klinikum & klinisch & klinke & klippe & klipper \\
+klirren & klischee & kloent & kloeppel & klomm
+\end{wzwanzig} 
+\begin{wzwanzig}
+klopfer & klopfte & kloster & klueger & kluft \\
+klumpte & knacker & knaeul & knallen & knallrot \\
+knappe & knapsen & knarren & knarrt & knarzen \\
+knattern & knattert & knauf & knausrig & knebelit
+\end{wzwanzig}
+\begin{wzwanzig}
+kneift & kneten & knetend & knetet & knick \\
+knickend & kniefall & knien & kniend & knietief \\
+knirps & knistern & knobelnd & knobelt & knobelte \\
+knochen & knolle & knollig & knopf & knorpel
+\end{wzwanzig} 
+\begin{wzwanzig}
+knorren & knospe & knoten & knotet & knueller \\
+knuettel & knuffen & knuffend & knufft & knutt \\
+koala & koaxial & kobellit & koben & koch \\
+kochte & kochtopf & koda & kodizes & koechin
+\end{wzwanzig}
+\begin{wzwanzig}
+koedern & koenig & koepfen & koepfend & koerner \\
+koernig & koernt & koete & kognak & kohle \\
+kohlkopf & kohlrabi & kohorte & kokain & kokarde \\
+kokett & koketter & kokkus & kokon & koks
+\end{wzwanzig} 
+\begin{wzwanzig}
+koksgrus & kolonial & kolonne & kolumne & koma \\
+komfort & komiker & kommen & kommod & kommt \\
+komoren & komplex & komposit & kompott & konditor \\
+konfetti & konfokal & konform & konfuser & konisch
+\end{wzwanzig}
+\begin{wzwanzig}
+konklave & konkret & konkurs & konode & konsens \\
+konsole & konsorte & kontakt & kontern & konto \\
+kontur & konzern & konzert & konzil & kopfring \\
+kopieren & koppel & koppeln & koppelnd & koppelt
+\end{wzwanzig} 
+\begin{wzwanzig}
+koppelte & kord & koreaner & kork & korken \\
+korkgeld & koronar & korps & korpus & korrekt \\
+korrelat & korrosiv & korrupt & korse & kortex \\
+kortikal & koschere & kosename & kosend & kosewort
+\end{wzwanzig}
+\begin{wzwanzig}
+kosmos & kostend & kostete & kostuem & kot \\
+kotelett & kotig & kovalent & krachte & kraechzt \\
+kraeht & kraengen & kraenken & kraenker & kraetze \\
+kraft & krafteck & krakeelt & krakelnd & krallig
+\end{wzwanzig} 
+\begin{wzwanzig}
+kram & kramen & kramend & kran & krangurt \\
+kranial & kranke & kranoese & kranz & kratzen \\
+kratzer & kratzig & kratzt & kraulen & kraus \\
+krawall & kraxe & kraxeln & kreatin & kreditor
+\end{wzwanzig}
+\newpage
+\stepcounter{wzweins}
+
+\begin{wzwanzig}
+kreidig & kreis & kreischt & kreiseln & kreosot \\
+krepp & kreter & kretikus & kreuzen & kreuzer \\
+kreuzigt & kreuzung & kriecher & kriegen & krill \\
+krimpen & krippe & kriseln & kriselnd & kritik
+\end{wzwanzig} 
+\begin{wzwanzig}
+kritiker & kritzelt & kroent & krokoit & krone \\
+krud & kruemel & kruemeln & kruemlig & kruemmer \\
+kruemmt & kruemmte & krumm & krural & kruste \\
+kruzifix & kryonik & krypten & kubatur & kubisch
+\end{wzwanzig}
+\begin{wzwanzig}
+kuchen & kudern & kudert & kuderte & kuebel \\
+kuehle & kuehlen & kuehler & kueken & kuemmel \\
+kuerass & kueren & kuerze & kuerzen & kuerzt \\
+kuessend & kuevette & kuh & kuhhirte & kuli
+\end{wzwanzig} 
+\begin{wzwanzig}
+kullerte & kultwein & kumquat & kunst & kuppeln \\
+kuppelte & kuppler & kurator & kurbel & kurieren \\
+kuriert & kuriosum & kurkuma & kurort & kurs \\
+kursiert & kursiv & kursziel & kurve & kurzfilm
+\end{wzwanzig}
+\begin{wzwanzig}
+kurzwahl & kurzwort & kuschelt & kuschen & kuschlig \\
+kuss & kustos & kutscher & kutter & kuwaiti \\
+kuweiter & kwangju & kyyiv & labberig & labern \\
+labert & labial & labil & labkraut & labsal
+\end{wzwanzig} 
+\begin{wzwanzig}
+labskaus & lachend & lachgas & lachlust & lachs \\
+lackaffe & lacrosse & laden & ladenbau & laderaum \\
+ladet & laehmen & laehmend & laehmte & laendler \\
+laengst & laeppen & laese & laestert & laeufer
+\end{wzwanzig}
+\begin{wzwanzig}
+laeutet & laeutete & lafser & lager & lagerbar \\
+lagerist & lagos & lahm & lahmend & lake \\
+lakritz & lammnetz & lampe & lancier & lanciert \\
+landgang & landgraf & landluft & landmann & landung
+\end{wzwanzig} 
+\begin{wzwanzig}
+landwehr & landwein & landwind & landwirt & lange \\
+langend & langhaus & langkiel & langte & lanolin \\
+lanthan & lanzhou & laptop & larve & las \\
+lasagne & laser & lasieren & lassen & last
+\end{wzwanzig}
+\begin{wzwanzig}
+lastart & lastzug & latein & lateral & latrine \\
+latschen & latschte & latte & latz & laubbaum \\
+laubdach & laube & laudanum & lauert & lauf \\
+laufen & laufrad & laufstil & laugen & laugend
+\end{wzwanzig} 
+\begin{wzwanzig}
+laugte & launig & lauschen & lauscht & lausen \\
+lausig & laute & lautheit & lautlich & lavasee \\
+laviert & layout & learara & leasen & leasing \\
+leber & lebhaft & lebloser & lebte & lechzte
+\end{wzwanzig}
+\begin{wzwanzig}
+leckend & lecker & leckrate & leckte & leder \\
+ledern & lee & leeds & leerdarm & leeren \\
+leergut & leert & leerzug & lefze & legal \\
+legend & legenot & leger & legierte & legte
+\end{wzwanzig} 
+\begin{wzwanzig}
+lehmerde & lehmiger & lehnend & lehnt & lehrdorn \\
+lehrend & lehrerin & lehrgang & lehrling & lehrring \\
+lehrt & lehrte & leibarzt & leiche & leid \\
+leiden & leier & leimen & leistete & leitbild
+\end{wzwanzig}
+\begin{wzwanzig}
+leiter & lektion & lenkkopf & lenkung & leptit \\
+lerche & lernend & lernpfad & lernt & lernte \\
+lesart & lese & lesebuch & lesekopf & lesend \\
+letal & letteln & lettisch & lettland & lettner
+\end{wzwanzig} 
+\begin{wzwanzig}
+letztens & leucin & leugnen & leugnete & leumund \\
+leutnant & level & levkoje & liaison & liberal \\
+liberale & liberia & libero & licht & lichtend \\
+lichtung & lidgecko & liebelei & lieber & lieblich
+\end{wzwanzig}
+\begin{wzwanzig}
+liebling & lieblos & liebte & liedchen & lieferte \\
+liegekur & liegend & liegt & lieh & liess \\
+liftend & ligieren & ligiert & ligierte & lignit \\
+liieren & liierend & likoer & lila & lilith
+\end{wzwanzig} 
+\begin{wzwanzig}
+lilongwe & lima & limbisch & limbo & limerick \\
+linarit & linde & linden & lineal & linie \\
+linke & linkend & linkisch & linneit & linoleum \\
+linse & linsen & lipaemie & lipid & lisene
+\end{wzwanzig}
+\begin{wzwanzig}
+lispelt & lispelte & litauen & lithotyp & litt \\
+litzen & live & lobus & lochbild & lochcode \\
+locher & lochia & lockern & lockernd & lockert \\
+lockig & lockt & loden & loechrig & loeser
+\end{wzwanzig} 
+\begin{wzwanzig}
+loest & loetbar & loeten & loetete & loge \\
+logieren & logiert & logik & logiker & logistik \\
+logo & lohn & lohnart & loipe & lokum \\
+lome & lorbeer & lose & losen & loshaken
+\end{wzwanzig}
+\begin{wzwanzig}
+loslager & lotet & lotete & lotisch & lotterie \\
+lotus & lowrider & loyal & luanda & luchs \\
+lucknow & ludhiana & luecke & luecken & luede \\
+lueftend & luefter & lueftet & lueftung & luettich
+\end{wzwanzig} 
+\begin{wzwanzig}
+luft & luftloch & luftraum & luftsack & lukriert \\
+lullend & lumb & lumbal & lunchbox & lungern \\
+lungernd & lunker & lupfer & lusaka & lustiger \\
+lutet & lutetium & luven & lux & luxus
+\end{wzwanzig}
+\newpage
+\stepcounter{wzweins}
+
+\begin{wzwanzig}
+luzern & luzerne & lycra & lydit & lymphom \\
+lyriker & lysin & lytisch & machart & mache \\
+machen & machend & machete & machwerk & madrigal \\
+maedchen & maehen & maeher & maehne & maehren
+\end{wzwanzig} 
+\begin{wzwanzig}
+maehte & maekeln & maelzen & maesten & maestend \\
+maestete & mafioso & mafisch & magen & magenta \\
+mager & magern & magisch & magnetit & mahagoni \\
+mahlend & mahlring & mahlt & mahnen & mahnt
+\end{wzwanzig}
+\begin{wzwanzig}
+maiblume & mailand & main & maische & majuro \\
+makaber & makramee & makrone & malen & malend \\
+maler & mallorca & malzbier & mampfend & mampft \\
+manama & manchmal & manganit & mangeln & mangold
+\end{wzwanzig} 
+\begin{wzwanzig}
+manier & manifest & manila & mannbar & mannheim \\
+mannloch & manntag & mannweib & manoever & mantra \\
+maputo & marginal & mariachi & marinade & mark \\
+markasit & marke & markiert & marklos & markt
+\end{wzwanzig}
+\begin{wzwanzig}
+marokko & maroons & marotte & marquis & mars \\
+marsch & marstall & martern & marterte & martit \\
+maryland & maserig & maseru & maserung & massage \\
+masse & masseuse & massiver & masslos & massstab
+\end{wzwanzig} 
+\begin{wzwanzig}
+masszahl & mastdarm & mastitis & mastrind & mastvieh \\
+masuren & matrize & matrose & matte & mattglas \\
+mauern & mauernd & mauken & maulen & maulend \\
+maulfaul & maulkorb & maulwurf & maunzen & mauser
+\end{wzwanzig}
+\begin{wzwanzig}
+mausernd & mausete & mausrad & meckernd & meckerte \\
+medan & mediator & medien & medizin & meerohr \\
+meerut & megaphon & mehr & mehrere & mehrwert \\
+mein & meine & meinen & meines & meiste
+\end{wzwanzig} 
+\begin{wzwanzig}
+mejonit & mekka & mekong & melaena & melanose \\
+melasse & meldend & meldete & meldung & melilith \\
+melisse & melkkuh & memphis & mengkorn & mental \\
+menue & menuett & mergeln & merkend & merkt
+\end{wzwanzig}
+\begin{wzwanzig}
+merkur & merlin & meskalin & mesokrat & mesolith \\
+mesozone & messdose & messe & messing & messkeil \\
+messraum & messuhr & messung & messzeit & meteor \\
+methan & methyl & metier & metzelei & meucheln
+\end{wzwanzig} 
+\begin{wzwanzig}
+meuterei & meutern & miami & miaut & mickrig \\
+micro & midimode & mied & miefend & miefig \\
+miesling & mietbar & mietet & mietfrei & mietkauf \\
+mietling & mietpark & mietwert & migmatit & migraene
+\end{wzwanzig}
+\begin{wzwanzig}
+migrant & migriert & mikrofon & mikrolog & milchig \\
+milder & mildert & milieu & militant & millerit \\
+milli & million & mimik & mimisch & mimo \\
+mimose & minarett & mindert & minderte & minerva
+\end{wzwanzig} 
+\begin{wzwanzig}
+miniatur & minirock & minister & minuend & minuskel \\
+mir & mischend & mispel & missend & missfiel \\
+mist & mistfink & miterbe & mitessen & mitesser \\
+mitgehen & mitgift & mitlesen & mitose & mitpacht
+\end{wzwanzig}
+\begin{wzwanzig}
+mittel & mitten & mittlere & mobbing & mobil \\
+mobile & mobilien & modder & modding & modehaus \\
+moderat & moderig & modern & moderner & modert \\
+modewort & modezar & modul & modular & moebel
+\end{wzwanzig} 
+\begin{wzwanzig}
+moechte & moegen & moehre & moertel & mofa \\
+mogelt & mogul & moin & molasse & molekuel \\
+moleskin & molk & moll & molluske & molmasse \\
+moloch & molsieb & moment & momentan & monarch
+\end{wzwanzig}
+\begin{wzwanzig}
+monat & mond & mondaen & mondhell & mondjahr \\
+mongolei & mongolid & moniert & monierte & monolith \\
+monophon & monoton & monoxid & montage & moorente \\
+moorhuhn & moorig & moos & moosig & mopsen
+\end{wzwanzig} 
+\begin{wzwanzig}
+moral & morden & mordent & moroni & morphem \\
+morphen & morphend & morphium & morscher & mosambik \\
+moschee & moschus & mosern & mosert & moserte \\
+moskito & most & motel & motte & motto
+\end{wzwanzig}
+\begin{wzwanzig}
+mudde & mueder & muehlrad & muehsal & muell \\
+mueller & muemmeln & muenchen & muenden & muendend \\
+muendete & muendig & muenster & muenze & muenzen \\
+muenzend & muessen & muessig & muetze & muff
+\end{wzwanzig} 
+\begin{wzwanzig}
+muffe & muffiger & muhend & muhme & mullah \\
+mundart & mundloch & mundvoll & munition & munster \\
+munterer & muqdisho & muraenen & murmelte & murrt \\
+mus & muscat & muschi & musical & musikant
+\end{wzwanzig}
+\begin{wzwanzig}
+musiker & muskel & mustang & mustern & musterte \\
+mutabel & mutieren & mutmasst & mutti & myanmar \\
+myelom & myopie & myositis & myrthe & mystik \\
+mystiker & nabe & nach & nachbau & nachbild
+\end{wzwanzig} 
+\begin{wzwanzig}
+nachdem & nachhut & nacht & nachweis & nachwelt \\
+nackt & nadel & nadelig & naechst & naechste \\
+naehe & naehend & naehere & naeherin & naehernd \\
+naehkorb & naehrt & naeht & naehte & nageln
+\end{wzwanzig}
+\newpage
+\stepcounter{wzweins}
+
+\begin{wzwanzig}
+nagetier & nagoya & nagpur & nah & nahbeben \\
+nahe & nahend & nahezu & nahfeld & nahkampf \\
+nahrung & naht & naiv & naivling & nakrit \\
+namen & namhaft & namur & nandu & nanning
+\end{wzwanzig} 
+\begin{wzwanzig}
+nannte & nantokit & naomi & napalm & napf \\
+napoli & narbe & narkose & naschen & naseweis \\
+nashorn & natrit & natrium & natron & nautik \\
+nazi & nebelig & nebenan & nebraska & nebst
+\end{wzwanzig}
+\begin{wzwanzig}
+necken & neckt & neckte & nee & negativ \\
+nehmen & neider & neidet & neidlos & neigen \\
+neigend & neigt & neigte & nektar & nelke \\
+nennen & nenner & nennlast & nennwert & neogotik
+\end{wzwanzig} 
+\begin{wzwanzig}
+neosom & nephrit & nepotist & nestbau & nett \\
+netz & netzball & netzdose & netzhemd & neu \\
+neuartig & neubau & neudruck & neugier & neuheit \\
+neulich & neumond & neun & neuntes & neunzehn
+\end{wzwanzig}
+\begin{wzwanzig}
+neunzig & neuritis & neuron & neutron & neuwahl \\
+niacin & nichts & nickt & niedrig & niet \\
+niete & nietend & nietet & nietete & nigeria \\
+nigger & nimmt & ningbo & niobium & nippel
+\end{wzwanzig} 
+\begin{wzwanzig}
+niqab & nirosta & nistend & nistet & nistete \\
+niue & nix & nodoes & noelen & noetigte \\
+nomade & norm & normaler & normiert & normwand \\
+norwegen & notation & notfall & notfalls & notiert
+\end{wzwanzig}
+\begin{wzwanzig}
+notlage & notlauf & notruf & noumea & nuclease \\
+nuclid & nudel & nudist & nukupuu & nullzeit \\
+numeral & nuss & nussig & nutend & nutte \\
+nuttig & nutzbar & nutzlast & nutzung & nylon
+\end{wzwanzig} 
+\begin{wzwanzig}
+obelisk & oben & obenab & obenan & obenauf \\
+oberarzt & oberes & oberhalb & oberhand & oberliga \\
+oberst & oberteil & obertrum & obgleich & oblag \\
+oblegen & obliegt & obsiegen & obsiegt & obskurer
+\end{wzwanzig}
+\begin{wzwanzig}
+obstler & obstsaft & obszoen & obwalten & ocker \\
+odor & oed & oedem & oedipal & oeffner \\
+oeffnung & oehr & oel & oelend & oeler \\
+oelfass & oeliger & oelmulti & oelnebel & oelpegel
+\end{wzwanzig} 
+\begin{wzwanzig}
+oelpreis & oelpumpe & oelspur & oelstand & oeltank \\
+oelte & oelzeug & oeresund & ofenfest & offizier \\
+offline & oft & oheim & ohmsch & ohnehin \\
+ohrpolyp & ohrwurm & okkult & oklahoma & okra
+\end{wzwanzig}
+\begin{wzwanzig}
+oktaeder & oktan & oktave & oktopus & okular \\
+oleander & oligurie & olivin & omelette & omen \\
+omme & omphacit & omsk & onanie & online \\
+ontario & oozyte & opa & opfer & opfernd
+\end{wzwanzig} 
+\begin{wzwanzig}
+opfertod & opferung & opiat & opossum & optativ \\
+optieren & optimist & optional & opulent & opus \\
+orakel & oralsex & orbital & orden & ordinaer \\
+ordnend & ordnung & ordoviz & oregon & orgasmus
+\end{wzwanzig}
+\begin{wzwanzig}
+orgeln & orgelnd & origami & original & orinoco \\
+orion & ort & ortete & ortgang & orthese \\
+ortolan & ortsbild & ortsfest & ortsname & ortsplan \\
+ortsteil & osaka & oscar & oslo & osmose
+\end{wzwanzig} 
+\begin{wzwanzig}
+ostgote & otitis & otoskop & outete & overlay \\
+ovuliert & oxer & ozeanien & ozon & ozonisch \\
+ozonwert & paaring & paarlauf & paarreim & paarung \\
+pacht & pachtend & packend & packte & paddel
+\end{wzwanzig}
+\begin{wzwanzig}
+paddeln & paddelnd & paddelte & paffen & paffer \\
+pafft & paffte & paisley & paket & palast \\
+palette & palila & palisade & palme & palmsaft \\
+panama & panamaer & panda & panik & panorama
+\end{wzwanzig} 
+\begin{wzwanzig}
+panzern & papagei & papeete & papel & papier \\
+papismus & pappe & paprika & papyrus & paragraf \\
+paraguay & paranoid & parasit & pardusco & pareo \\
+parese & pariert & parierte & parietal & parkdeck
+\end{wzwanzig}
+\begin{wzwanzig}
+parkuhr & parmesan & parodie & parole & partie \\
+partitiv & partizip & partner & partout & party \\
+parzelle & pascal & pasch & passabel & passage \\
+passant & passbild & passen & passiert & passmass
+\end{wzwanzig} 
+\begin{wzwanzig}
+passt & passte & pastete & pastille & pastoral \\
+patch & patrone & patt & patzer & patziger \\
+pauke & paukfach & paukist & pausen & pausend \\
+pausiert & pavao & pawlowa & paywall & pazifist
+\end{wzwanzig}
+\begin{wzwanzig}
+peak & pedell & peering & pegasus & pegmatit \\
+peitscht & pelikan & pellte & pelz & pelzig \\
+pendelnd & pendelt & pendler & penibel & pennend \\
+penny & perfekt & pergamin & pergola & perihel
+\end{wzwanzig} 
+\begin{wzwanzig}
+perineal & perlen & perlgarn & perlgrau & perlhuhn \\
+perlkauz & perlmutt & perplex & perseus & persisch \\
+person & personal & perth & peruecke & pervers \\
+pestizid & pestwurz & petalit & petzte & pfaenden
+\end{wzwanzig}
+\newpage
+\stepcounter{wzweins}
+
+\begin{wzwanzig}
+pfahlbau & pfand & pfeffert & pfeifen & pfeift \\
+pfeil & pfeiler & pferd & pfiffig & pflanzer \\
+pflanzte & pflaster & pflaume & pflege & pflueckt \\
+pflueger & pfluegt & pfosten & pfote & pfropf
+\end{wzwanzig} 
+\begin{wzwanzig}
+pfropfte & pfuetze & pfuhl & pfui & pfund \\
+pfuschig & phantast & phasor & phenol & phi \\
+philogyn & phiole & phlegma & phloem & phoebe \\
+phoenix & phonzahl & physik & physiker & physisch
+\end{wzwanzig}
+\begin{wzwanzig}
+pianist & piano & pichelnd & pickel & pickt \\
+pieksen & pieksend & piensen & piensend & piepser \\
+piepste & piepte & piercend & pigment & pikass \\
+piken & pikend & pikieren & pikiert & pilgern
+\end{wzwanzig} 
+\begin{wzwanzig}
+pilgernd & pille & pingen & pinie & pink \\
+pinkeln & pinkelnd & pinkelte & pinnula & pinnwand \\
+pinscher & pinsel & piopio & pipe & pipifax \\
+pirol & pirsch & pissen & pisspott & pistill
+\end{wzwanzig}
+\begin{wzwanzig}
+pistole & pizza & plage & plagend & plakat \\
+plakette & planen & planet & planiert & plankton \\
+planlos & planscht & plant & plantage & plantar \\
+plasma & plastik & platt & platte & plattig
+\end{wzwanzig} 
+\begin{wzwanzig}
+platy & platzt & plaudern & pleite & plenum \\
+pleonast & plinthe & plissee & plumper & plumps \\
+pluton & plymouth & pobacke & pochiert & pocke \\
+podium & poebel & poekeln & poem & pokal
+\end{wzwanzig}
+\begin{wzwanzig}
+pokernd & polaron & polend & polierte & politik \\
+politur & pollen & polohemd & polonium & poltert \\
+polterte & polyamid & polynom & polyphon & polzahl \\
+pomadig & pomp & poncho & popanz & popelig
+\end{wzwanzig} 
+\begin{wzwanzig}
+popelin & poppig & populist & porig & poroeser \\
+port & portativ & portland & portlet & porto \\
+portwein & posen & position & possen & post \\
+postamt & postauto & postfach & postiert & postural
+\end{wzwanzig}
+\begin{wzwanzig}
+potent & potenter & pott & poularde & praefekt \\
+praefix & praegen & praegend & praegung & praesent \\
+prahlen & prahlend & prahlt & prall & prallen \\
+prallend & prangen & prangend & prasinit & prasseln
+\end{wzwanzig} 
+\begin{wzwanzig}
+prassen & predigt & preis & prekaer & premier \\
+premiere & preschen & pretioes & pretoria & prima \\
+prime & primus & pritsche & privat & privileg \\
+proben & probiert & problem & probt & progerie
+\end{wzwanzig}
+\begin{wzwanzig}
+programm & projekt & proktor & prokura & propan \\
+proper & prophet & prosa & prosit & prospekt \\
+protzend & proustit & proviant & provost & prozedur \\
+prozent & pruede & prueder & pruefen & pruefgas
+\end{wzwanzig} 
+\begin{wzwanzig}
+pruegeln & pruegelt & prunken & psalmist & psalter \\
+psyche & pucherit & puder & pudert & puffern \\
+puffernd & pulk & pullern & pullover & pulswahl \\
+pumpwerk & punker & punzen & punzend & purgativ
+\end{wzwanzig}
+\begin{wzwanzig}
+purismus & purist & purzeln & purzelnd & pushen \\
+pustel & pustelig & pustend & putativ & puter \\
+putte & putten & putzig & putzt & pyelitis \\
+pygidium & pygmaee & pyramide & pyrexie & pyrolyse
+\end{wzwanzig} 
+\begin{wzwanzig}
+python & qiqihar & quadrant & quadrat & quaeken \\
+quaekend & quaeler & quaelte & quaestur & quaken \\
+quakt & qual & qualmig & qualvoll & quant \\
+quappe & quart & quarte & quartier & quarz
+\end{wzwanzig}
+\begin{wzwanzig}
+quarzend & quasseln & quebec & quellung & querend \\
+querholz & querkopf & querpass & querzug & quiche \\
+quinaer & quinte & quisling & quitte & quittung \\
+rabauke & racemat & racheakt & rachitis & rackernd
+\end{wzwanzig} 
+\begin{wzwanzig}
+raclette & radeln & radelt & radi & radial \\
+radiant & radierer & radikale & radio & radium \\
+radkreuz & radlader & radnabe & radstand & raechend \\
+raechte & raendeln & raenge & raeumen & raeumung
+\end{wzwanzig}
+\begin{wzwanzig}
+raffen & raffend & raffgier & raffte & ragtime \\
+ragweed & rah & rahm & rahmen & rahmend \\
+raigras & rakel & raleigh & rallig & ramdisk \\
+rammeln & rammen & rammt & ramsch & ramstein
+\end{wzwanzig} 
+\begin{wzwanzig}
+ranch & randale & randlos & randvoll & randzone \\
+rangelei & rangelnd & rangiert & rangun & rannte \\
+ranzig & rap & rapmusik & rappe & rappel \\
+rappelnd & rapplig & rapport & raps & rascher
+\end{wzwanzig}
+\begin{wzwanzig}
+rasiert & raspelnd & rasselnd & rasselte & rassiger \\
+rassist & rastbar & rasten & rastend & rastlos \\
+rasur & raten & ratgeber & ratlos & ratsam \\
+rau & raubbau & raubend & raubtier & raubzug
+\end{wzwanzig} 
+\begin{wzwanzig}
+rauch & rauchend & raucht & raucitas & raufend \\
+rauheit & raum & raumbuch & raummass & raureif \\
+rauscht & raute & raven & ravioli & rayon \\
+razzia & reagens & reaktion & reaktiv & realfilm
+\end{wzwanzig}
+\newpage
+\stepcounter{wzweins}
+
+\begin{wzwanzig}
+rechner & rechteck & recife & recken & recycelt \\
+reden & redend & rederei & redlich & reep \\
+refrain & refugium & regatta & regelnd & regenarm \\
+regent & regentag & reggae & regierte & regime
+\end{wzwanzig} 
+\begin{wzwanzig}
+regional & register & regler & reglette & reglos \\
+regnen & regulaer & reh & rehwild & reiberei \\
+reiblaut & reibwert & reichen & reicherz & reifend \\
+reifrock & reifte & reifung & reihernd & reim
+\end{wzwanzig}
+\begin{wzwanzig}
+reimstab & reimwort & reiner & reinfall & reinigen \\
+reiniger & reinigt & reisbrei & reisen & reissen \\
+reist & reizbar & reizdarm & reizung & reizvoll \\
+rekord & rektorat & rekursiv & relais & relief
+\end{wzwanzig} 
+\begin{wzwanzig}
+relikt & remis & rempelnd & rempler & rendern \\
+renegat & renin & renitenz & rennt & renntag \\
+rentner & repeater & report & reprise & reseda \\
+reservat & resident & rest & reste & retorte
+\end{wzwanzig}
+\begin{wzwanzig}
+retour & retsina & rettend & rettete & rettich \\
+rettung & reue & revanche & revier & rezent \\
+rezeptiv & rezessiv & rhaet & rhapsode & rhein \\
+rhetorik & rheuma & rho & rhodium & rhythmik
+\end{wzwanzig} 
+\begin{wzwanzig}
+richtet & richtig & richtung & ricke & riechen \\
+riechend & riecher & riedgras & rief & riegel \\
+riemen & rieseln & rieselt & riesiger & riff \\
+riffel & riffeln & rigid & rigide & rijad
+\end{wzwanzig}
+\begin{wzwanzig}
+rikscha & rillen & rillung & rind & ringbuch \\
+ringnut & rinnen & rinnend & rinnsal & rippchen \\
+rippe & ripstop & riss & rist & ritter \\
+rituell & ritze & ritzt & rivale & rizinus
+\end{wzwanzig} 
+\begin{wzwanzig}
+roadie & robbe & robe & robinie & robust \\
+robuster & rochiert & rocken & rockend & rocksaum \\
+rockstar & rodeln & rodend & rodung & roecheln \\
+roemerit & roesch & roestend & roester & roesti
+\end{wzwanzig}
+\begin{wzwanzig}
+roeten & roeter & roetlich & rohdaten & rohheit \\
+rohholz & rohkohle & rohr & rohsalz & rohstahl \\
+rohzink & rolle & rollend & rollfeld & rollgang \\
+rollgurt & rolltor & rolodex & rom & romanze
+\end{wzwanzig} 
+\begin{wzwanzig}
+rondo & rosario & rose & rosella & rosig \\
+rosskur & rostend & rostet & rostfest & rostig \\
+rostiger & rostock & rot & rotaetze & rotalge \\
+rotauge & rotbraun & roterde & rotguss & rothaut
+\end{wzwanzig}
+\begin{wzwanzig}
+rotholz & rotieren & rotierte & rotlehm & rotmilan \\
+rotte & rotwein & rotwild & rotz & rotznase \\
+rotzunge & routend & router & royalist & rubbeln \\
+rubellit & rubinrot & rubrik & ruckeln & ruckend
+\end{wzwanzig} 
+\begin{wzwanzig}
+ruder & ruderer & rudern & rueboel & rueckt \\
+rueckzug & ruede & rueffelt & ruegen & ruegend \\
+ruegte & ruehrei & ruehrend & ruehrig & ruehrte \\
+ruesche & ruessel & ruestung & ruettler & rufend
+\end{wzwanzig}
+\begin{wzwanzig}
+ruft & ruhe & ruhelage & ruhepol & ruhezeit \\
+ruhezone & ruhiger & ruhm & ruhrwurz & ruin \\
+ruiniert & rumkugel & rumoren & rumpf & rumpfnah \\
+rundbau & runde & rundfax & rundfunk & rundherd
+\end{wzwanzig} 
+\begin{wzwanzig}
+rundholz & rundlauf & rundnut & rundofen & rundweg \\
+runter & runzel & runzeln & runzelt & runzlig \\
+rupel & rupfen & rupfend & rupfte & russ \\
+russend & russeule & saatwert & saatzeit & sabbeln
+\end{wzwanzig}
+\begin{wzwanzig}
+sabbert & sabberte & sacha & sacharin & sachbuch \\
+sachlich & sachse & sackung & sadismus & sadist \\
+saeend & saege & saeger & saegt & saegte \\
+saemling & saeubern & saeuert & saeugte & saeule
+\end{wzwanzig} 
+\begin{wzwanzig}
+saeumend & saeumte & saft & saftiger & saftlos \\
+sage & sago & sagte & sahniger & saite \\
+sakrileg & salbader & salband & salbte & saldo \\
+salm & salmiak & salon & salz & salzig
+\end{wzwanzig}
+\begin{wzwanzig}
+salzlos & salzsee & salzteig & salzton & samba \\
+sambesi & sambia & sammeln & sammelte & sammler \\
+sammlung & samoa & sampler & samt & samtmatt \\
+sand & sandbad & sandburg & sandig & sandiger
+\end{wzwanzig} 
+\begin{wzwanzig}
+sandte & sandwich & sanfter & sansa & sansibar \\
+santon & santos & sappe & saprobie & sardelle \\
+sarong & sass & sassolin & satellit & satrapie \\
+satt & sattblau & satteln & sattelt & sattlung
+\end{wzwanzig}
+\begin{wzwanzig}
+saturn & satyr & satz & satzung & sau \\
+sauciere & saufbold & saugend & saugkopf & saugrohr \\
+saukalt & sauklaue & saumagen & saumpfad & sausen \\
+saust & scalping & scampi & scandium & scannen
+\end{wzwanzig} 
+\begin{wzwanzig}
+scannend & schaben & schabend & schabte & schacher \\
+schacht & schaden & schadet & schaedel & schaefer \\
+schaeler & schaere & schaerft & schaerpe & schaetzt \\
+schafft & schafott & schaler & schalig & schalung
+\end{wzwanzig}
+\newpage
+\stepcounter{wzweins}
+
+\begin{wzwanzig}
+schar & scharren & schart & schatten & schauder \\
+schauend & schauer & schauern & schaum & schaurig \\
+scheck & scheel & scheelit & scheibe & scheidet \\
+schein & scheisse & scheisst & schelten & schemel
+\end{wzwanzig} 
+\begin{wzwanzig}
+scherbe & schere & scherge & scherung & scheu \\
+scheune & schicken & schicker & schickse & schief \\
+schiene & schient & schiesst & schiffer & schifft \\
+schiite & schikane & schild & schilt & schimmer
+\end{wzwanzig}
+\begin{wzwanzig}
+schindel & schinden & schindet & schinken & schippen \\
+schippte & schlaf & schlafen & schlaff & schlag \\
+schlagen & schlager & schlang & schlaufe & schlecht \\
+schleier & schleim & schleppe & schleppt & schlich
+\end{wzwanzig} 
+\begin{wzwanzig}
+schlicht & schliere & schlitz & schlotte & schluckt \\
+schlurft & schmal & schmand & schmatzt & schmaus \\
+schmeckt & schmerz & schmiere & schminke & schmuck \\
+schmutz & schnabel & schnake & schnappt & schnauft
+\end{wzwanzig}
+\begin{wzwanzig}
+schneien & schnell & schnieke & schnitt & schnitte \\
+schnitzt & schnurre & schnurrt & schober & schockt \\
+schoeffe & schoen & schoene & schoepft & scholle \\
+schollig & schonen & schonend & schoppen & schor
+\end{wzwanzig} 
+\begin{wzwanzig}
+schorfig & schraege & schranke & schraube & schreier \\
+schrein & schuetze & schuetzt & schufa & schuffel \\
+schuft & schuften & schuftig & schuld & schuldet \\
+schuldig & schulend & schulrat & schult & schulter
+\end{wzwanzig}
+\begin{wzwanzig}
+schulweg & schuppig & schuster & schutt & schutz \\
+schwach & schwaden & schwager & schwalbe & schwamm \\
+schwang & schwank & schwappt & schwatzt & schwebt \\
+schwebte & schwein & schwelen & schwelgt & schwemmt
+\end{wzwanzig} 
+\begin{wzwanzig}
+schwenk & schwer & schwerer & schwerin & schwieg \\
+schwinge & schwirrt & schwul & schwulst & schwur \\
+schwyz & scrollen & seance & sechzehn & sechzig \\
+sedcard & sedieren & see & seeamt & seebaer
+\end{wzwanzig}
+\begin{wzwanzig}
+seebeben & seegurke & seekuh & seelisch & seeluft \\
+seemine & seemoewe & seepocke & seerose & seestern \\
+seetier & seeufer & seewarte & segen & segment \\
+segnen & segnete & segnung & sehend & sehnerv
+\end{wzwanzig} 
+\begin{wzwanzig}
+sehnlich & sehnt & sei & seid & seidel \\
+seiden & seidiger & seifiger & seiger & seigern \\
+seiht & seinige & seit & seitens & sektion \\
+sekunde & selbe & selbig & selbst & selen
+\end{wzwanzig}
+\begin{wzwanzig}
+semiarid & seminorm & semiotik & senat & senator \\
+sendai & senden & sendend & sendet & sendete \\
+senegal & senftopf & senior & senkdorn & senkniet \\
+senne & sense & sensorik & sentenz & sepsis
+\end{wzwanzig} 
+\begin{wzwanzig}
+septime & serbisch & serie & seriell & serin \\
+seroes & server & sessil & session & set \\
+setzerei & setzling & setzt & setzte & setzung \\
+seufzend & seufzer & sexte & sexuell & seziert
+\end{wzwanzig}
+\begin{wzwanzig}
+shalom & shenyang & sheriff & sherry & shinty \\
+show & shrimps & shunten & sialisch & sibylle \\
+sich & sicher & sicherer & sichernd & sichtend \\
+sichter & sichtete & sickert & sidebar & sie
+\end{wzwanzig} 
+\begin{wzwanzig}
+sieben & siebend & siebente & siebte & siebter \\
+sieden & siedete & siedler & siedlung & siehste \\
+sieht & sierra & siesta & sigma & signatar \\
+signiert & silbe & silbrig & silicid & silieren
+\end{wzwanzig}
+\begin{wzwanzig}
+silizium & silomais & simbabwe & simonie & simpel \\
+simplex & sinekure & sinfonie & singapur & singen \\
+singend & singfest & sinkend & sinnen & sinniert \\
+sinnlich & sinnt & sinologe & sintern & sinuston
+\end{wzwanzig} 
+\begin{wzwanzig}
+sioux & sipho & sippe & sirene & sirenen \\
+sisal & sitar & sittich & sittlich & sitz \\
+sitzbad & sitzbein & sitzen & sitzende & sitzgurt \\
+sitzrohr & sizilien & skalpell & skarn & skat
+\end{wzwanzig}
+\begin{wzwanzig}
+skater & skeet & skepsis & ski & skiff \\
+skink & skipiste & skipjak & skipper & skischuh \\
+skistock & skoliose & skopje & skotom & skua \\
+skull & skurril & skyline & slalom & slogan
+\end{wzwanzig} 
+\begin{wzwanzig}
+slums & smaltin & smart & smog & smsen \\
+smutje & sniefend & snob & so & sobald \\
+socke & sockel & sodomie & soeffe & soehlig \\
+soell & sofa & sogar & solar & solarium
+\end{wzwanzig}
+\begin{wzwanzig}
+solaroel & solch & solche & solcher & sold \\
+soldbuch & solid & soliton & soll & sollst \\
+somalia & sombrero & somit & sommers & sonett \\
+sonne & sonnend & sonniger & sonor & sooft
+\end{wzwanzig} 
+\begin{wzwanzig}
+sophist & sorbisch & sorgt & sosse & soupiert \\
+soutane & spaetheu & spagat & spalier & spaltaxt \\
+spaltend & spaltet & spaltung & spanen & spange \\
+spannen & spannrad & sparren & sparring & spass
+\end{wzwanzig}
+\newpage
+\stepcounter{wzweins}
+
+\begin{wzwanzig}
+spassen & spasst & spatz & specht & speckig \\
+speedo & speer & speicher & speisen & speist \\
+spende & spenden & sperber & sperre & sperren \\
+sperrig & sperrrad & speziell & spickend & spielart
+\end{wzwanzig} 
+\begin{wzwanzig}
+spielen & spieltag & spielzug & spiess & spiesst \\
+spike & spillage & spinat & spind & spinne \\
+spinnen & spinnt & spionage & spitz & splice \\
+spoenne & spondeus & spornen & spornend & sport
+\end{wzwanzig}
+\begin{wzwanzig}
+sportler & spotten & spottet & spottete & sprach \\
+spreader & sprecher & spreizt & sprengen & sprich \\
+spring & springt & sprint & sprit & spritzte \\
+spross & sprosse & sprudeln & spruehte & spuelend
+\end{wzwanzig} 
+\begin{wzwanzig}
+spuerbar & spuert & spuerte & spukhaft & spukhaus \\
+spule & spulend & spulwurm & spundend & spundete \\
+sputnik & sputum & squash & stab & stachelt \\
+stadel & stadium & stadt & stadttor & staehle
+\end{wzwanzig}
+\begin{wzwanzig}
+staehlt & staerke & staerkt & staette & stahlbad \\
+staken & stalker & stall & stallung & stamm \\
+stammen & stammlos & stammte & stampfen & stand \\
+standgas & standuhr & stanzend & stanzte & stapel
+\end{wzwanzig} 
+\begin{wzwanzig}
+stapeln & stapelte & starrte & start & startend \\
+starter & statik & statiker & statisch & statist \\
+stator & stauchte & stauen & stauer & staufer \\
+staunen & staut & stearin & stechen & steckbar
+\end{wzwanzig}
+\begin{wzwanzig}
+stecken & steghose & stehend & stehfalz & stehlen \\
+stehlend & steht & steife & steifen & steifend \\
+steigert & steinern & steingut & steinigt & stelle \\
+stellend & stelzend & stelzt & stemmte & stempel
+\end{wzwanzig} 
+\begin{wzwanzig}
+stent & steppen & steppte & sterbend & stereo \\
+steuern & steward & stichel & sticht & stichtag \\
+stickt & stieg & stiehl & stifte & stil \\
+stilett & stilist & stille & stillen & stilvoll
+\end{wzwanzig}
+\begin{wzwanzig}
+stimmbar & stimmlos & stimmte & stimmung & stinkig \\
+stint & stochern & stocken & stockig & stockte \\
+stockung & stoehnen & stoehnt & stoehnte & stoer \\
+stolpern & stolpert & stolz & stoppel & stossbar
+\end{wzwanzig} 
+\begin{wzwanzig}
+stossen & stosser & straeubt & strafbar & straff \\
+straffen & strafte & strahler & strahlt & strand \\
+strapaze & strass & stratus & strauben & streamer \\
+streb & streben & streber & strecken & streich
+\end{wzwanzig}
+\begin{wzwanzig}
+streifig & streifte & streiken & streikt & streitig \\
+strenge & streu & streuend & streuer & streuner \\
+streunt & streut & strickte & strittig & stroemen \\
+strohhut & strohig & strom & stromlos & strosse
+\end{wzwanzig} 
+\begin{wzwanzig}
+strotzte & strumpf & struwit & student & stueck \\
+stuemper & stuende & stuermt & stuermte & stuerzt \\
+stuetze & stuetzen & stufe & stufen & stummel \\
+stumpf & stunde & stundung & stupend & stupsen
+\end{wzwanzig}
+\begin{wzwanzig}
+stupst & sturm & sturz & sturzbad & stutzend \\
+styling & subjekt & sublimat & subnetz & substanz \\
+subtil & subtyp & suchbar & suchbaum & suche \\
+sucher & suchfeld & suchhund & sud & sudan
+\end{wzwanzig} 
+\begin{wzwanzig}
+sudelei & suedpol & suedwein & suedwind & suehne \\
+suehnen & suelze & suesse & suessen & suesser \\
+suesste & sukkubus & sulahuhn & sulfat & sultan \\
+summen & summer & summt & sumo & sumpfig
+\end{wzwanzig}
+\begin{wzwanzig}
+sund & supinum & suren & surfen & surinam \\
+sutur & suzeln & symptom & synagoge & synapse \\
+syndikat & syngamie & syngenit & synkope & synonym \\
+synthese & syrer & syrisch & systole & tabriz
+\end{wzwanzig} 
+\begin{wzwanzig}
+taco & tadel & tadelnd & tadelt & taefeln \\
+taendler & taenzeln & tafelig & tagalog & tagelang \\
+tagelohn & tagen & tagewerk & tagt & taifun \\
+taille & taipeh & taiwaner & takler & taktung
+\end{wzwanzig}
+\begin{wzwanzig}
+taktvoll & tal & talent & taler & talfahrt \\
+talgig & talgrund & taliban & talisman & talmi \\
+talmulde & talwiese & tamile & tampon & tandem \\
+tangens & tangiert & tankend & tantal & tantalit
+\end{wzwanzig} 
+\begin{wzwanzig}
+tanzend & tanzerei & tao & tapedeck & tappen \\
+tapsiger & tapste & tarawa & tarlatan & tarock \\
+tartar & tasse & tasthaar & tat & tatar \\
+tatmotiv & tatra & tatschen & tatterig & tattrig
+\end{wzwanzig}
+\begin{wzwanzig}
+tau & tauber & taubheit & tauchen & tauchte \\
+tauen & taufend & taugen & taumelig & taumeln \\
+taupunkt & tauscht & tausend & taxieren & taxon \\
+techno & teebaum & teeblatt & teeglas & teekanne
+\end{wzwanzig} 
+\begin{wzwanzig}
+teeroel & teeuhr & teigig & teilbar & teilen \\
+teilend & teils & teilte & teilung & telefon \\
+telepath & teller & telomer & tempel & tempern \\
+tempernd & temporal & tendenz & tensid & tentativ
+\end{wzwanzig}
+\newpage
+\stepcounter{wzweins}
+
+\begin{wzwanzig}
+tephroit & termite & ternaer & terrain & terrigen \\
+terror & tesafilm & testend & tester & teufe \\
+teufelei & text & textend & textende & texter \\
+thailand & thallium & theater & theismus & thema
+\end{wzwanzig} 
+\begin{wzwanzig}
+theorbe & theorem & theosoph & thermik & thiamin \\
+thimphu & thrombus & thronst & thront & thulium \\
+tiara & tic & tick & ticken & ticktack \\
+tiefbett & tiefblau & tiefe & tiefland & tiefsinn
+\end{wzwanzig}
+\begin{wzwanzig}
+tierheim & tierlieb & tierstil & tigerhai & tilapia \\
+tilde & tilgen & tilgt & timen & tippelnd \\
+tippen & tippt & tirol & tiroler & tisch \\
+titel & tja & toaster & toben & tobsucht
+\end{wzwanzig} 
+\begin{wzwanzig}
+todernst & todestag & todkrank & toedlich & toelpel \\
+toepfer & toerchen & toetend & tofu & togoer \\
+tokyo & tolerant & toll & tolle & toller \\
+tollerei & toluca & tomate & tombak & tombola
+\end{wzwanzig}
+\begin{wzwanzig}
+tomtom & ton & tonarm & tonbad & tonboden \\
+tonerde & tonisch & tonkopf & tonkunst & tonnage \\
+tonne & tonraum & tonsilbe & tontaube & top \\
+topfhut & topisch & topograf & tordalk & torfkoks
+\end{wzwanzig} 
+\begin{wzwanzig}
+torfmoos & torhaus & torlinie & toronto & torques \\
+tort & torte & tory & toskana & tot \\
+total & totband & totseil & totzeit & toupet \\
+toxaemie & toxin & trab & trabant & tracer
+\end{wzwanzig}
+\begin{wzwanzig}
+trachtet & traef & traeger & traenke & traenken \\
+traenkt & traenkte & traeumen & traeumer & traeumt \\
+traeumte & trag & tragend & tragik & traglast \\
+traktor & trampeln & trampte & tramway & transgen
+\end{wzwanzig} 
+\begin{wzwanzig}
+transit & trappelt & trappist & trara & trass \\
+trassat & tratscht & tratte & trauerte & traurede \\
+traute & treckend & treffer & treibgas & treibgut \\
+treideln & tremolit & trend & trennt & trennte
+\end{wzwanzig}
+\begin{wzwanzig}
+tresse & tretboot & treue & treulich & triade \\
+tribuene & tribut & triefend & triefte & triel \\
+triff & trifft & trifle & triklin & trilby \\
+trillion & trimmer & trinken & trinkt & trip
+\end{wzwanzig} 
+\begin{wzwanzig}
+triplett & triptyk & trisomie & tritium & tritt \\
+trivial & trocken & trocknen & trockner & troedelt \\
+troedler & troesten & troete & troilit & trojaner \\
+trommel & trommelt & tropfen & tropfend & tropfoel
+\end{wzwanzig}
+\begin{wzwanzig}
+tropft & tropisch & tropus & trott & trotten \\
+trottend & trottete & trotzen & trotzt & trubel \\
+trudelnd & trudelt & truebend & truebsal & truebt \\
+truebte & truebung & trueffel & truegen & truegend
+\end{wzwanzig} 
+\begin{wzwanzig}
+truegte & truhe & trumpfen & trupp & trust \\
+truthahn & truthuhn & tschad & tschador & tube \\
+tuckern & tuecken & tuefteln & tuemmelt & tuepfel \\
+tuepfelt & tuer & tuerken & tuerkis & tuermend
+\end{wzwanzig}
+\begin{wzwanzig}
+tuermt & tui & tukan & tulpe & tummler \\
+tumor & tun & tunika & tunis & tunken \\
+tunkend & tunnelnd & tunte & tuntig & turban \\
+turf & turmalin & turnen & turnend & turniert
+\end{wzwanzig} 
+\begin{wzwanzig}
+turnus & turnzeug & turtelnd & tusche & tuscheln \\
+tuschelt & tussi & tuvalu & typ & typisch \\
+tyrann & tyrosin & uebel & ueber & ueberbot \\
+uebermut & ueberwog & ueberzog & uebrig & ueppiger
+\end{wzwanzig}
+\begin{wzwanzig}
+ufer & uferdamm & uferwall & uff & ufo \\
+uhr & uhrkette & uhrzeit & ukraine & ukrainer \\
+ukulele & ulken & ulkend & ulme & umarmt \\
+umbau & umbauen & umber & umbra & umbruch
+\end{wzwanzig} 
+\begin{wzwanzig}
+umdenken & umfaengt & umfasste & umfeld & umflog \\
+umfluten & umfuhr & umgang & umgarnen & umgarnt \\
+umgebend & umgehabt & umgraben & umhaben & umhauen \\
+umkanten & umkehr & umkehren & umkippen & umkreis
+\end{wzwanzig}
+\begin{wzwanzig}
+umladend & umlegen & ummodelt & umpumpen & umrahmt \\
+umranken & umringte & umriss & umroller & umrunden \\
+umschlag & umsegelt & umsehen & umsetzen & umsicht \\
+umsorgt & umsprang & umspuelt & umspulen & umtaufen
+\end{wzwanzig} 
+\begin{wzwanzig}
+umweg & umwelt & umwerfen & umwerten & umwinden \\
+umzug & unaer & unbefugt & unbeirrt & unbelebt \\
+undation & unebener & unfall & unfein & unfrei \\
+unfriede & ungelenk & ungern & ungesund & unheilig
+\end{wzwanzig}
+\begin{wzwanzig}
+unionist & unkenruf & unkraut & unkundig & unlauter \\
+unlogik & unmenge & unnahbar & unnuetz & unratsam \\
+unrecht & unreifer & unreiner & unruh & unruhe \\
+uns & unsagbar & unsauber & unselig & unserer
+\end{wzwanzig} 
+\begin{wzwanzig}
+unsicher & unsinn & unsinnig & unsolide & unsozial \\
+unsrige & unstabil & unstet & untat & unterarm \\
+unterart & unterbot & unterlag & untertan & untief \\
+untiefe & untoten & unwesen & unwillig & unwohl
+\end{wzwanzig}
+\newpage
+\stepcounter{wzweins}
+
+\begin{wzwanzig}
+unzeitig & unzucht & urbeleg & urform & urgenz \\
+urgiert & uri & uriniert & urknall & urkunden \\
+urlader & urlaub & urlehre & urmeer & urmensch \\
+urologe & urschrei & ursprung & ursuppe & urteilen
+\end{wzwanzig} 
+\begin{wzwanzig}
+urteilte & urumqi & urvogel & urzeit & usenet \\
+utopia & utopie & uveitis & uwarowit & vaduz \\
+vagil & vaginal & vakuum & valangin & valenz \\
+valetta & valviert & vamp & variante & varietee
+\end{wzwanzig}
+\begin{wzwanzig}
+varikoes & vasall & vater & vati & vegan \\
+vegemite & venetien & verascht & verband & verbeten \\
+verbog & verbot & verbucht & verdammt & verdarb \\
+verdauen & verdaut & verdeck & verdeckt & verderbt
+\end{wzwanzig} 
+\begin{wzwanzig}
+verdreht & verdruss & verdummt & verehren & verehrer \\
+verehrte & vereint & verengt & vererzen & vererzt \\
+vererzte & verfiel & verfilmt & verfolgt & verfror \\
+verfuhr & vergasen & vergast & vergehen & vergeht
+\end{wzwanzig}
+\begin{wzwanzig}
+verging & verhau & verhaute & verheizt & verheult \\
+verhexen & verirrt & verjagte & verkappt & verkehrt \\
+verklagt & verkohlt & verkoken & verkokt & verlacht \\
+verladen & verladet & verlag & verlangt & verlegen
+\end{wzwanzig} 
+\begin{wzwanzig}
+verleih & verlernt & verlesen & verliebt & verlor \\
+verloren & verlosen & vermass & vermehrt & vermeint \\
+vermint & vermuten & vernarbt & vernarrt & verneint \\
+verorten & verpackt & verpasst & verputzt & verreist
+\end{wzwanzig}
+\begin{wzwanzig}
+verrenkt & verrohrt & verrusst & vers & versagen \\
+versager & versalzt & versaut & verschob & versehrt \\
+versengt & versohlt & verspaar & verstand & verstoss \\
+vertaeut & vertagen & vertagt & vertieft & vertonen
+\end{wzwanzig} 
+\begin{wzwanzig}
+vertont & vertrank & vertritt & vertuend & verueben \\
+verulkt & verulkte & verwaist & verwandt & verwanzt \\
+verwarf & verwarnt & verweht & verwirrt & verzagt \\
+verzerrt & verzicht & verzinnt & verzinst & verzug
+\end{wzwanzig}
+\begin{wzwanzig}
+vesper & vesperte & veteran & viadukt & vibrato \\
+viech & vieh & viehbox & viehisch & viel \\
+viele & vieleck & vielheit & vier & viereck \\
+vierte & viertens & vierzehn & vierzig & vigil
+\end{wzwanzig} 
+\begin{wzwanzig}
+villa & vilnius & vinothek & virginia & virtuell \\
+virtuos & virtuose & visieren & visite & viskos \\
+visum & vital & vitamin & vitriol & vivianit \\
+voellig & vogt & vogtei & vokabel & vokativ
+\end{wzwanzig}
+\begin{wzwanzig}
+volant & vollniet & vollwort & volute & voodoo \\
+vor & vorabend & vorabruf & voraus & vorbauen \\
+vorbeben & vorbild & vordem & vordere & vorderer \\
+voreilig & vorfahre & vorfilm & vorfrage & vorgabe
+\end{wzwanzig} 
+\begin{wzwanzig}
+vorgrube & vorhafen & vorhalle & vorig & vorkauf \\
+vorlauf & vorlaut & vorleger & vorleser & vormalig \\
+vormals & vormund & vorne & vorrang & vorraum \\
+vorrecht & vorschau & vorschub & vorstadt & vorstieg
+\end{wzwanzig}
+\begin{wzwanzig}
+vorstufe & vortag & vortrag & vortrieb & vortrupp \\
+vorwahl & vorwurf & voyeur & waadt & wachend \\
+wachmann & wachs & wachsam & wachsein & wachsen \\
+wachturm & wackelnd & wacklig & waechter & waegen
+\end{wzwanzig} 
+\begin{wzwanzig}
+waegung & waehe & waehlen & waehlte & waelzen \\
+waelzend & waelzt & waermen & waermend & waerter \\
+waescht & waessern & waessert & wagte & wahlen \\
+wahllos & wahlmann & wahlrede & wahnsinn & wahren
+\end{wzwanzig}
+\begin{wzwanzig}
+wahrhaft & wahrung & waldarm & waldbaum & waldhopf \\
+waldhuhn & waldig & walfang & walfisch & walhalla \\
+waliser & walkend & walkuere & walkung & wall \\
+wallen & wallis & waloel & walzen & wams
+\end{wzwanzig} 
+\begin{wzwanzig}
+wandel & wandeln & wandelnd & wandelte & wanderer \\
+wandert & wandlehm & wanken & wankend & wann \\
+wanst & want & warft & warnend & warnte \\
+warterei & wartete & warwick & warzig & waschend
+\end{wzwanzig}
+\begin{wzwanzig}
+wascher & waschung & wealden & weben & webend \\
+webkante & webleine & website & webte & webware \\
+wechsler & weckend & weckruf & weckt & wedelnd \\
+wedelte & wegen & wegerich & wegfegen & weggeben
+\end{wzwanzig} 
+\begin{wzwanzig}
+wegkreuz & weglos & wegpunkt & wegsehen & wegsein \\
+wehen & wehklage & wehrgang & wehrsold & wehtun \\
+weichei & weide & weidet & weidete & weihbild \\
+weihe & weihen & weihend & weihte & weiland
+\end{wzwanzig}
+\begin{wzwanzig}
+weilend & weilt & weilte & weinlese & weise \\
+weiser & weisheit & weiss & weisser & weisste \\
+weisswal & weitab & weiten & weitend & weiter \\
+weitet & weitete & weithin & weitung & weizen
+\end{wzwanzig} 
+\begin{wzwanzig}
+welcher & welkheit & wellen & wellend & wellig \\
+wellt & welpe & weltbild & weltcup & weltraum \\
+weltteil & weltweit & wen & wenden & wendend \\
+wendisch & wenig & wenigste & wenn & werfend
+\end{wzwanzig}
+\newpage
+\stepcounter{wzweins}
+
+\begin{wzwanzig}
+werfer & werft & werg & werkshof & wermut \\
+wert & wertfrei & wertlos & wertung & werwolf \\
+wesenlos & wesir & west & westen & westgote \\
+westtor & weswegen & wettend & wettende & wetterte
+\end{wzwanzig} 
+\begin{wzwanzig}
+wettete & wetzend & wetzt & whist & wich \\
+wichser & wichteln & wichtet & wichtig & wickelnd \\
+wicket & wider & widmend & widmet & wiederum \\
+wiege & wiegend & wiegte & wiener & wienern
+\end{wzwanzig}
+\begin{wzwanzig}
+wieso & wieviel & wieviele & wildbach & wilde \\
+wildernd & wildling & wildreis & wildtyp & willemit \\
+willens & wimmelt & wimmelte & windhund & windiger \\
+windlast & windsack & windsee & windstau & windsunk
+\end{wzwanzig} 
+\begin{wzwanzig}
+wink & winkend & winklig & winkte & winseln \\
+winselnd & winselt & winselte & winternd & winzig \\
+winziger & wipfel & wippe & wippt & wirbel \\
+wirbeln & wirbelte & wird & wirksam & wirkt
+\end{wzwanzig}
+\begin{wzwanzig}
+wirkung & wirren & wirrer & wirrkopf & wirrwarr \\
+wirtin & wischend & wissend & wittert & witwe \\
+witwer & witzelnd & witzelt & witzlos & wo \\
+wob & wobei & woche & wodka & woebe
+\end{wzwanzig} 
+\begin{wzwanzig}
+woelben & woelbt & woelbung & wogen & wogt \\
+woher & wohltat & wohnend & wohnlage & wohnort \\
+wohnsilo & wohnt & wohnte & wohnung & wok \\
+wollgarn & wolliger & wollmaus & wollte & wombat
+\end{wzwanzig}
+\begin{wzwanzig}
+wonach & worauf & worden & worfelnd & workshop \\
+wortlos & wortsinn & wortteil & worueber & wrang \\
+wricken & wriggeln & wringen & wuchernd & wucherte \\
+wuchtend & wuchtig & wuehler & wuenscht & wuerdig
+\end{wzwanzig} 
+\begin{wzwanzig}
+wuerfe & wuerfel & wuergend & wuergt & wuerzte \\
+wuesche & wueste & wund & wundarzt & wunde \\
+wunsch & wurfring & wurm & wurmig & wurst \\
+wurzeln & wurzelnd & wurzelt & wurzelte & wuselnd
+\end{wzwanzig}
+\begin{wzwanzig}
+wuxi & wyoming & xenon & yangon & yotta \\
+ypsilon & yucca & yukon & z & zacken \\
+zackig & zaeh & zaehlbar & zaehlen & zaehlend \\
+zaehler & zaehlt & zaehmt & zaehmung & zaehne
+\end{wzwanzig} 
+\begin{wzwanzig}
+zaenker & zaeumen & zagend & zaghaft & zagreb \\
+zagte & zahlte & zahm & zahmheit & zahn \\
+zahnarzt & zahnfach & zahnfee & zahngold & zahnrad \\
+zahnt & zapfloch & zappelt & zauberer & zauberin
+\end{wzwanzig}
+\begin{wzwanzig}
+zaudern & zaudert & zauderte & zaumzeug & zausend \\
+zebu & zeche & zechen & zecher & zecht \\
+zechte & zehner & zehntel & zehren & zeichen \\
+zeichnet & zeigen & zeigt & zeitigen & zeitlos
+\end{wzwanzig} 
+\begin{wzwanzig}
+zeitmass & zeitplan & zeitung & zeitwort & zelle \\
+zellfrei & zellwand & zelot & zeltdach & zement \\
+zenit & zensur & zentral & zerfetzt & zerfloss \\
+zergeht & zerlegen & zerlegt & zerlesen & zerlumpt
+\end{wzwanzig}
+\begin{wzwanzig}
+zermahlt & zernagt & zernagte & zerrung & zertritt \\
+zession & zeta & zeterte & zeugend & zeugma \\
+zickiger & zickzack & ziegelei & ziehend & ziehung \\
+zielt & zielwert & ziemend & ziemlich & ziepen
+\end{wzwanzig} 
+\begin{wzwanzig}
+zier & zieren & ziererei & zierte & ziesel \\
+zig & zigste & zigstes & zimmern & zimmerte \\
+zimtbaum & zimtente & zinder & zink & zinke \\
+zinkit & zinkoxid & zinksarg & zinn & zinnerz
+\end{wzwanzig}
+\begin{wzwanzig}
+zinnie & zinnober & zinnrot & zinslos & zionist \\
+zirka & zischend & zischt & zischte & zitat \\
+zither & zitronat & zittert & zivilist & zockeln \\
+zockelnd & zoege & zoegern & zoegernd & zoegert
+\end{wzwanzig} 
+\begin{wzwanzig}
+zoegerte & zoegling & zoelibat & zoisit & zoll \\
+zonarbau & zone & zopf & zorbing & zottelnd \\
+zottelt & zubinden & zucchini & zucht & zuckernd \\
+zuechtig & zueckt & zuegel & zuegeln & zuegig
+\end{wzwanzig}
+\begin{wzwanzig}
+zuegiger & zueilend & zuendend & zuender & zuendet \\
+zuendoel & zuenftig & zuengeln & zuernend & zuernte \\
+zuerst & zufahren & zufallen & zufolge & zuganker \\
+zugeben & zugeeilt & zugesagt & zugfeder & zugipsen
+\end{wzwanzig} 
+\begin{wzwanzig}
+zugmodul & zugochse & zugvieh & zugvogel & zuhaben \\
+zuhalten & zuhause & zuhoeren & zujubeln & zukorken \\
+zulage & zulegend & zuluft & zum & zumachen \\
+zumeist & zumutung & zunahme & zunder & zuoberst
+\end{wzwanzig}
+\begin{wzwanzig}
+zuordner & zupfen & zurecht & zureden & zurrte \\
+zurzeit & zusage & zusammen & zusatz & zuschlag \\
+zuschuss & zusehen & zusetzen & zustand & zuwachs \\
+zuweilen & zuzeiten & zwaenge & zwanzig & zwecks
+\end{wzwanzig} 
+\begin{wzwanzig}
+zweifach & zweifeln & zweifelt & zweipol & zweit \\
+zweiter & zwerg & zwickt & zwieback & zwiebel \\
+zwingt & zwinkern & zwirn & zwirnen & zwoelf \\
+zyklamat & zynisch & zypresse & zyprisch & zyste
+\end{wzwanzig}
+\end{document}
+
+
+%%% Local Variables: 
+%%% mode: latex
+%%% TeX-master: t
+%%% End: 
