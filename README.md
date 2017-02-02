@@ -15,4 +15,4 @@ Source of the words:
 * URL :: http://dict.tu-chemnitz.de/
 
 
-
+As basically all the files in this repo contain these words, the GPL applies to them as well.
