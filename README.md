@@ -20,6 +20,7 @@ These finished word lists PDFs,
 * deutsche Wortliste für Diceware, für W20.pdf
 * deutsche Wortliste für Diceware, für W6.pdf
 * Diceware English word list for use with d20.pdf
+
 are licensed as GPL 3 or later, not GPL 2.
 
 ### EFF
