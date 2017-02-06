@@ -1,31 +1,17 @@
 %% -*- mode: latex ; coding: utf-8 -*-
-\newif\iflhyper
-%\lhypertrue          %Hyperlinks im dvi
-\lhyperfalse        %keine Hykerlinks, erm"oglicht kompaktae Zitate,
-                     %Bei  Papierversion \lhyperfalse einstellen
 
-\newif\ifdraft
-%\drafttrue              % Set draft option in documentclass
-\draftfalse             % Don't set draft option in documentclass
-
-
-%\documentclass{article}        
-%\documentclass[8pt,twoside,normalheadings,
 \documentclass[fontsize=11pt,normalheadings,
         paper=a4,headinclude,DIV20,BCOR=5mm,
         pointlessnumbers,
-%        twocolumn,
-        \ifdraft draft,\fi
-%        ]{scrreprt}    
-        ]{scrartcl}      
-%DIV was 12, KOMA thougt that was too much enough
-\include{myheader}
+%        draft,
+        ]{scrartcl}
+%\include{myheader}
 \usepackage{epsdice}
-%\usepackage{palatino}
+\usepackage{palatino}
 
-\newcommand{\ppwfuenf}{\stepcounter{wuerfelfuenf}\epsdice{\thewuerfelfuenf}} 
+\newcommand{\ppwfuenf}{\stepcounter{wuerfelfuenf}\epsdice{\thewuerfelfuenf}}
 
-%
+
 \newenvironment{wsechs}{
 \bigskip
 
@@ -54,7 +40,6 @@
 
 
 \begin{document}
-\selectlanguage{british}
 
 \newcounter{wuerfeleins}
 \newcounter{wuerfelzwei}[wuerfeleins]
@@ -1948,7 +1933,7 @@
 \end{document}
 
 
-%%% Local Variables: 
+%%% Local Variables:
 %%% mode: latex
 %%% TeX-master: t
-%%% End: 
+%%% End:
