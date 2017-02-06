@@ -1,0 +1,358 @@
+%% -*- mode: latex ; coding: utf-8 -*-
+
+\documentclass[fontsize=11pt,normalheadings,
+        paper=a4,headinclude,DIV20,BCOR=5mm,
+        pointlessnumbers,
+%        draft,
+        ]{scrartcl}
+\usepackage{epsdice}
+\usepackage{palatino}
+
+\newcommand{\ppwfuenf}{\stepcounter{wuerfelfuenf}\epsdice{\thewuerfelfuenf}}
+
+
+\newenvironment{wsechs}{
+\bigskip
+
+\stepcounter{wuerfeldrei}
+\begin{minipage}{\textwidth}
+\begin{tabular}[c]{r|llllll}
+\multicolumn{1}{c}{\LARGE{\textsf{\epsdice{\thewuerfeleins}\epsdice{\thewuerfeldrei}}}} & \multicolumn{1}{c}{\epsdice{1}} & \multicolumn{1}{c}{\epsdice{2}} & \multicolumn{1}{c}{\epsdice{3}}
+& \multicolumn{1}{c}{\epsdice{4}} & \multicolumn{1}{c}{\epsdice{5}} & \multicolumn{1}{c}{\epsdice{6}} \\
+\cline{2-7}
+\rule[2.2ex]{0em}{0ex}}{\end{tabular}\end{minipage}}
+
+\setlength{\parindent}{0mm}
+
+\usepackage{fancyhdr}
+\setlength{\headheight}{15.2pt}
+\pagestyle{fancyplain}
+\cfoot{}
+
+\lhead{\Huge\arabic{wuerfeleins}}
+\chead{\Huge\bf English}
+\rhead{\Huge\epsdice{\thewuerfeleins}}
+\lfoot{\Huge\epsdice{\thewuerfeleins}}
+\cfoot{\Huge\bf English}
+\rfoot{\Huge\arabic{wuerfeleins}}
+
+
+
+\begin{document}
+
+\newcounter{wuerfeleins}
+% \newcounter{wuerfelzwei}[wuerfeleins]  % The one dropped for the EFF
+%short lists
+\newcounter{wuerfeldrei}[wuerfeleins]
+%wuerfelvier ist die Titelzeile der tabellen
+\newcounter{wuerfelfuenf}[wuerfeldrei]
+
+\stepcounter{wuerfeleins}
+\begin{wsechs}
+\ppwfuenf & foobar & foobar & foobar & foobar & foobar & foobar \\
+\ppwfuenf & foobar & foobar & foobar & foobar & foobar & foobar \\
+\ppwfuenf & foobar & foobar & foobar & foobar & foobar & foobar \\
+\ppwfuenf & foobar & foobar & foobar & foobar & foobar & foobar \\
+\ppwfuenf & foobar & foobar & foobar & foobar & foobar & foobar \\
+\ppwfuenf & foobar & foobar & foobar & foobar & foobar & foobar
+\end{wsechs}
+\begin{wsechs}
+\ppwfuenf & foobar & foobar & foobar & foobar & foobar & foobar \\
+\ppwfuenf & foobar & foobar & foobar & foobar & foobar & foobar \\
+\ppwfuenf & foobar & foobar & foobar & foobar & foobar & foobar \\
+\ppwfuenf & foobar & foobar & foobar & foobar & foobar & foobar \\
+\ppwfuenf & foobar & foobar & foobar & foobar & foobar & foobar \\
+\ppwfuenf & foobar & foobar & foobar & foobar & foobar & foobar
+\end{wsechs}
+\begin{wsechs}
+\ppwfuenf & foobar & foobar & foobar & foobar & foobar & foobar \\
+\ppwfuenf & foobar & foobar & foobar & foobar & foobar & foobar \\
+\ppwfuenf & foobar & foobar & foobar & foobar & foobar & foobar \\
+\ppwfuenf & foobar & foobar & foobar & foobar & foobar & foobar \\
+\ppwfuenf & foobar & foobar & foobar & foobar & foobar & foobar \\
+\ppwfuenf & foobar & foobar & foobar & foobar & foobar & foobar
+\end{wsechs}
+\begin{wsechs}
+\ppwfuenf & foobar & foobar & foobar & foobar & foobar & foobar \\
+\ppwfuenf & foobar & foobar & foobar & foobar & foobar & foobar \\
+\ppwfuenf & foobar & foobar & foobar & foobar & foobar & foobar \\
+\ppwfuenf & foobar & foobar & foobar & foobar & foobar & foobar \\
+\ppwfuenf & foobar & foobar & foobar & foobar & foobar & foobar \\
+\ppwfuenf & foobar & foobar & foobar & foobar & foobar & foobar
+\end{wsechs}
+\begin{wsechs}
+\ppwfuenf & foobar & foobar & foobar & foobar & foobar & foobar \\
+\ppwfuenf & foobar & foobar & foobar & foobar & foobar & foobar \\
+\ppwfuenf & foobar & foobar & foobar & foobar & foobar & foobar \\
+\ppwfuenf & foobar & foobar & foobar & foobar & foobar & foobar \\
+\ppwfuenf & foobar & foobar & foobar & foobar & foobar & foobar \\
+\ppwfuenf & foobar & foobar & foobar & foobar & foobar & foobar
+\end{wsechs}
+\begin{wsechs}
+\ppwfuenf & foobar & foobar & foobar & foobar & foobar & foobar \\
+\ppwfuenf & foobar & foobar & foobar & foobar & foobar & foobar \\
+\ppwfuenf & foobar & foobar & foobar & foobar & foobar & foobar \\
+\ppwfuenf & foobar & foobar & foobar & foobar & foobar & foobar \\
+\ppwfuenf & foobar & foobar & foobar & foobar & foobar & foobar \\
+\ppwfuenf & foobar & foobar & foobar & foobar & foobar & foobar
+\end{wsechs}
+\newpage
+\stepcounter{wuerfeleins}
+\begin{wsechs}
+\ppwfuenf & foobar & foobar & foobar & foobar & foobar & foobar \\
+\ppwfuenf & foobar & foobar & foobar & foobar & foobar & foobar \\
+\ppwfuenf & foobar & foobar & foobar & foobar & foobar & foobar \\
+\ppwfuenf & foobar & foobar & foobar & foobar & foobar & foobar \\
+\ppwfuenf & foobar & foobar & foobar & foobar & foobar & foobar \\
+\ppwfuenf & foobar & foobar & foobar & foobar & foobar & foobar
+\end{wsechs}
+\begin{wsechs}
+\ppwfuenf & foobar & foobar & foobar & foobar & foobar & foobar \\
+\ppwfuenf & foobar & foobar & foobar & foobar & foobar & foobar \\
+\ppwfuenf & foobar & foobar & foobar & foobar & foobar & foobar \\
+\ppwfuenf & foobar & foobar & foobar & foobar & foobar & foobar \\
+\ppwfuenf & foobar & foobar & foobar & foobar & foobar & foobar \\
+\ppwfuenf & foobar & foobar & foobar & foobar & foobar & foobar
+\end{wsechs}
+\begin{wsechs}
+\ppwfuenf & foobar & foobar & foobar & foobar & foobar & foobar \\
+\ppwfuenf & foobar & foobar & foobar & foobar & foobar & foobar \\
+\ppwfuenf & foobar & foobar & foobar & foobar & foobar & foobar \\
+\ppwfuenf & foobar & foobar & foobar & foobar & foobar & foobar \\
+\ppwfuenf & foobar & foobar & foobar & foobar & foobar & foobar \\
+\ppwfuenf & foobar & foobar & foobar & foobar & foobar & foobar
+\end{wsechs}
+\begin{wsechs}
+\ppwfuenf & foobar & foobar & foobar & foobar & foobar & foobar \\
+\ppwfuenf & foobar & foobar & foobar & foobar & foobar & foobar \\
+\ppwfuenf & foobar & foobar & foobar & foobar & foobar & foobar \\
+\ppwfuenf & foobar & foobar & foobar & foobar & foobar & foobar \\
+\ppwfuenf & foobar & foobar & foobar & foobar & foobar & foobar \\
+\ppwfuenf & foobar & foobar & foobar & foobar & foobar & foobar
+\end{wsechs}
+\begin{wsechs}
+\ppwfuenf & foobar & foobar & foobar & foobar & foobar & foobar \\
+\ppwfuenf & foobar & foobar & foobar & foobar & foobar & foobar \\
+\ppwfuenf & foobar & foobar & foobar & foobar & foobar & foobar \\
+\ppwfuenf & foobar & foobar & foobar & foobar & foobar & foobar \\
+\ppwfuenf & foobar & foobar & foobar & foobar & foobar & foobar \\
+\ppwfuenf & foobar & foobar & foobar & foobar & foobar & foobar
+\end{wsechs}
+\begin{wsechs}
+\ppwfuenf & foobar & foobar & foobar & foobar & foobar & foobar \\
+\ppwfuenf & foobar & foobar & foobar & foobar & foobar & foobar \\
+\ppwfuenf & foobar & foobar & foobar & foobar & foobar & foobar \\
+\ppwfuenf & foobar & foobar & foobar & foobar & foobar & foobar \\
+\ppwfuenf & foobar & foobar & foobar & foobar & foobar & foobar \\
+\ppwfuenf & foobar & foobar & foobar & foobar & foobar & foobar
+\end{wsechs}
+\newpage
+\stepcounter{wuerfeleins}
+
+\begin{wsechs}
+\ppwfuenf & foobar & foobar & foobar & foobar & foobar & foobar \\
+\ppwfuenf & foobar & foobar & foobar & foobar & foobar & foobar \\
+\ppwfuenf & foobar & foobar & foobar & foobar & foobar & foobar \\
+\ppwfuenf & foobar & foobar & foobar & foobar & foobar & foobar \\
+\ppwfuenf & foobar & foobar & foobar & foobar & foobar & foobar \\
+\ppwfuenf & foobar & foobar & foobar & foobar & foobar & foobar
+\end{wsechs}
+\begin{wsechs}
+\ppwfuenf & foobar & foobar & foobar & foobar & foobar & foobar \\
+\ppwfuenf & foobar & foobar & foobar & foobar & foobar & foobar \\
+\ppwfuenf & foobar & foobar & foobar & foobar & foobar & foobar \\
+\ppwfuenf & foobar & foobar & foobar & foobar & foobar & foobar \\
+\ppwfuenf & foobar & foobar & foobar & foobar & foobar & foobar \\
+\ppwfuenf & foobar & foobar & foobar & foobar & foobar & foobar
+\end{wsechs}
+\begin{wsechs}
+\ppwfuenf & foobar & foobar & foobar & foobar & foobar & foobar \\
+\ppwfuenf & foobar & foobar & foobar & foobar & foobar & foobar \\
+\ppwfuenf & foobar & foobar & foobar & foobar & foobar & foobar \\
+\ppwfuenf & foobar & foobar & foobar & foobar & foobar & foobar \\
+\ppwfuenf & foobar & foobar & foobar & foobar & foobar & foobar \\
+\ppwfuenf & foobar & foobar & foobar & foobar & foobar & foobar
+\end{wsechs}
+\begin{wsechs}
+\ppwfuenf & foobar & foobar & foobar & foobar & foobar & foobar \\
+\ppwfuenf & foobar & foobar & foobar & foobar & foobar & foobar \\
+\ppwfuenf & foobar & foobar & foobar & foobar & foobar & foobar \\
+\ppwfuenf & foobar & foobar & foobar & foobar & foobar & foobar \\
+\ppwfuenf & foobar & foobar & foobar & foobar & foobar & foobar \\
+\ppwfuenf & foobar & foobar & foobar & foobar & foobar & foobar
+\end{wsechs}
+\begin{wsechs}
+\ppwfuenf & foobar & foobar & foobar & foobar & foobar & foobar \\
+\ppwfuenf & foobar & foobar & foobar & foobar & foobar & foobar \\
+\ppwfuenf & foobar & foobar & foobar & foobar & foobar & foobar \\
+\ppwfuenf & foobar & foobar & foobar & foobar & foobar & foobar \\
+\ppwfuenf & foobar & foobar & foobar & foobar & foobar & foobar \\
+\ppwfuenf & foobar & foobar & foobar & foobar & foobar & foobar
+\end{wsechs}
+\begin{wsechs}
+\ppwfuenf & foobar & foobar & foobar & foobar & foobar & foobar \\
+\ppwfuenf & foobar & foobar & foobar & foobar & foobar & foobar \\
+\ppwfuenf & foobar & foobar & foobar & foobar & foobar & foobar \\
+\ppwfuenf & foobar & foobar & foobar & foobar & foobar & foobar \\
+\ppwfuenf & foobar & foobar & foobar & foobar & foobar & foobar \\
+\ppwfuenf & foobar & foobar & foobar & foobar & foobar & foobar
+\end{wsechs}
+\newpage
+\stepcounter{wuerfeleins}
+
+\begin{wsechs}
+\ppwfuenf & foobar & foobar & foobar & foobar & foobar & foobar \\
+\ppwfuenf & foobar & foobar & foobar & foobar & foobar & foobar \\
+\ppwfuenf & foobar & foobar & foobar & foobar & foobar & foobar \\
+\ppwfuenf & foobar & foobar & foobar & foobar & foobar & foobar \\
+\ppwfuenf & foobar & foobar & foobar & foobar & foobar & foobar \\
+\ppwfuenf & foobar & foobar & foobar & foobar & foobar & foobar
+\end{wsechs}
+\begin{wsechs}
+\ppwfuenf & foobar & foobar & foobar & foobar & foobar & foobar \\
+\ppwfuenf & foobar & foobar & foobar & foobar & foobar & foobar \\
+\ppwfuenf & foobar & foobar & foobar & foobar & foobar & foobar \\
+\ppwfuenf & foobar & foobar & foobar & foobar & foobar & foobar \\
+\ppwfuenf & foobar & foobar & foobar & foobar & foobar & foobar \\
+\ppwfuenf & foobar & foobar & foobar & foobar & foobar & foobar
+\end{wsechs}
+\begin{wsechs}
+\ppwfuenf & foobar & foobar & foobar & foobar & foobar & foobar \\
+\ppwfuenf & foobar & foobar & foobar & foobar & foobar & foobar \\
+\ppwfuenf & foobar & foobar & foobar & foobar & foobar & foobar \\
+\ppwfuenf & foobar & foobar & foobar & foobar & foobar & foobar \\
+\ppwfuenf & foobar & foobar & foobar & foobar & foobar & foobar \\
+\ppwfuenf & foobar & foobar & foobar & foobar & foobar & foobar
+\end{wsechs}
+\begin{wsechs}
+\ppwfuenf & foobar & foobar & foobar & foobar & foobar & foobar \\
+\ppwfuenf & foobar & foobar & foobar & foobar & foobar & foobar \\
+\ppwfuenf & foobar & foobar & foobar & foobar & foobar & foobar \\
+\ppwfuenf & foobar & foobar & foobar & foobar & foobar & foobar \\
+\ppwfuenf & foobar & foobar & foobar & foobar & foobar & foobar \\
+\ppwfuenf & foobar & foobar & foobar & foobar & foobar & foobar
+\end{wsechs}
+\begin{wsechs}
+\ppwfuenf & foobar & foobar & foobar & foobar & foobar & foobar \\
+\ppwfuenf & foobar & foobar & foobar & foobar & foobar & foobar \\
+\ppwfuenf & foobar & foobar & foobar & foobar & foobar & foobar \\
+\ppwfuenf & foobar & foobar & foobar & foobar & foobar & foobar \\
+\ppwfuenf & foobar & foobar & foobar & foobar & foobar & foobar \\
+\ppwfuenf & foobar & foobar & foobar & foobar & foobar & foobar
+\end{wsechs}
+\begin{wsechs}
+\ppwfuenf & foobar & foobar & foobar & foobar & foobar & foobar \\
+\ppwfuenf & foobar & foobar & foobar & foobar & foobar & foobar \\
+\ppwfuenf & foobar & foobar & foobar & foobar & foobar & foobar \\
+\ppwfuenf & foobar & foobar & foobar & foobar & foobar & foobar \\
+\ppwfuenf & foobar & foobar & foobar & foobar & foobar & foobar \\
+\ppwfuenf & foobar & foobar & foobar & foobar & foobar & foobar
+\end{wsechs}
+\newpage
+\stepcounter{wuerfeleins}
+
+\begin{wsechs}
+\ppwfuenf & foobar & foobar & foobar & foobar & foobar & foobar \\
+\ppwfuenf & foobar & foobar & foobar & foobar & foobar & foobar \\
+\ppwfuenf & foobar & foobar & foobar & foobar & foobar & foobar \\
+\ppwfuenf & foobar & foobar & foobar & foobar & foobar & foobar \\
+\ppwfuenf & foobar & foobar & foobar & foobar & foobar & foobar \\
+\ppwfuenf & foobar & foobar & foobar & foobar & foobar & foobar
+\end{wsechs}
+\begin{wsechs}
+\ppwfuenf & foobar & foobar & foobar & foobar & foobar & foobar \\
+\ppwfuenf & foobar & foobar & foobar & foobar & foobar & foobar \\
+\ppwfuenf & foobar & foobar & foobar & foobar & foobar & foobar \\
+\ppwfuenf & foobar & foobar & foobar & foobar & foobar & foobar \\
+\ppwfuenf & foobar & foobar & foobar & foobar & foobar & foobar \\
+\ppwfuenf & foobar & foobar & foobar & foobar & foobar & foobar
+\end{wsechs}
+\begin{wsechs}
+\ppwfuenf & foobar & foobar & foobar & foobar & foobar & foobar \\
+\ppwfuenf & foobar & foobar & foobar & foobar & foobar & foobar \\
+\ppwfuenf & foobar & foobar & foobar & foobar & foobar & foobar \\
+\ppwfuenf & foobar & foobar & foobar & foobar & foobar & foobar \\
+\ppwfuenf & foobar & foobar & foobar & foobar & foobar & foobar \\
+\ppwfuenf & foobar & foobar & foobar & foobar & foobar & foobar
+\end{wsechs}
+\begin{wsechs}
+\ppwfuenf & foobar & foobar & foobar & foobar & foobar & foobar \\
+\ppwfuenf & foobar & foobar & foobar & foobar & foobar & foobar \\
+\ppwfuenf & foobar & foobar & foobar & foobar & foobar & foobar \\
+\ppwfuenf & foobar & foobar & foobar & foobar & foobar & foobar \\
+\ppwfuenf & foobar & foobar & foobar & foobar & foobar & foobar \\
+\ppwfuenf & foobar & foobar & foobar & foobar & foobar & foobar
+\end{wsechs}
+\begin{wsechs}
+\ppwfuenf & foobar & foobar & foobar & foobar & foobar & foobar \\
+\ppwfuenf & foobar & foobar & foobar & foobar & foobar & foobar \\
+\ppwfuenf & foobar & foobar & foobar & foobar & foobar & foobar \\
+\ppwfuenf & foobar & foobar & foobar & foobar & foobar & foobar \\
+\ppwfuenf & foobar & foobar & foobar & foobar & foobar & foobar \\
+\ppwfuenf & foobar & foobar & foobar & foobar & foobar & foobar
+\end{wsechs}
+\begin{wsechs}
+\ppwfuenf & foobar & foobar & foobar & foobar & foobar & foobar \\
+\ppwfuenf & foobar & foobar & foobar & foobar & foobar & foobar \\
+\ppwfuenf & foobar & foobar & foobar & foobar & foobar & foobar \\
+\ppwfuenf & foobar & foobar & foobar & foobar & foobar & foobar \\
+\ppwfuenf & foobar & foobar & foobar & foobar & foobar & foobar \\
+\ppwfuenf & foobar & foobar & foobar & foobar & foobar & foobar
+\end{wsechs}
+\newpage
+\stepcounter{wuerfeleins}
+\begin{wsechs}
+\ppwfuenf & foobar & foobar & foobar & foobar & foobar & foobar \\
+\ppwfuenf & foobar & foobar & foobar & foobar & foobar & foobar \\
+\ppwfuenf & foobar & foobar & foobar & foobar & foobar & foobar \\
+\ppwfuenf & foobar & foobar & foobar & foobar & foobar & foobar \\
+\ppwfuenf & foobar & foobar & foobar & foobar & foobar & foobar \\
+\ppwfuenf & foobar & foobar & foobar & foobar & foobar & foobar
+\end{wsechs}
+\begin{wsechs}
+\ppwfuenf & foobar & foobar & foobar & foobar & foobar & foobar \\
+\ppwfuenf & foobar & foobar & foobar & foobar & foobar & foobar \\
+\ppwfuenf & foobar & foobar & foobar & foobar & foobar & foobar \\
+\ppwfuenf & foobar & foobar & foobar & foobar & foobar & foobar \\
+\ppwfuenf & foobar & foobar & foobar & foobar & foobar & foobar \\
+\ppwfuenf & foobar & foobar & foobar & foobar & foobar & foobar
+\end{wsechs}
+\begin{wsechs}
+\ppwfuenf & foobar & foobar & foobar & foobar & foobar & foobar \\
+\ppwfuenf & foobar & foobar & foobar & foobar & foobar & foobar \\
+\ppwfuenf & foobar & foobar & foobar & foobar & foobar & foobar \\
+\ppwfuenf & foobar & foobar & foobar & foobar & foobar & foobar \\
+\ppwfuenf & foobar & foobar & foobar & foobar & foobar & foobar \\
+\ppwfuenf & foobar & foobar & foobar & foobar & foobar & foobar
+\end{wsechs}
+\begin{wsechs}
+\ppwfuenf & foobar & foobar & foobar & foobar & foobar & foobar \\
+\ppwfuenf & foobar & foobar & foobar & foobar & foobar & foobar \\
+\ppwfuenf & foobar & foobar & foobar & foobar & foobar & foobar \\
+\ppwfuenf & foobar & foobar & foobar & foobar & foobar & foobar \\
+\ppwfuenf & foobar & foobar & foobar & foobar & foobar & foobar \\
+\ppwfuenf & foobar & foobar & foobar & foobar & foobar & foobar
+\end{wsechs}
+\begin{wsechs}
+\ppwfuenf & foobar & foobar & foobar & foobar & foobar & foobar \\
+\ppwfuenf & foobar & foobar & foobar & foobar & foobar & foobar \\
+\ppwfuenf & foobar & foobar & foobar & foobar & foobar & foobar \\
+\ppwfuenf & foobar & foobar & foobar & foobar & foobar & foobar \\
+\ppwfuenf & foobar & foobar & foobar & foobar & foobar & foobar \\
+\ppwfuenf & foobar & foobar & foobar & foobar & foobar & foobar
+\end{wsechs}
+\begin{wsechs}
+\ppwfuenf & foobar & foobar & foobar & foobar & foobar & foobar \\
+\ppwfuenf & foobar & foobar & foobar & foobar & foobar & foobar \\
+\ppwfuenf & foobar & foobar & foobar & foobar & foobar & foobar \\
+\ppwfuenf & foobar & foobar & foobar & foobar & foobar & foobar \\
+\ppwfuenf & foobar & foobar & foobar & foobar & foobar & foobar \\
+\ppwfuenf & foobar & foobar & foobar & foobar & foobar & foobar
+\end{wsechs}
+\end{document}
+
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: t
+%%% End:
