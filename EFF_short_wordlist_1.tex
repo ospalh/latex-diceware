@@ -1,0 +1,358 @@
+%% -*- mode: latex ; coding: utf-8 -*-
+
+\documentclass[fontsize=11pt,normalheadings,
+        paper=a4,headinclude,DIV20,BCOR=5mm,
+        pointlessnumbers,
+%        draft,
+        ]{scrartcl}
+\usepackage{epsdice}
+\usepackage{palatino}
+
+\newcommand{\ppwfuenf}{\stepcounter{wuerfelfuenf}\epsdice{\thewuerfelfuenf}}
+
+
+\newenvironment{wsechs}{
+\bigskip
+
+\stepcounter{wuerfeldrei}
+\begin{minipage}{\textwidth}
+\begin{tabular}[c]{r|llllll}
+\multicolumn{1}{c}{\LARGE{\textsf{\epsdice{\thewuerfeleins}\epsdice{\thewuerfeldrei}}}} & \multicolumn{1}{c}{\epsdice{1}} & \multicolumn{1}{c}{\epsdice{2}} & \multicolumn{1}{c}{\epsdice{3}}
+& \multicolumn{1}{c}{\epsdice{4}} & \multicolumn{1}{c}{\epsdice{5}} & \multicolumn{1}{c}{\epsdice{6}} \\
+\cline{2-7}
+\rule[2.2ex]{0em}{0ex}}{\end{tabular}\end{minipage}}
+
+\setlength{\parindent}{0mm}
+
+\usepackage{fancyhdr}
+\setlength{\headheight}{15.2pt}
+\pagestyle{fancyplain}
+\cfoot{}
+
+\lhead{\Huge\arabic{wuerfeleins}}
+\chead{\Huge\bf English}
+\rhead{\Huge\epsdice{\thewuerfeleins}}
+\lfoot{\Huge\epsdice{\thewuerfeleins}}
+\cfoot{\Huge\bf English}
+\rfoot{\Huge\arabic{wuerfeleins}}
+
+
+
+\begin{document}
+
+\newcounter{wuerfeleins}
+% \newcounter{wuerfelzwei}[wuerfeleins]  % The one dropped for the EFF
+%short lists
+\newcounter{wuerfeldrei}[wuerfeleins]
+%wuerfelvier ist die Titelzeile der tabellen
+\newcounter{wuerfelfuenf}[wuerfeldrei]
+
+\stepcounter{wuerfeleins}
+\begin{wsechs}
+\ppwfuenf & acid & acorn & acre & acts & afar & affix \\
+\ppwfuenf & aged & agent & agile & aging & agony & ahead \\
+\ppwfuenf & aide & aids & aim & ajar & alarm & alias \\
+\ppwfuenf & alibi & alien & alike & alive & aloe & aloft \\
+\ppwfuenf & aloha & alone & amend & amino & ample & amuse \\
+\ppwfuenf & angel & anger & angle & ankle & apple & april
+\end{wsechs}
+\begin{wsechs}
+\ppwfuenf & apron & aqua & area & arena & argue & arise \\
+\ppwfuenf & armed & armor & army & aroma & array & arson \\
+\ppwfuenf & art & ashen & ashes & atlas & atom & attic \\
+\ppwfuenf & audio & avert & avoid & awake & award & awoke \\
+\ppwfuenf & axis & bacon & badge & bagel & baggy & baked \\
+\ppwfuenf & baker & balmy & banjo & barge & barn & bash
+\end{wsechs}
+\begin{wsechs}
+\ppwfuenf & basil & bask & batch & bath & baton & bats \\
+\ppwfuenf & blade & blank & blast & blaze & bleak & blend \\
+\ppwfuenf & bless & blimp & blink & bloat & blob & blog \\
+\ppwfuenf & blot & blunt & blurt & blush & boast & boat \\
+\ppwfuenf & body & boil & bok & bolt & boned & boney \\
+\ppwfuenf & bonus & bony & book & booth & boots & boss
+\end{wsechs}
+\begin{wsechs}
+\ppwfuenf & botch & both & boxer & breed & bribe & brick \\
+\ppwfuenf & bride & brim & bring & brink & brisk & broad \\
+\ppwfuenf & broil & broke & brook & broom & brush & buck \\
+\ppwfuenf & bud & buggy & bulge & bulk & bully & bunch \\
+\ppwfuenf & bunny & bunt & bush & bust & busy & buzz \\
+\ppwfuenf & cable & cache & cadet & cage & cake & calm
+\end{wsechs}
+\begin{wsechs}
+\ppwfuenf & cameo & canal & candy & cane & canon & cape \\
+\ppwfuenf & card & cargo & carol & carry & carve & case \\
+\ppwfuenf & cash & cause & cedar & chain & chair & chant \\
+\ppwfuenf & chaos & charm & chase & cheek & cheer & chef \\
+\ppwfuenf & chess & chest & chew & chief & chili & chill \\
+\ppwfuenf & chip & chomp & chop & chow & chuck & chump
+\end{wsechs}
+\begin{wsechs}
+\ppwfuenf & chunk & churn & chute & cider & cinch & city \\
+\ppwfuenf & civic & civil & clad & claim & clamp & clap \\
+\ppwfuenf & clash & clasp & class & claw & clay & clean \\
+\ppwfuenf & clear & cleat & cleft & clerk & click & cling \\
+\ppwfuenf & clink & clip & cloak & clock & clone & cloth \\
+\ppwfuenf & cloud & clump & coach & coast & coat & cod
+\end{wsechs}
+\newpage
+\stepcounter{wuerfeleins}
+\begin{wsechs}
+\ppwfuenf & coil & coke & cola & cold & colt & coma \\
+\ppwfuenf & come & comic & comma & cone & cope & copy \\
+\ppwfuenf & coral & cork & cost & cot & couch & cough \\
+\ppwfuenf & cover & cozy & craft & cramp & crane & crank \\
+\ppwfuenf & crate & crave & crawl & crazy & creme & crepe \\
+\ppwfuenf & crept & crib & cried & crisp & crook & crop
+\end{wsechs}
+\begin{wsechs}
+\ppwfuenf & cross & crowd & crown & crumb & crush & crust \\
+\ppwfuenf & cub & cult & cupid & cure & curl & curry \\
+\ppwfuenf & curse & curve & curvy & cushy & cut & cycle \\
+\ppwfuenf & dab & dad & daily & dairy & daisy & dance \\
+\ppwfuenf & dandy & darn & dart & dash & data & date \\
+\ppwfuenf & dawn & deaf & deal & dean & debit & debt
+\end{wsechs}
+\begin{wsechs}
+\ppwfuenf & debug & decaf & decal & decay & deck & decor \\
+\ppwfuenf & decoy & deed & delay & denim & dense & dent \\
+\ppwfuenf & depth & derby & desk & dial & diary & dice \\
+\ppwfuenf & dig & dill & dime & dimly & diner & dingy \\
+\ppwfuenf & disco & dish & disk & ditch & ditzy & dizzy \\
+\ppwfuenf & dock & dodge & doing & doll & dome & donor
+\end{wsechs}
+\begin{wsechs}
+\ppwfuenf & donut & dose & dot & dove & down & dowry \\
+\ppwfuenf & doze & drab & drama & drank & draw & dress \\
+\ppwfuenf & dried & drift & drill & drive & drone & droop \\
+\ppwfuenf & drove & drown & drum & dry & duck & duct \\
+\ppwfuenf & dude & dug & duke & duo & dusk & dust \\
+\ppwfuenf & duty & dwarf & dwell & eagle & early & earth
+\end{wsechs}
+\begin{wsechs}
+\ppwfuenf & easel & east & eaten & eats & ebay & ebony \\
+\ppwfuenf & ebook & echo & edge & eel & eject & elbow \\
+\ppwfuenf & elder & elf & elk & elm & elope & elude \\
+\ppwfuenf & elves & email & emit & empty & emu & enter \\
+\ppwfuenf & entry & envoy & equal & erase & error & erupt \\
+\ppwfuenf & essay & etch & evade & even & evict & evil
+\end{wsechs}
+\begin{wsechs}
+\ppwfuenf & evoke & exact & exit & fable & faced & fact \\
+\ppwfuenf & fade & fall & false & fancy & fang & fax \\
+\ppwfuenf & feast & feed & femur & fence & fend & ferry \\
+\ppwfuenf & fetal & fetch & fever & fiber & fifth & fifty \\
+\ppwfuenf & film & filth & final & finch & fit & five \\
+\ppwfuenf & flag & flaky & flame & flap & flask & fled
+\end{wsechs}
+\newpage
+\stepcounter{wuerfeleins}
+
+\begin{wsechs}
+\ppwfuenf & flick & fling & flint & flip & flirt & float \\
+\ppwfuenf & flock & flop & floss & flyer & foam & foe \\
+\ppwfuenf & fog & foil & folic & folk & food & fool \\
+\ppwfuenf & found & fox & foyer & frail & frame & fray \\
+\ppwfuenf & fresh & fried & frill & frisk & from & front \\
+\ppwfuenf & frost & froth & frown & froze & fruit & gag
+\end{wsechs}
+\begin{wsechs}
+\ppwfuenf & gains & gala & game & gap & gas & gave \\
+\ppwfuenf & gear & gecko & geek & gem & genre & gift \\
+\ppwfuenf & gig & gills & given & giver & glad & glass \\
+\ppwfuenf & glide & gloss & glove & glow & glue & goal \\
+\ppwfuenf & going & golf & gong & good & gooey & goofy \\
+\ppwfuenf & gore & gown & grab & grain & grant & grape
+\end{wsechs}
+\begin{wsechs}
+\ppwfuenf & graph & grasp & grass & grave & gravy & gray \\
+\ppwfuenf & green & greet & grew & grid & grief & grill \\
+\ppwfuenf & grip & grit & groom & grope & growl & grub \\
+\ppwfuenf & grunt & guide & gulf & gulp & gummy & guru \\
+\ppwfuenf & gush & gut & guy & habit & half & halo \\
+\ppwfuenf & halt & happy & harm & hash & hasty & hatch
+\end{wsechs}
+\begin{wsechs}
+\ppwfuenf & hate & haven & hazel & hazy & heap & heat \\
+\ppwfuenf & heave & hedge & hefty & help & herbs & hers \\
+\ppwfuenf & hub & hug & hula & hull & human & humid \\
+\ppwfuenf & hump & hung & hunk & hunt & hurry & hurt \\
+\ppwfuenf & hush & hut & ice & icing & icon & icy \\
+\ppwfuenf & igloo & image & ion & iron & islam & issue
+\end{wsechs}
+\begin{wsechs}
+\ppwfuenf & item & ivory & ivy & jab & jam & jaws \\
+\ppwfuenf & jazz & jeep & jelly & jet & jiffy & job \\
+\ppwfuenf & jog & jolly & jolt & jot & joy & judge \\
+\ppwfuenf & juice & juicy & july & jumbo & jump & junky \\
+\ppwfuenf & juror & jury & keep & keg & kept & kick \\
+\ppwfuenf & kilt & king & kite & kitty & kiwi & knee
+\end{wsechs}
+\begin{wsechs}
+\ppwfuenf & knelt & koala & kung & ladle & lady & lair \\
+\ppwfuenf & lake & lance & land & lapel & large & lash \\
+\ppwfuenf & lasso & last & latch & late & lazy & left \\
+\ppwfuenf & legal & lemon & lend & lens & lent & level \\
+\ppwfuenf & lever & lid & life & lift & lilac & lily \\
+\ppwfuenf & limb & limes & line & lint & lion & lip
+\end{wsechs}
+\newpage
+\stepcounter{wuerfeleins}
+
+\begin{wsechs}
+\ppwfuenf & list & lived & liver & lunar & lunch & lung \\
+\ppwfuenf & lurch & lure & lurk & lying & lyric & mace \\
+\ppwfuenf & maker & malt & mama & mango & manor & many \\
+\ppwfuenf & map & march & mardi & marry & mash & match \\
+\ppwfuenf & mate & math & moan & mocha & moist & mold \\
+\ppwfuenf & mom & moody & mop & morse & most & motor
+\end{wsechs}
+\begin{wsechs}
+\ppwfuenf & motto & mount & mouse & mousy & mouth & move \\
+\ppwfuenf & movie & mower & mud & mug & mulch & mule \\
+\ppwfuenf & mull & mumbo & mummy & mural & muse & music \\
+\ppwfuenf & musky & mute & nacho & nag & nail & name \\
+\ppwfuenf & nanny & nap & navy & near & neat & neon \\
+\ppwfuenf & nerd & nest & net & next & niece & ninth
+\end{wsechs}
+\begin{wsechs}
+\ppwfuenf & nutty & oak & oasis & oat & ocean & oil \\
+\ppwfuenf & old & olive & omen & onion & only & ooze \\
+\ppwfuenf & opal & open & opera & opt & otter & ouch \\
+\ppwfuenf & ounce & outer & oval & oven & owl & ozone \\
+\ppwfuenf & pace & pagan & pager & palm & panda & panic \\
+\ppwfuenf & pants & panty & paper & park & party & pasta
+\end{wsechs}
+\begin{wsechs}
+\ppwfuenf & patch & path & patio & payer & pecan & penny \\
+\ppwfuenf & pep & perch & perky & perm & pest & petal \\
+\ppwfuenf & petri & petty & photo & plank & plant & plaza \\
+\ppwfuenf & plead & plot & plow & pluck & plug & plus \\
+\ppwfuenf & poach & pod & poem & poet & pogo & point \\
+\ppwfuenf & poise & poker & polar & polio & polka & polo
+\end{wsechs}
+\begin{wsechs}
+\ppwfuenf & pond & pony & poppy & pork & poser & pouch \\
+\ppwfuenf & pound & pout & power & prank & press & print \\
+\ppwfuenf & prior & prism & prize & probe & prong & proof \\
+\ppwfuenf & props & prude & prune & pry & pug & pull \\
+\ppwfuenf & pulp & pulse & puma & punch & punk & pupil \\
+\ppwfuenf & puppy & purr & purse & push & putt & quack
+\end{wsechs}
+\begin{wsechs}
+\ppwfuenf & quake & query & quiet & quill & quilt & quit \\
+\ppwfuenf & quota & quote & rabid & race & rack & radar \\
+\ppwfuenf & radio & raft & rage & raid & rail & rake \\
+\ppwfuenf & rally & ramp & ranch & range & rank & rant \\
+\ppwfuenf & rash & raven & reach & react & ream & rebel \\
+\ppwfuenf & recap & relax & relay & relic & remix & repay
+\end{wsechs}
+\newpage
+\stepcounter{wuerfeleins}
+
+\begin{wsechs}
+\ppwfuenf & repel & reply & rerun & reset & rhyme & rice \\
+\ppwfuenf & rich & ride & rigid & rigor & rinse & riot \\
+\ppwfuenf & ripen & rise & risk & ritzy & rival & river \\
+\ppwfuenf & roast & robe & robin & rock & rogue & roman \\
+\ppwfuenf & romp & rope & rover & royal & ruby & rug \\
+\ppwfuenf & ruin & rule & runny & rush & rust & rut
+\end{wsechs}
+\begin{wsechs}
+\ppwfuenf & sadly & sage & said & saint & salad & salon \\
+\ppwfuenf & salsa & salt & same & sandy & santa & satin \\
+\ppwfuenf & sauna & saved & savor & sax & say & scale \\
+\ppwfuenf & scam & scan & scare & scarf & scary & scoff \\
+\ppwfuenf & scold & scoop & scoot & scope & score & scorn \\
+\ppwfuenf & scout & scowl & scrap & scrub & scuba & scuff
+\end{wsechs}
+\begin{wsechs}
+\ppwfuenf & sect & sedan & self & send & sepia & serve \\
+\ppwfuenf & set & seven & shack & shade & shady & shaft \\
+\ppwfuenf & shaky & sham & shape & share & sharp & shed \\
+\ppwfuenf & sheep & sheet & shelf & shell & shine & shiny \\
+\ppwfuenf & ship & shirt & shock & shop & shore & shout \\
+\ppwfuenf & shove & shown & showy & shred & shrug & shun
+\end{wsechs}
+\begin{wsechs}
+\ppwfuenf & shush & shut & shy & sift & silk & silly \\
+\ppwfuenf & silo & sip & siren & sixth & size & skate \\
+\ppwfuenf & skew & skid & skier & skies & skip & skirt \\
+\ppwfuenf & skit & sky & slab & slack & slain & slam \\
+\ppwfuenf & slang & slash & slate & slaw & sled & sleek \\
+\ppwfuenf & sleep & sleet & slept & slice & slick & slimy
+\end{wsechs}
+\begin{wsechs}
+\ppwfuenf & sling & slip & slit & slob & slot & slug \\
+\ppwfuenf & slum & slurp & slush & small & smash & smell \\
+\ppwfuenf & smile & smirk & smog & snack & snap & snare \\
+\ppwfuenf & snarl & sneak & sneer & sniff & snore & snort \\
+\ppwfuenf & snout & snowy & snub & snuff & speak & speed \\
+\ppwfuenf & spend & spent & spew & spied & spill & spiny
+\end{wsechs}
+\begin{wsechs}
+\ppwfuenf & spoil & spoke & spoof & spool & spoon & sport \\
+\ppwfuenf & spot & spout & spray & spree & spur & squad \\
+\ppwfuenf & squat & squid & stack & staff & stage & stain \\
+\ppwfuenf & stall & stamp & stand & stank & stark & start \\
+\ppwfuenf & stash & state & stays & steam & steep & stem \\
+\ppwfuenf & step & stew & stick & sting & stir & stock
+\end{wsechs}
+\newpage
+\stepcounter{wuerfeleins}
+\begin{wsechs}
+\ppwfuenf & stole & stomp & stony & stood & stool & stoop \\
+\ppwfuenf & stop & storm & stout & stove & straw & stray \\
+\ppwfuenf & strut & stuck & stud & stuff & stump & stung \\
+\ppwfuenf & stunt & suds & sugar & sulk & surf & sushi \\
+\ppwfuenf & swab & swan & swarm & sway & swear & sweat \\
+\ppwfuenf & sweep & swell & swept & swim & swing & swipe
+\end{wsechs}
+\begin{wsechs}
+\ppwfuenf & swirl & swoop & swore & syrup & tacky & taco \\
+\ppwfuenf & tag & take & tall & talon & tamer & tank \\
+\ppwfuenf & taper & taps & tarot & tart & task & taste \\
+\ppwfuenf & tasty & taunt & thank & thaw & theft & theme \\
+\ppwfuenf & thigh & thing & think & thong & thorn & those \\
+\ppwfuenf & throb & thud & thumb & thump & thus & tiara
+\end{wsechs}
+\begin{wsechs}
+\ppwfuenf & tidal & tidy & tiger & tile & tilt & tint \\
+\ppwfuenf & tiny & trace & track & trade & train & trait \\
+\ppwfuenf & trap & trash & tray & treat & tree & trek \\
+\ppwfuenf & trend & trial & tribe & trick & trio & trout \\
+\ppwfuenf & truce & truck & trump & trunk & try & tug \\
+\ppwfuenf & tulip & tummy & turf & tusk & tutor & tutu
+\end{wsechs}
+\begin{wsechs}
+\ppwfuenf & tux & tweak & tweet & twice & twine & twins \\
+\ppwfuenf & twirl & twist & uncle & uncut & undo & unify \\
+\ppwfuenf & union & unit & untie & upon & upper & urban \\
+\ppwfuenf & used & user & usher & utter & value & vapor \\
+\ppwfuenf & vegan & venue & verse & vest & veto & vice \\
+\ppwfuenf & video & view & viral & virus & visa & visor
+\end{wsechs}
+\begin{wsechs}
+\ppwfuenf & vixen & vocal & voice & void & volt & voter \\
+\ppwfuenf & vowel & wad & wafer & wager & wages & wagon \\
+\ppwfuenf & wake & walk & wand & wasp & watch & water \\
+\ppwfuenf & wavy & wheat & whiff & whole & whoop & wick \\
+\ppwfuenf & widen & widow & width & wife & wifi & wilt \\
+\ppwfuenf & wimp & wind & wing & wink & wipe & wired
+\end{wsechs}
+\begin{wsechs}
+\ppwfuenf & wiry & wise & wish & wispy & wok & wolf \\
+\ppwfuenf & womb & wool & woozy & word & work & worry \\
+\ppwfuenf & wound & woven & wrath & wreck & wrist & xerox \\
+\ppwfuenf & yahoo & yam & yard & year & yeast & yelp \\
+\ppwfuenf & yield & yo-yo & yodel & yoga & yoyo & yummy \\
+\ppwfuenf & zebra & zero & zesty & zippy & zone & zoom
+\end{wsechs}
+\end{document}
+
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: t
+%%% End:
