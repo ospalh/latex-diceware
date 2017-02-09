@@ -21,8 +21,9 @@ def do_process(args):
         inf_s = inf.read()
         with open(args.outfile, 'w') as outf:
             with open(args.wordfile, 'r') as wordlist:
-                for wordline in wordlist.readlines():
-                    word = re.search('[0-6]+\\s+([^\s]+)', wordline).group(1)
+                # for wordline in wordlist.readlines():
+                for word in wordlist.read().splitlines():
+                    # word = re.search('[0-6]+\\s+([^\s]+)', wordline).group(1)
                     inf_s = inf_s.replace('foobar', word, 1)
             outf.write(inf_s)
 
